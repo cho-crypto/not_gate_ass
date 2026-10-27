@@ -1,0 +1,5 @@
+work/
+modelsim.ini
+*.wlf
+transcript
+__pycache__/

@@ -1,0 +1,27 @@
+{
+  "Q1_AND_OR": {
+    "exit_code": 0,
+    "passed": 16,
+    "failed": 0
+  },
+  "Q2_MUX8": {
+    "exit_code": 0,
+    "passed": 2048,
+    "failed": 0
+  },
+  "Q3_LETTERS": {
+    "exit_code": 0,
+    "passed": 8,
+    "failed": 0
+  },
+  "Q4_VOTING25": {
+    "exit_code": 0,
+    "passed": 8791,
+    "failed": 0
+  },
+  "Q5_COUNT_DISPLAY": {
+    "exit_code": 0,
+    "passed": 16384,
+    "failed": 0
+  }
+}

@@ -1,0 +1,77 @@
+# do tests/simulate.do
+# Questa Altera Starter FPGA Edition-64 vmap 2025.3 Lib Mapping Utility 2025.09 Sep 15 2025
+# vmap work work 
+# ** Note: (vmap-220) 'modelsim.ini' is used as the ini file.
+# Modifying modelsim.ini
+# Questa Altera Starter FPGA Edition-64 vcom 2025.3 Compiler 2025.09 Sep 15 2025
+# Start time: 20:59:55 on Oct 27,2026
+# vcom -2008 src/and_or4.vhd src/mux8.vhd src/letters7seg.vhd src/voting25.vhd src/popcount13_display.vhd src/hex7seg.vhd tests/tb_assignment2.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity and_or4
+# -- Compiling architecture rtl of and_or4
+# -- Compiling entity mux8
+# -- Compiling architecture rtl of mux8
+# -- Compiling entity letters7seg
+# -- Compiling architecture rtl of letters7seg
+# -- Compiling entity voting25
+# -- Compiling architecture rtl of voting25
+# -- Compiling entity popcount13_display
+# -- Compiling architecture rtl of popcount13_display
+# -- Compiling entity hex7seg
+# -- Compiling architecture rtl of hex7seg
+# -- Compiling entity tb_assignment2
+# -- Compiling architecture test of tb_assignment2
+# -- Loading entity and_or4
+# -- Loading entity mux8
+# -- Loading entity letters7seg
+# -- Loading entity voting25
+# -- Loading entity popcount13_display
+# -- Loading entity hex7seg
+# -- Loading package ENV
+# End time: 20:59:55 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim work.tb_assignment2 
+# Start time: 20:59:56 on Oct 27,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.3 win64 Sep 15 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.tb_assignment2(test)#1
+# ** Note: PASS Q1: 16 exhaustive input combinations
+#    Time: 160 ns  Iteration: 0  Instance: /tb_assignment2
+# ** Note: PASS Q2: 2048 exhaustive data/select combinations
+#    Time: 20640 ns  Iteration: 0  Instance: /tb_assignment2
+# ** Note: PASS Q3: 8 selectors, including 2 blank codes
+#    Time: 20720 ns  Iteration: 0  Instance: /tb_assignment2
+# ** Note: PASS Q4: 8791 deterministic vectors (all counts, rotated boundaries, random)
+#    Time: 108630 ns  Iteration: 0  Instance: /tb_assignment2
+# ** Note: PASS Q5: 16384 exhaustive vt/enable combinations
+#    Time: 272470 ns  Iteration: 0  Instance: /tb_assignment2
+# ** Note: PASS HEX: all 16 symbols (including unreachable E,F for Q5)
+#    Time: 272630 ns  Iteration: 0  Instance: /tb_assignment2
+# ** Note: ALL TESTS PASSED
+#    Time: 272630 ns  Iteration: 0  Instance: /tb_assignment2
+# End time: 20:59:57 on Oct 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
