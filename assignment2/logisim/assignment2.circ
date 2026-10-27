@@ -731,49 +731,115 @@ fc 60 da f2 66 b6 be e0 fe f6 ee 3e 9c 7a 9e 8e
       <a name="font" val="SansSerif plain 14" />
       <a name="halign" val="left" />
     </comp>
-    <comp name="and_or4" loc="(400,200)">
-      <a name="appearance" val="classic" />
+    <comp name="and_or4" loc="(520,200)">
+      <a name="appearance" val="logisim_evolution" />
       <a name="label" val="U1" />
     </comp>
-    <comp name="Pin" loc="(160,190)" lib="0">
+    <comp name="Pin" loc="(120,170)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="a" />
       <a name="width" val="1" />
     </comp>
-    <wire from="(160,190)" to="(370,190)" />
-    <comp name="Pin" loc="(160,200)" lib="0">
+    <wire from="(120,170)" to="(160,170)" />
+    <comp name="Tunnel" loc="(160,170)" lib="0">
+      <a name="label" val="a" />
+      <a name="width" val="1" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Tunnel" loc="(270,200)" lib="0">
+      <a name="label" val="a" />
+      <a name="width" val="1" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(270,200)" to="(300,200)" />
+    <comp name="Pin" loc="(120,260)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="b" />
       <a name="width" val="1" />
     </comp>
-    <wire from="(160,200)" to="(370,200)" />
-    <comp name="Pin" loc="(160,210)" lib="0">
+    <wire from="(120,260)" to="(160,260)" />
+    <comp name="Tunnel" loc="(160,260)" lib="0">
+      <a name="label" val="b" />
+      <a name="width" val="1" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Tunnel" loc="(270,220)" lib="0">
+      <a name="label" val="b" />
+      <a name="width" val="1" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(270,220)" to="(300,220)" />
+    <comp name="Pin" loc="(120,350)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="c" />
       <a name="width" val="1" />
     </comp>
-    <wire from="(160,210)" to="(370,210)" />
-    <comp name="Pin" loc="(160,220)" lib="0">
+    <wire from="(120,350)" to="(160,350)" />
+    <comp name="Tunnel" loc="(160,350)" lib="0">
+      <a name="label" val="c" />
+      <a name="width" val="1" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Tunnel" loc="(270,240)" lib="0">
+      <a name="label" val="c" />
+      <a name="width" val="1" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(270,240)" to="(300,240)" />
+    <comp name="Pin" loc="(120,440)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="d" />
       <a name="width" val="1" />
     </comp>
-    <wire from="(160,220)" to="(370,220)" />
-    <wire from="(400,200)" to="(500,200)" />
-    <comp name="Pin" loc="(500,200)" lib="0">
+    <wire from="(120,440)" to="(160,440)" />
+    <comp name="Tunnel" loc="(160,440)" lib="0">
+      <a name="label" val="d" />
+      <a name="width" val="1" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Tunnel" loc="(270,260)" lib="0">
+      <a name="label" val="d" />
+      <a name="width" val="1" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(270,260)" to="(300,260)" />
+    <wire from="(520,200)" to="(550,200)" />
+    <comp name="Tunnel" loc="(550,200)" lib="0">
+      <a name="label" val="out1" />
+      <a name="width" val="1" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Pin" loc="(700,200)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="out1" />
       <a name="width" val="1" />
       <a name="type" val="output" />
       <a name="facing" val="west" />
     </comp>
-    <wire from="(400,210)" to="(500,210)" />
-    <comp name="Pin" loc="(500,210)" lib="0">
+    <wire from="(660,200)" to="(700,200)" />
+    <comp name="Tunnel" loc="(660,200)" lib="0">
+      <a name="label" val="out1" />
+      <a name="width" val="1" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(520,220)" to="(550,220)" />
+    <comp name="Tunnel" loc="(550,220)" lib="0">
+      <a name="label" val="out2" />
+      <a name="width" val="1" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Pin" loc="(700,290)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="out2" />
       <a name="width" val="1" />
       <a name="type" val="output" />
       <a name="facing" val="west" />
+    </comp>
+    <wire from="(660,290)" to="(700,290)" />
+    <comp name="Tunnel" loc="(660,290)" lib="0">
+      <a name="label" val="out2" />
+      <a name="width" val="1" />
+      <a name="facing" val="east" />
     </comp>
   </circuit>
   <circuit name="VHDL_mux8">
@@ -783,29 +849,62 @@ fc 60 da f2 66 b6 be e0 fe f6 ee 3e 9c 7a 9e 8e
       <a name="font" val="SansSerif plain 14" />
       <a name="halign" val="left" />
     </comp>
-    <comp name="mux8" loc="(400,200)">
-      <a name="appearance" val="classic" />
+    <comp name="mux8" loc="(520,200)">
+      <a name="appearance" val="logisim_evolution" />
       <a name="label" val="U1" />
     </comp>
-    <comp name="Pin" loc="(160,200)" lib="0">
+    <comp name="Pin" loc="(120,170)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="d" />
       <a name="width" val="8" />
     </comp>
-    <wire from="(160,200)" to="(370,200)" />
-    <comp name="Pin" loc="(160,210)" lib="0">
+    <wire from="(120,170)" to="(160,170)" />
+    <comp name="Tunnel" loc="(160,170)" lib="0">
+      <a name="label" val="d" />
+      <a name="width" val="8" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Tunnel" loc="(270,200)" lib="0">
+      <a name="label" val="d" />
+      <a name="width" val="8" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(270,200)" to="(300,200)" />
+    <comp name="Pin" loc="(120,260)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="s" />
       <a name="width" val="3" />
     </comp>
-    <wire from="(160,210)" to="(370,210)" />
-    <wire from="(400,200)" to="(500,200)" />
-    <comp name="Pin" loc="(500,200)" lib="0">
+    <wire from="(120,260)" to="(160,260)" />
+    <comp name="Tunnel" loc="(160,260)" lib="0">
+      <a name="label" val="s" />
+      <a name="width" val="3" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Tunnel" loc="(270,220)" lib="0">
+      <a name="label" val="s" />
+      <a name="width" val="3" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(270,220)" to="(300,220)" />
+    <wire from="(520,200)" to="(550,200)" />
+    <comp name="Tunnel" loc="(550,200)" lib="0">
+      <a name="label" val="y" />
+      <a name="width" val="1" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Pin" loc="(700,200)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="y" />
       <a name="width" val="1" />
       <a name="type" val="output" />
       <a name="facing" val="west" />
+    </comp>
+    <wire from="(660,200)" to="(700,200)" />
+    <comp name="Tunnel" loc="(660,200)" lib="0">
+      <a name="label" val="y" />
+      <a name="width" val="1" />
+      <a name="facing" val="east" />
     </comp>
   </circuit>
   <circuit name="VHDL_letters7seg">
@@ -815,28 +914,45 @@ fc 60 da f2 66 b6 be e0 fe f6 ee 3e 9c 7a 9e 8e
       <a name="font" val="SansSerif plain 14" />
       <a name="halign" val="left" />
     </comp>
-    <comp name="letters7seg" loc="(400,200)">
-      <a name="appearance" val="classic" />
+    <comp name="letters7seg" loc="(520,200)">
+      <a name="appearance" val="logisim_evolution" />
       <a name="label" val="U1" />
     </comp>
-    <comp name="Pin" loc="(160,200)" lib="0">
+    <comp name="Pin" loc="(120,170)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="sel" />
       <a name="width" val="3" />
     </comp>
-    <wire from="(160,200)" to="(370,200)" />
-    <wire from="(400,200)" to="(500,200)" />
-    <comp name="Pin" loc="(500,200)" lib="0">
+    <wire from="(120,170)" to="(160,170)" />
+    <comp name="Tunnel" loc="(160,170)" lib="0">
+      <a name="label" val="sel" />
+      <a name="width" val="3" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Tunnel" loc="(270,200)" lib="0">
+      <a name="label" val="sel" />
+      <a name="width" val="3" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(270,200)" to="(300,200)" />
+    <wire from="(520,200)" to="(550,200)" />
+    <comp name="Tunnel" loc="(550,200)" lib="0">
+      <a name="label" val="seg" />
+      <a name="width" val="8" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Pin" loc="(700,200)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="seg" />
       <a name="width" val="8" />
       <a name="type" val="output" />
       <a name="facing" val="west" />
     </comp>
-    <comp name="Tunnel" loc="(470,200)" lib="0">
+    <wire from="(660,200)" to="(700,200)" />
+    <comp name="Tunnel" loc="(660,200)" lib="0">
       <a name="label" val="seg" />
       <a name="width" val="8" />
-      <a name="facing" val="west" />
+      <a name="facing" val="east" />
     </comp>
     <comp name="Tunnel" loc="(750,280)" lib="0">
       <a name="label" val="seg" />
@@ -961,23 +1077,45 @@ fc 60 da f2 66 b6 be e0 fe f6 ee 3e 9c 7a 9e 8e
       <a name="font" val="SansSerif plain 14" />
       <a name="halign" val="left" />
     </comp>
-    <comp name="voting25" loc="(400,200)">
-      <a name="appearance" val="classic" />
+    <comp name="voting25" loc="(520,200)">
+      <a name="appearance" val="logisim_evolution" />
       <a name="label" val="U1" />
     </comp>
-    <comp name="Pin" loc="(160,200)" lib="0">
+    <comp name="Pin" loc="(120,170)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="vt" />
       <a name="width" val="25" />
     </comp>
-    <wire from="(160,200)" to="(370,200)" />
-    <wire from="(400,200)" to="(500,200)" />
-    <comp name="Pin" loc="(500,200)" lib="0">
+    <wire from="(120,170)" to="(160,170)" />
+    <comp name="Tunnel" loc="(160,170)" lib="0">
+      <a name="label" val="vt" />
+      <a name="width" val="25" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Tunnel" loc="(270,200)" lib="0">
+      <a name="label" val="vt" />
+      <a name="width" val="25" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(270,200)" to="(300,200)" />
+    <wire from="(520,200)" to="(550,200)" />
+    <comp name="Tunnel" loc="(550,200)" lib="0">
+      <a name="label" val="result" />
+      <a name="width" val="1" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Pin" loc="(700,200)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="result" />
       <a name="width" val="1" />
       <a name="type" val="output" />
       <a name="facing" val="west" />
+    </comp>
+    <wire from="(660,200)" to="(700,200)" />
+    <comp name="Tunnel" loc="(660,200)" lib="0">
+      <a name="label" val="result" />
+      <a name="width" val="1" />
+      <a name="facing" val="east" />
     </comp>
   </circuit>
   <circuit name="VHDL_popcount13_display">
@@ -987,34 +1125,62 @@ fc 60 da f2 66 b6 be e0 fe f6 ee 3e 9c 7a 9e 8e
       <a name="font" val="SansSerif plain 14" />
       <a name="halign" val="left" />
     </comp>
-    <comp name="popcount13_display" loc="(400,200)">
-      <a name="appearance" val="classic" />
+    <comp name="popcount13_display" loc="(520,200)">
+      <a name="appearance" val="logisim_evolution" />
       <a name="label" val="U1" />
     </comp>
-    <comp name="Pin" loc="(160,200)" lib="0">
+    <comp name="Pin" loc="(120,170)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="vt" />
       <a name="width" val="13" />
     </comp>
-    <wire from="(160,200)" to="(370,200)" />
-    <comp name="Pin" loc="(160,210)" lib="0">
+    <wire from="(120,170)" to="(160,170)" />
+    <comp name="Tunnel" loc="(160,170)" lib="0">
+      <a name="label" val="vt" />
+      <a name="width" val="13" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Tunnel" loc="(270,200)" lib="0">
+      <a name="label" val="vt" />
+      <a name="width" val="13" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(270,200)" to="(300,200)" />
+    <comp name="Pin" loc="(120,260)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="en" />
       <a name="width" val="1" />
     </comp>
-    <wire from="(160,210)" to="(370,210)" />
-    <wire from="(400,200)" to="(500,200)" />
-    <comp name="Pin" loc="(500,200)" lib="0">
+    <wire from="(120,260)" to="(160,260)" />
+    <comp name="Tunnel" loc="(160,260)" lib="0">
+      <a name="label" val="en" />
+      <a name="width" val="1" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Tunnel" loc="(270,220)" lib="0">
+      <a name="label" val="en" />
+      <a name="width" val="1" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(270,220)" to="(300,220)" />
+    <wire from="(520,200)" to="(550,200)" />
+    <comp name="Tunnel" loc="(550,200)" lib="0">
+      <a name="label" val="seg" />
+      <a name="width" val="8" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="Pin" loc="(700,200)" lib="0">
       <a name="appearance" val="classic" />
       <a name="label" val="seg" />
       <a name="width" val="8" />
       <a name="type" val="output" />
       <a name="facing" val="west" />
     </comp>
-    <comp name="Tunnel" loc="(470,200)" lib="0">
+    <wire from="(660,200)" to="(700,200)" />
+    <comp name="Tunnel" loc="(660,200)" lib="0">
       <a name="label" val="seg" />
       <a name="width" val="8" />
-      <a name="facing" val="west" />
+      <a name="facing" val="east" />
     </comp>
     <comp name="Tunnel" loc="(750,280)" lib="0">
       <a name="label" val="seg" />
@@ -1132,7 +1298,7 @@ fc 60 da f2 66 b6 be e0 fe f6 ee 3e 9c 7a 9e 8e
       <a name="halign" val="left" />
     </comp>
   </circuit>
-  <vhdl name="and_or4" appearance="classic">library ieee;
+  <vhdl name="and_or4" appearance="logisim_evolution">library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
@@ -1147,7 +1313,7 @@ begin
   out2 &lt;= a or b or c or d;
 end rtl;
 </vhdl>
-  <vhdl name="mux8" appearance="classic">library ieee;
+  <vhdl name="mux8" appearance="logisim_evolution">library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
@@ -1168,7 +1334,7 @@ begin
     'X' when others;
 end rtl;
 </vhdl>
-  <vhdl name="letters7seg" appearance="classic">library ieee;
+  <vhdl name="letters7seg" appearance="logisim_evolution">library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
@@ -1191,7 +1357,7 @@ begin
     "00000000" when others;
 end rtl;
 </vhdl>
-  <vhdl name="voting25" appearance="classic">library ieee;
+  <vhdl name="voting25" appearance="logisim_evolution">library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
@@ -1220,7 +1386,7 @@ begin
   end process;
 end rtl;
 </vhdl>
-  <vhdl name="popcount13_display" appearance="classic">library ieee;
+  <vhdl name="popcount13_display" appearance="logisim_evolution">library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
@@ -1269,7 +1435,7 @@ begin
   end process;
 end rtl;
 </vhdl>
-  <vhdl name="hex7seg" appearance="classic">library ieee;
+  <vhdl name="hex7seg" appearance="logisim_evolution">library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 

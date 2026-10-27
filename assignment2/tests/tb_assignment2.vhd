@@ -23,6 +23,10 @@ architecture test of tb_assignment2 is
     for i in 1 to width loop total:=total+(x mod 2); x:=x/2; end loop;
     return total;
   end;
+  function logic(b : boolean) return std_logic is
+  begin
+    if b then return '1'; else return '0'; end if;
+  end;
 begin
   u1: entity work.and_or4 port map(a,b,c,d,out1,out2);
   u2: entity work.mux8 port map(md,ms,my);
@@ -39,8 +43,8 @@ begin
     for i in 0 to 15 loop
       q:=std_logic_vector(to_unsigned(i,4)); a<=q(3);b<=q(2);c<=q(1);d<=q(0);
       wait for 10 ns;
-      assert (out1='1')=(i=15) report "Q1 AND mismatch" severity failure;
-      assert (out2='1')=(i/=0) report "Q1 OR mismatch" severity failure;
+      assert out1=logic(i=15) report "Q1 AND mismatch" severity failure;
+      assert out2=logic(i/=0) report "Q1 OR mismatch" severity failure;
     end loop;
     report "PASS Q1: 16 exhaustive input combinations";
     for i in 0 to 255 loop
@@ -59,7 +63,7 @@ begin
     while not endfile(vf) loop
       readline(vf,line_in);read(line_in,n);v25<=std_logic_vector(to_unsigned(n,25));
       wait for 10 ns;
-      assert (vr='1')=(ones(n,25)>=13) report "Q4 majority mismatch" severity failure;
+      assert vr=logic(ones(n,25)>=13) report "Q4 majority mismatch" severity failure;
       tested:=tested+1;
     end loop;
     report "PASS Q4: " & integer'image(tested) & " deterministic vectors (all counts, rotated boundaries, random)";
