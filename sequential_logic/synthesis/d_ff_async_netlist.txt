@@ -1,0 +1,24 @@
+module {m2} $top
+  module {m102} \d_ff_async
+    input \d;
+    input \clk;
+    input \set;
+    input \clr;
+    output \q;
+    output \qb;
+    \q_i:$o{n7w1} := $signal{i5} (
+      .$i{p5}: %13:$q{n15w1} := $adff{i13} (
+          .$clk{p20}: %4:$o{n9w1} := $posedge{i7} (
+              .$i{p7}: \clk{n2w1}),
+          .$d{p21}: \d{n1w1},
+          .$rst{p22}: %12:$o{n10w1} := $or{i8} (
+              .$a{p18}: \clr{n4w1},
+              .$b{p19}: \set{n3w1}),
+          .$rst_val{p23}: %7:$o{n12w1} := $mux2{i10} (
+              .$s{p11}: \clr{n4w1},
+              .$i0{p12}: %6:$o{n11w1} := 1'uh1,
+              .$i1{p13}: %8:$o{n13w1} := 1'uh0)))
+    %11:$o{n16w1} := $not{i14} (
+      .$i{p17}: \q_i:$o{n7w1})
+    \q := \q_i:$o{n7w1}
+    \qb := %11:$o{n16w1}

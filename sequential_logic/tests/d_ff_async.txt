@@ -1,0 +1,14 @@
+d clk set clr q qb <set> <seq>
+0 0 0 1 0 1 1 1 # Async Clear at low
+0 0 1 1 0 1 1 2 # Clear wins both high
+0 0 1 0 1 0 1 3 # Async Set no edge
+0 0 0 0 1 0 1 4 # Release Set holds
+0 1 0 0 0 1 1 5 # Normal rising captures 0
+1 1 0 0 0 1 1 6 # High D change holds
+1 1 1 0 1 0 1 7 # Async Set while high
+1 1 1 1 0 1 1 8 # Async Clear overrides Set
+1 1 0 1 0 1 1 9 # Clear maintained
+1 1 0 0 0 1 1 10 # Release Clear no edge
+1 0 0 0 0 1 1 11 # Falling holds
+1 1 0 0 1 0 1 12 # Normal rising captures 1
+1 0 0 0 1 0 1 13 # Return low

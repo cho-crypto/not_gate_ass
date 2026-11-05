@@ -1,0 +1,76 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+use std.env.all;
+
+entity tb_d_ff is end;
+architecture test of tb_d_ff is
+  signal d, clk : std_logic := '0';
+  signal q, qb, gq, gqb : std_logic;
+begin
+  dut: entity work.d_ff(rtl) port map(d, clk, q, qb);
+  net: entity work.d_ff_gates(gates) port map(d, clk, gq, gqb);
+  process
+  begin
+    d <= '0'; clk <= '0';
+    wait for 30 ns;
+    report "PASS step 1: Prepare D=0" severity note;
+    d <= '0'; clk <= '1';
+    wait for 30 ns;
+    assert q = '0' and qb = '1' report "RTL step 2: Rising captures 0" severity failure;
+    assert gq = '0' and gqb = '1' report "Gates step 2: Rising captures 0" severity failure;
+    assert q = gq and qb = gqb report "Equivalence step 2" severity failure;
+    report "PASS step 2: Rising captures 0" severity note;
+    d <= '1'; clk <= '1';
+    wait for 30 ns;
+    assert q = '0' and qb = '1' report "RTL step 3: High phase holds" severity failure;
+    assert gq = '0' and gqb = '1' report "Gates step 3: High phase holds" severity failure;
+    assert q = gq and qb = gqb report "Equivalence step 3" severity failure;
+    report "PASS step 3: High phase holds" severity note;
+    d <= '1'; clk <= '0';
+    wait for 30 ns;
+    assert q = '0' and qb = '1' report "RTL step 4: Falling holds" severity failure;
+    assert gq = '0' and gqb = '1' report "Gates step 4: Falling holds" severity failure;
+    assert q = gq and qb = gqb report "Equivalence step 4" severity failure;
+    report "PASS step 4: Falling holds" severity note;
+    d <= '0'; clk <= '0';
+    wait for 30 ns;
+    assert q = '0' and qb = '1' report "RTL step 5: Low phase change" severity failure;
+    assert gq = '0' and gqb = '1' report "Gates step 5: Low phase change" severity failure;
+    assert q = gq and qb = gqb report "Equivalence step 5" severity failure;
+    report "PASS step 5: Low phase change" severity note;
+    d <= '1'; clk <= '0';
+    wait for 30 ns;
+    assert q = '0' and qb = '1' report "RTL step 6: Prepare D=1" severity failure;
+    assert gq = '0' and gqb = '1' report "Gates step 6: Prepare D=1" severity failure;
+    assert q = gq and qb = gqb report "Equivalence step 6" severity failure;
+    report "PASS step 6: Prepare D=1" severity note;
+    d <= '1'; clk <= '1';
+    wait for 30 ns;
+    assert q = '1' and qb = '0' report "RTL step 7: Rising captures 1" severity failure;
+    assert gq = '1' and gqb = '0' report "Gates step 7: Rising captures 1" severity failure;
+    assert q = gq and qb = gqb report "Equivalence step 7" severity failure;
+    report "PASS step 7: Rising captures 1" severity note;
+    d <= '0'; clk <= '1';
+    wait for 30 ns;
+    assert q = '1' and qb = '0' report "RTL step 8: High phase holds 1" severity failure;
+    assert gq = '1' and gqb = '0' report "Gates step 8: High phase holds 1" severity failure;
+    assert q = gq and qb = gqb report "Equivalence step 8" severity failure;
+    report "PASS step 8: High phase holds 1" severity note;
+    d <= '0'; clk <= '0';
+    wait for 30 ns;
+    assert q = '1' and qb = '0' report "RTL step 9: Falling holds 1" severity failure;
+    assert gq = '1' and gqb = '0' report "Gates step 9: Falling holds 1" severity failure;
+    assert q = gq and qb = gqb report "Equivalence step 9" severity failure;
+    report "PASS step 9: Falling holds 1" severity note;
+    d <= '0'; clk <= '1';
+    wait for 30 ns;
+    assert q = '0' and qb = '1' report "RTL step 10: Rising captures 0" severity failure;
+    assert gq = '0' and gqb = '1' report "Gates step 10: Rising captures 0" severity failure;
+    assert q = gq and qb = gqb report "Equivalence step 10" severity failure;
+    report "PASS step 10: Rising captures 0" severity note;
+    report "ALL PASS d_ff" severity note;
+    finish;
+    wait;
+  end process;
+end architecture;

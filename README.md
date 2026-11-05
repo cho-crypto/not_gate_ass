@@ -1,5 +1,21 @@
 # VHDL 과제
 
+## Sequential Logic Assignment
+
+RS Latch, D Latch, D Flip-Flop, JK Flip-Flop, 비동기 Set/Clear D Flip-Flop의 게이트 및 VHDL 구현입니다.
+
+- [이번 과제 제출 폴더](sequential_logic/)
+- [PDF 보고서](sequential_logic/output/pdf/sequential_logic_report.pdf)
+- [VHDL 소스 5개](sequential_logic/vhdl/)
+- [게이트 기반 Logisim 프로젝트](sequential_logic/logisim/sequential_logic.circ)
+- [테스트벤치](sequential_logic/testbench/)
+- [시뮬레이션 파형과 검증 로그](sequential_logic/results/)
+- [생성된 합성 넷리스트](sequential_logic/synthesis/)
+
+Logisim 53개 순차 벡터 통과. VHDL RTL, 게이트 모델 및 합성 넷리스트의 동작을 검증했습니다.
+최초 준비 벡터 2개를 제외한 51개 단계에서 Q와 Qb를 검사했습니다.
+
+
 ## Assignment-2 (VHDL_1)
 
 강의 자료 VHDL_1의 5문제: 4입력 AND/OR, 8:1 MUX, 문자 표시, 25인 투표기, 13비트 1 개수 표시.

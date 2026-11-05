@@ -1,0 +1,10 @@
+testbench/tb_d_latch.vhd:20:5:@30ns:(report note): PASS step 1: Initialize transparent
+testbench/tb_d_latch.vhd:26:5:@60ns:(report note): PASS step 2: Follow 1
+testbench/tb_d_latch.vhd:32:5:@90ns:(report note): PASS step 3: Close latch
+testbench/tb_d_latch.vhd:38:5:@120ns:(report note): PASS step 4: Hold despite D change
+testbench/tb_d_latch.vhd:44:5:@150ns:(report note): PASS step 5: Follow 0
+testbench/tb_d_latch.vhd:50:5:@180ns:(report note): PASS step 6: Close at 0
+testbench/tb_d_latch.vhd:56:5:@210ns:(report note): PASS step 7: Hold 0
+testbench/tb_d_latch.vhd:62:5:@240ns:(report note): PASS step 8: Follow again
+testbench/tb_d_latch.vhd:63:5:@240ns:(report note): ALL PASS d_latch
+simulation finished @240ns

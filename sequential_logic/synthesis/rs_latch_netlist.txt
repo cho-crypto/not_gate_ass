@@ -1,0 +1,18 @@
+module {m2} $top
+  module {m102} \rs_latch
+    input \s;
+    input \r;
+    output \q;
+    output \qb;
+    \q_i:$o{n5w1} := $signal{i5} (
+      .$i{p5}: %3:$o{n8w1} := $not{i8} (
+          .$i{p9}: %2:$o{n7w1} := $or{i7} (
+              .$a{p7}: \r{n2w1},
+              .$b{p8}: \qb_i:$o{n6w1})))
+    \qb_i:$o{n6w1} := $signal{i6} (
+      .$i{p6}: %5:$o{n10w1} := $not{i10} (
+          .$i{p12}: %4:$o{n9w1} := $or{i9} (
+              .$a{p10}: \s{n1w1},
+              .$b{p11}: \q_i:$o{n5w1})))
+    \q := \q_i:$o{n5w1}
+    \qb := \qb_i:$o{n6w1}

@@ -1,0 +1,11 @@
+d clk q qb <set> <seq>
+0 0 <DC> <DC> 1 1 # Prepare D=0
+0 1 0 1 1 2 # Rising captures 0
+1 1 0 1 1 3 # High phase holds
+1 0 0 1 1 4 # Falling holds
+0 0 0 1 1 5 # Low phase change
+1 0 0 1 1 6 # Prepare D=1
+1 1 1 0 1 7 # Rising captures 1
+0 1 1 0 1 8 # High phase holds 1
+0 0 1 0 1 9 # Falling holds 1
+0 1 0 1 1 10 # Rising captures 0

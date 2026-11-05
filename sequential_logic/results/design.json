@@ -1,0 +1,1057 @@
+[
+  {
+    "name": "rs_latch",
+    "inputs": [
+      "s",
+      "r"
+    ],
+    "gates": [
+      [
+        "NOR",
+        "q",
+        [
+          "r",
+          "qb"
+        ]
+      ],
+      [
+        "NOR",
+        "qb",
+        [
+          "s",
+          "q"
+        ]
+      ]
+    ],
+    "tests": [
+      [
+        {
+          "s": 0,
+          "r": 1
+        },
+        0,
+        1,
+        "Reset"
+      ],
+      [
+        {
+          "s": 0,
+          "r": 0
+        },
+        0,
+        1,
+        "Hold 0"
+      ],
+      [
+        {
+          "s": 1,
+          "r": 0
+        },
+        1,
+        0,
+        "Set"
+      ],
+      [
+        {
+          "s": 0,
+          "r": 0
+        },
+        1,
+        0,
+        "Hold 1"
+      ],
+      [
+        {
+          "s": 1,
+          "r": 1
+        },
+        0,
+        0,
+        "Forbidden"
+      ],
+      [
+        {
+          "s": 0,
+          "r": 1
+        },
+        0,
+        1,
+        "Recover via Reset"
+      ],
+      [
+        {
+          "s": 0,
+          "r": 0
+        },
+        0,
+        1,
+        "Hold after recovery"
+      ]
+    ]
+  },
+  {
+    "name": "d_latch",
+    "inputs": [
+      "d",
+      "en"
+    ],
+    "gates": [
+      [
+        "NAND",
+        "dn",
+        [
+          "d",
+          "d"
+        ]
+      ],
+      [
+        "NAND",
+        "sb",
+        [
+          "d",
+          "en"
+        ]
+      ],
+      [
+        "NAND",
+        "rb",
+        [
+          "dn",
+          "en"
+        ]
+      ],
+      [
+        "NAND",
+        "q",
+        [
+          "sb",
+          "qb"
+        ]
+      ],
+      [
+        "NAND",
+        "qb",
+        [
+          "rb",
+          "q"
+        ]
+      ]
+    ],
+    "tests": [
+      [
+        {
+          "d": 0,
+          "en": 1
+        },
+        0,
+        1,
+        "Initialize transparent"
+      ],
+      [
+        {
+          "d": 1,
+          "en": 1
+        },
+        1,
+        0,
+        "Follow 1"
+      ],
+      [
+        {
+          "d": 1,
+          "en": 0
+        },
+        1,
+        0,
+        "Close latch"
+      ],
+      [
+        {
+          "d": 0,
+          "en": 0
+        },
+        1,
+        0,
+        "Hold despite D change"
+      ],
+      [
+        {
+          "d": 0,
+          "en": 1
+        },
+        0,
+        1,
+        "Follow 0"
+      ],
+      [
+        {
+          "d": 0,
+          "en": 0
+        },
+        0,
+        1,
+        "Close at 0"
+      ],
+      [
+        {
+          "d": 1,
+          "en": 0
+        },
+        0,
+        1,
+        "Hold 0"
+      ],
+      [
+        {
+          "d": 1,
+          "en": 1
+        },
+        1,
+        0,
+        "Follow again"
+      ]
+    ]
+  },
+  {
+    "name": "d_ff",
+    "inputs": [
+      "d",
+      "clk"
+    ],
+    "gates": [
+      [
+        "NOT",
+        "clkn",
+        [
+          "clk"
+        ]
+      ],
+      [
+        "NAND",
+        "m_dn",
+        [
+          "d",
+          "d"
+        ]
+      ],
+      [
+        "NAND",
+        "m_sb",
+        [
+          "d",
+          "clkn"
+        ]
+      ],
+      [
+        "NAND",
+        "m_rb",
+        [
+          "m_dn",
+          "clkn"
+        ]
+      ],
+      [
+        "NAND",
+        "mq",
+        [
+          "m_sb",
+          "mqb"
+        ]
+      ],
+      [
+        "NAND",
+        "mqb",
+        [
+          "m_rb",
+          "mq"
+        ]
+      ],
+      [
+        "NAND",
+        "s_dn",
+        [
+          "mq",
+          "mq"
+        ]
+      ],
+      [
+        "NAND",
+        "s_sb",
+        [
+          "mq",
+          "clk"
+        ]
+      ],
+      [
+        "NAND",
+        "s_rb",
+        [
+          "s_dn",
+          "clk"
+        ]
+      ],
+      [
+        "NAND",
+        "q",
+        [
+          "s_sb",
+          "qb"
+        ]
+      ],
+      [
+        "NAND",
+        "qb",
+        [
+          "s_rb",
+          "q"
+        ]
+      ]
+    ],
+    "tests": [
+      [
+        {
+          "d": 0,
+          "clk": 0
+        },
+        null,
+        null,
+        "Prepare D=0"
+      ],
+      [
+        {
+          "d": 0,
+          "clk": 1
+        },
+        0,
+        1,
+        "Rising captures 0"
+      ],
+      [
+        {
+          "d": 1,
+          "clk": 1
+        },
+        0,
+        1,
+        "High phase holds"
+      ],
+      [
+        {
+          "d": 1,
+          "clk": 0
+        },
+        0,
+        1,
+        "Falling holds"
+      ],
+      [
+        {
+          "d": 0,
+          "clk": 0
+        },
+        0,
+        1,
+        "Low phase change"
+      ],
+      [
+        {
+          "d": 1,
+          "clk": 0
+        },
+        0,
+        1,
+        "Prepare D=1"
+      ],
+      [
+        {
+          "d": 1,
+          "clk": 1
+        },
+        1,
+        0,
+        "Rising captures 1"
+      ],
+      [
+        {
+          "d": 0,
+          "clk": 1
+        },
+        1,
+        0,
+        "High phase holds 1"
+      ],
+      [
+        {
+          "d": 0,
+          "clk": 0
+        },
+        1,
+        0,
+        "Falling holds 1"
+      ],
+      [
+        {
+          "d": 0,
+          "clk": 1
+        },
+        0,
+        1,
+        "Rising captures 0"
+      ]
+    ]
+  },
+  {
+    "name": "jk_ff",
+    "inputs": [
+      "j",
+      "k",
+      "clk"
+    ],
+    "gates": [
+      [
+        "NAND",
+        "clkn",
+        [
+          "clk",
+          "clk"
+        ]
+      ],
+      [
+        "NAND",
+        "kn",
+        [
+          "k",
+          "k"
+        ]
+      ],
+      [
+        "NAND",
+        "jterm",
+        [
+          "j",
+          "qb"
+        ]
+      ],
+      [
+        "NAND",
+        "kterm",
+        [
+          "kn",
+          "q"
+        ]
+      ],
+      [
+        "NAND",
+        "next_d",
+        [
+          "jterm",
+          "kterm"
+        ]
+      ],
+      [
+        "NAND",
+        "m_dn",
+        [
+          "next_d",
+          "next_d"
+        ]
+      ],
+      [
+        "NAND",
+        "m_sb",
+        [
+          "next_d",
+          "clkn"
+        ]
+      ],
+      [
+        "NAND",
+        "m_rb",
+        [
+          "m_dn",
+          "clkn"
+        ]
+      ],
+      [
+        "NAND",
+        "mq",
+        [
+          "m_sb",
+          "mqb"
+        ]
+      ],
+      [
+        "NAND",
+        "mqb",
+        [
+          "m_rb",
+          "mq"
+        ]
+      ],
+      [
+        "NAND",
+        "s_dn",
+        [
+          "mq",
+          "mq"
+        ]
+      ],
+      [
+        "NAND",
+        "s_sb",
+        [
+          "mq",
+          "clk"
+        ]
+      ],
+      [
+        "NAND",
+        "s_rb",
+        [
+          "s_dn",
+          "clk"
+        ]
+      ],
+      [
+        "NAND",
+        "q",
+        [
+          "s_sb",
+          "qb"
+        ]
+      ],
+      [
+        "NAND",
+        "qb",
+        [
+          "s_rb",
+          "q"
+        ]
+      ]
+    ],
+    "tests": [
+      [
+        {
+          "j": 0,
+          "k": 1,
+          "clk": 0
+        },
+        null,
+        null,
+        "Prepare Reset"
+      ],
+      [
+        {
+          "j": 0,
+          "k": 1,
+          "clk": 1
+        },
+        0,
+        1,
+        "Reset"
+      ],
+      [
+        {
+          "j": 0,
+          "k": 0,
+          "clk": 1
+        },
+        0,
+        1,
+        "High holds"
+      ],
+      [
+        {
+          "j": 0,
+          "k": 0,
+          "clk": 0
+        },
+        0,
+        1,
+        "Prepare Hold"
+      ],
+      [
+        {
+          "j": 0,
+          "k": 0,
+          "clk": 1
+        },
+        0,
+        1,
+        "Hold 0"
+      ],
+      [
+        {
+          "j": 1,
+          "k": 0,
+          "clk": 0
+        },
+        0,
+        1,
+        "Prepare Set"
+      ],
+      [
+        {
+          "j": 1,
+          "k": 0,
+          "clk": 1
+        },
+        1,
+        0,
+        "Set"
+      ],
+      [
+        {
+          "j": 0,
+          "k": 0,
+          "clk": 0
+        },
+        1,
+        0,
+        "Prepare Hold 1"
+      ],
+      [
+        {
+          "j": 0,
+          "k": 0,
+          "clk": 1
+        },
+        1,
+        0,
+        "Hold 1"
+      ],
+      [
+        {
+          "j": 1,
+          "k": 1,
+          "clk": 0
+        },
+        1,
+        0,
+        "Prepare Toggle"
+      ],
+      [
+        {
+          "j": 1,
+          "k": 1,
+          "clk": 1
+        },
+        0,
+        1,
+        "Toggle to 0"
+      ],
+      [
+        {
+          "j": 1,
+          "k": 1,
+          "clk": 0
+        },
+        0,
+        1,
+        "Falling holds"
+      ],
+      [
+        {
+          "j": 1,
+          "k": 1,
+          "clk": 1
+        },
+        1,
+        0,
+        "Toggle to 1"
+      ],
+      [
+        {
+          "j": 0,
+          "k": 1,
+          "clk": 0
+        },
+        1,
+        0,
+        "Prepare Reset again"
+      ],
+      [
+        {
+          "j": 0,
+          "k": 1,
+          "clk": 1
+        },
+        0,
+        1,
+        "Reset again"
+      ]
+    ]
+  },
+  {
+    "name": "d_ff_async",
+    "inputs": [
+      "d",
+      "clk",
+      "set",
+      "clr"
+    ],
+    "gates": [
+      [
+        "NAND",
+        "clkn",
+        [
+          "clk",
+          "clk"
+        ]
+      ],
+      [
+        "NAND",
+        "clrn",
+        [
+          "clr",
+          "clr"
+        ]
+      ],
+      [
+        "NAND",
+        "setn",
+        [
+          "set",
+          "clrn"
+        ]
+      ],
+      [
+        "NAND",
+        "idle_n",
+        [
+          "clrn",
+          "setn"
+        ]
+      ],
+      [
+        "NAND",
+        "idle",
+        [
+          "idle_n",
+          "idle_n"
+        ]
+      ],
+      [
+        "NAND",
+        "men_n",
+        [
+          "clkn",
+          "idle"
+        ]
+      ],
+      [
+        "NAND",
+        "men",
+        [
+          "men_n",
+          "men_n"
+        ]
+      ],
+      [
+        "NAND",
+        "sen_n",
+        [
+          "clk",
+          "idle"
+        ]
+      ],
+      [
+        "NAND",
+        "sen",
+        [
+          "sen_n",
+          "sen_n"
+        ]
+      ],
+      [
+        "NAND",
+        "m_dn",
+        [
+          "d",
+          "d"
+        ]
+      ],
+      [
+        "NAND",
+        "m_sb",
+        [
+          "d",
+          "men"
+        ]
+      ],
+      [
+        "NAND",
+        "m_rb",
+        [
+          "m_dn",
+          "men"
+        ]
+      ],
+      [
+        "NAND",
+        "m_qsn",
+        [
+          "m_sb",
+          "mqb"
+        ]
+      ],
+      [
+        "NAND",
+        "m_qsab",
+        [
+          "m_qsn",
+          "m_qsn"
+        ]
+      ],
+      [
+        "NAND",
+        "mq",
+        [
+          "m_qsab",
+          "setn"
+        ]
+      ],
+      [
+        "NAND",
+        "m_qrn",
+        [
+          "m_rb",
+          "mq"
+        ]
+      ],
+      [
+        "NAND",
+        "m_qrab",
+        [
+          "m_qrn",
+          "m_qrn"
+        ]
+      ],
+      [
+        "NAND",
+        "mqb",
+        [
+          "m_qrab",
+          "clrn"
+        ]
+      ],
+      [
+        "NAND",
+        "s_dn",
+        [
+          "mq",
+          "mq"
+        ]
+      ],
+      [
+        "NAND",
+        "s_sb",
+        [
+          "mq",
+          "sen"
+        ]
+      ],
+      [
+        "NAND",
+        "s_rb",
+        [
+          "s_dn",
+          "sen"
+        ]
+      ],
+      [
+        "NAND",
+        "s_qsn",
+        [
+          "s_sb",
+          "qb"
+        ]
+      ],
+      [
+        "NAND",
+        "s_qsab",
+        [
+          "s_qsn",
+          "s_qsn"
+        ]
+      ],
+      [
+        "NAND",
+        "q",
+        [
+          "s_qsab",
+          "setn"
+        ]
+      ],
+      [
+        "NAND",
+        "s_qrn",
+        [
+          "s_rb",
+          "q"
+        ]
+      ],
+      [
+        "NAND",
+        "s_qrab",
+        [
+          "s_qrn",
+          "s_qrn"
+        ]
+      ],
+      [
+        "NAND",
+        "qb",
+        [
+          "s_qrab",
+          "clrn"
+        ]
+      ]
+    ],
+    "tests": [
+      [
+        {
+          "d": 0,
+          "clk": 0,
+          "set": 0,
+          "clr": 1
+        },
+        0,
+        1,
+        "Async Clear at low"
+      ],
+      [
+        {
+          "d": 0,
+          "clk": 0,
+          "set": 1,
+          "clr": 1
+        },
+        0,
+        1,
+        "Clear wins both high"
+      ],
+      [
+        {
+          "d": 0,
+          "clk": 0,
+          "set": 1,
+          "clr": 0
+        },
+        1,
+        0,
+        "Async Set no edge"
+      ],
+      [
+        {
+          "d": 0,
+          "clk": 0,
+          "set": 0,
+          "clr": 0
+        },
+        1,
+        0,
+        "Release Set holds"
+      ],
+      [
+        {
+          "d": 0,
+          "clk": 1,
+          "set": 0,
+          "clr": 0
+        },
+        0,
+        1,
+        "Normal rising captures 0"
+      ],
+      [
+        {
+          "d": 1,
+          "clk": 1,
+          "set": 0,
+          "clr": 0
+        },
+        0,
+        1,
+        "High D change holds"
+      ],
+      [
+        {
+          "d": 1,
+          "clk": 1,
+          "set": 1,
+          "clr": 0
+        },
+        1,
+        0,
+        "Async Set while high"
+      ],
+      [
+        {
+          "d": 1,
+          "clk": 1,
+          "set": 1,
+          "clr": 1
+        },
+        0,
+        1,
+        "Async Clear overrides Set"
+      ],
+      [
+        {
+          "d": 1,
+          "clk": 1,
+          "set": 0,
+          "clr": 1
+        },
+        0,
+        1,
+        "Clear maintained"
+      ],
+      [
+        {
+          "d": 1,
+          "clk": 1,
+          "set": 0,
+          "clr": 0
+        },
+        0,
+        1,
+        "Release Clear no edge"
+      ],
+      [
+        {
+          "d": 1,
+          "clk": 0,
+          "set": 0,
+          "clr": 0
+        },
+        0,
+        1,
+        "Falling holds"
+      ],
+      [
+        {
+          "d": 1,
+          "clk": 1,
+          "set": 0,
+          "clr": 0
+        },
+        1,
+        0,
+        "Normal rising captures 1"
+      ],
+      [
+        {
+          "d": 1,
+          "clk": 0,
+          "set": 0,
+          "clr": 0
+        },
+        1,
+        0,
+        "Return low"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+testbench/tb_d_ff_async.vhd:20:5:@30ns:(report note): PASS step 1: Async Clear at low
+testbench/tb_d_ff_async.vhd:26:5:@60ns:(report note): PASS step 2: Clear wins both high
+testbench/tb_d_ff_async.vhd:32:5:@90ns:(report note): PASS step 3: Async Set no edge
+testbench/tb_d_ff_async.vhd:38:5:@120ns:(report note): PASS step 4: Release Set holds
+testbench/tb_d_ff_async.vhd:44:5:@150ns:(report note): PASS step 5: Normal rising captures 0
+testbench/tb_d_ff_async.vhd:50:5:@180ns:(report note): PASS step 6: High D change holds
+testbench/tb_d_ff_async.vhd:56:5:@210ns:(report note): PASS step 7: Async Set while high
+testbench/tb_d_ff_async.vhd:62:5:@240ns:(report note): PASS step 8: Async Clear overrides Set
+testbench/tb_d_ff_async.vhd:68:5:@270ns:(report note): PASS step 9: Clear maintained
+testbench/tb_d_ff_async.vhd:74:5:@300ns:(report note): PASS step 10: Release Clear no edge
+testbench/tb_d_ff_async.vhd:80:5:@330ns:(report note): PASS step 11: Falling holds
+testbench/tb_d_ff_async.vhd:86:5:@360ns:(report note): PASS step 12: Normal rising captures 1
+testbench/tb_d_ff_async.vhd:92:5:@390ns:(report note): PASS step 13: Return low
+testbench/tb_d_ff_async.vhd:93:5:@390ns:(report note): ALL PASS d_ff_async
+simulation finished @390ns

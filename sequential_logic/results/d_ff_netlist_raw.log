@@ -1,0 +1,15 @@
+module {m2} $top
+  module {m102} \d_ff
+    input \d;
+    input \clk;
+    output \q;
+    output \qb;
+    \q_i:$o{n5w1} := $signal{i5} (
+      .$i{p5}: %8:$q{n9w1} := $dff{i9} (
+          .$clk{p12}: %4:$o{n7w1} := $posedge{i7} (
+              .$i{p7}: \clk{n2w1}),
+          .$d{p13}: \d{n1w1}))
+    %7:$o{n10w1} := $not{i10} (
+      .$i{p11}: \q_i:$o{n5w1})
+    \q := \q_i:$o{n5w1}
+    \qb := %7:$o{n10w1}

@@ -1,0 +1,165 @@
+$date
+  Fri Nov  6 06:43:58 2026
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module textio $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module env $end
+$upscope $end
+$scope module tb_d_latch $end
+$var reg 1 ! d $end
+$var reg 1 " en $end
+$var reg 1 # q $end
+$var reg 1 $ qb $end
+$var reg 1 % gq $end
+$var reg 1 & gqb $end
+$scope module dut $end
+$var reg 1 ' d $end
+$var reg 1 ( en $end
+$var reg 1 ) q $end
+$var reg 1 * qb $end
+$var reg 1 + q_i $end
+$upscope $end
+$scope module net $end
+$var reg 1 , d $end
+$var reg 1 - en $end
+$var reg 1 . q $end
+$var reg 1 / qb $end
+$var reg 1 0 dn $end
+$var reg 1 1 sb $end
+$var reg 1 2 rb $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+1"
+0#
+1$
+U%
+U&
+0'
+1(
+0)
+1*
+0+
+0,
+1-
+U.
+U/
+U0
+U1
+U2
+#1000000
+U.
+U/
+10
+11
+#2000000
+U.
+02
+#3000000
+1&
+1/
+#4000000
+0%
+0.
+#5000000
+1/
+#30000000
+1!
+1#
+0$
+1'
+1)
+0*
+1+
+1,
+#31000000
+00
+01
+#32000000
+1%
+1.
+12
+#33000000
+0&
+0/
+#34000000
+1.
+#60000000
+0"
+0(
+0-
+#61000000
+11
+#62000000
+1.
+#90000000
+0!
+0'
+0,
+#91000000
+10
+#120000000
+1"
+0#
+1$
+1(
+0)
+1*
+0+
+1-
+#121000000
+02
+#122000000
+1&
+1/
+#123000000
+0%
+0.
+#124000000
+1/
+#150000000
+0"
+0(
+0-
+#151000000
+12
+#152000000
+1/
+#180000000
+1!
+1'
+1,
+#181000000
+00
+#210000000
+1"
+1#
+0$
+1(
+1)
+0*
+1+
+1-
+#211000000
+01
+#212000000
+1%
+1.
+#213000000
+0&
+0/
+#214000000
+1.
+#240000000

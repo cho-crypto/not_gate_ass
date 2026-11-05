@@ -1,0 +1,9 @@
+testbench/tb_rs_latch.vhd:20:5:@30ns:(report note): PASS step 1: Reset
+testbench/tb_rs_latch.vhd:26:5:@60ns:(report note): PASS step 2: Hold 0
+testbench/tb_rs_latch.vhd:32:5:@90ns:(report note): PASS step 3: Set
+testbench/tb_rs_latch.vhd:38:5:@120ns:(report note): PASS step 4: Hold 1
+testbench/tb_rs_latch.vhd:44:5:@150ns:(report note): PASS step 5: Forbidden
+testbench/tb_rs_latch.vhd:50:5:@180ns:(report note): PASS step 6: Recover via Reset
+testbench/tb_rs_latch.vhd:56:5:@210ns:(report note): PASS step 7: Hold after recovery
+testbench/tb_rs_latch.vhd:57:5:@210ns:(report note): ALL PASS rs_latch
+simulation finished @210ns

@@ -1,0 +1,14 @@
+module {m2} $top
+  module {m102} \d_latch
+    input \d;
+    input \en;
+    output \q;
+    output \qb;
+    \q_i:$o{n5w1} := $signal{i5} (
+      .$i{p5}: %7:$q{n8w1} := $dlatch{i8} (
+          .$d{p11}: \d{n1w1},
+          .$en{p12}: \en{n2w1}))
+    %6:$o{n9w1} := $not{i9} (
+      .$i{p10}: \q_i:$o{n5w1})
+    \q := \q_i:$o{n5w1}
+    \qb := %6:$o{n9w1}

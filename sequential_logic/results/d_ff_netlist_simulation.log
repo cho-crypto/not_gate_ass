@@ -1,0 +1,12 @@
+tmp/tb_d_ff_synth.vhd:17:5:@30ns:(report note): PASS step 1: Prepare D=0
+tmp/tb_d_ff_synth.vhd:23:5:@60ns:(report note): PASS step 2: Rising captures 0
+tmp/tb_d_ff_synth.vhd:29:5:@90ns:(report note): PASS step 3: High phase holds
+tmp/tb_d_ff_synth.vhd:35:5:@120ns:(report note): PASS step 4: Falling holds
+tmp/tb_d_ff_synth.vhd:41:5:@150ns:(report note): PASS step 5: Low phase change
+tmp/tb_d_ff_synth.vhd:47:5:@180ns:(report note): PASS step 6: Prepare D=1
+tmp/tb_d_ff_synth.vhd:53:5:@210ns:(report note): PASS step 7: Rising captures 1
+tmp/tb_d_ff_synth.vhd:59:5:@240ns:(report note): PASS step 8: High phase holds 1
+tmp/tb_d_ff_synth.vhd:65:5:@270ns:(report note): PASS step 9: Falling holds 1
+tmp/tb_d_ff_synth.vhd:71:5:@300ns:(report note): PASS step 10: Rising captures 0
+tmp/tb_d_ff_synth.vhd:72:5:@300ns:(report note): ALL PASS d_ff
+simulation finished @300ns

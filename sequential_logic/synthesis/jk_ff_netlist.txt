@@ -1,0 +1,34 @@
+module {m2} $top
+  module {m102} \jk_ff
+    input \j;
+    input \k;
+    input \clk;
+    output \q;
+    output \qb;
+    \q_i:$o{n6w1} := $signal{i5} (
+      .$i{p5}: %19:$q{n21w1} := $dff{i20} (
+          .$clk{p30}: %4:$o{n8w1} := $posedge{i7} (
+              .$i{p7}: \clk{n3w1}),
+          .$d{p31}: %15:$o{n19w1} := $mux2{i18} (
+              .$s{p23}: %6:$o{n10w1} := $and{i9} (
+                  .$a{p9}: \k{n2w1},
+                  .$b{p10}: %5:$o{n9w1} := $not{i8} (
+                      .$i{p8}: \j{n1w1})),
+              .$i0{p24}: %13:$o{n17w1} := $mux2{i16} (
+                  .$s{p20}: %8:$o{n12w1} := $and{i11} (
+                      .$a{p12}: %7:$o{n11w1} := $not{i10} (
+                          .$i{p11}: \k{n2w1}),
+                      .$b{p13}: \j{n1w1}),
+                  .$i0{p21}: %11:$o{n15w1} := $mux2{i14} (
+                      .$s{p17}: %9:$o{n13w1} := $and{i12} (
+                          .$a{p14}: \k{n2w1},
+                          .$b{p15}: \j{n1w1}),
+                      .$i0{p18}: \q_i:$o{n6w1},
+                      .$i1{p19}: %10:$o{n14w1} := $not{i13} (
+                          .$i{p16}: \q_i:$o{n6w1})),
+                  .$i1{p22}: %12:$o{n16w1} := 1'uh1),
+              .$i1{p25}: %14:$o{n18w1} := 1'uh0)))
+    %18:$o{n22w1} := $not{i21} (
+      .$i{p29}: \q_i:$o{n6w1})
+    \q := \q_i:$o{n6w1}
+    \qb := %18:$o{n22w1}
