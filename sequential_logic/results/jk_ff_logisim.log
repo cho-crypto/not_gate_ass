@@ -1,5 +1,5 @@
 Loading test vector “tests/jk_ff.txt”…
-Running 15 vectors…
+Running 22 vectors…
 1 
 2 
 3 
@@ -15,5 +15,12 @@ Running 15 vectors…
 13 
 14 
 15 
+16 
+17 
+18 
+19 
+20 
+21 
+22 
 
-Passed: 15, Failed: 0
+Passed: 22, Failed: 0

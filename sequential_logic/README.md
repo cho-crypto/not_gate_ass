@@ -20,10 +20,10 @@ RS Latch, D Latch, positive-edge D Flip-Flop, JK Flip-Flop, and D Flip-Flop with
 | RS Latch | 7/7 | PASS | PASS |
 | D Latch | 8/8 | PASS | PASS |
 | D Flip-Flop | 10/10 | PASS | PASS |
-| JK Flip-Flop | 15/15 | PASS | PASS |
+| JK Flip-Flop | 22/22 | PASS | PASS |
 | Async Set/Clear D Flip-Flop | 13/13 | PASS | PASS |
 
-총 53개 벡터 중 D/JK FF의 최초 준비 단계 2개는 미초기화 출력을 검사하지 않습니다. 나머지 51개 단계에서는 Q와 Qb를 모두 검사합니다. 테스트 실패 시 verify.py가 중단됩니다. Logisim은 벡터 실패에도 종료 코드가 0일 수 있으므로 `Failed: 0` 문구도 검사합니다.
+총 60개 기본 벡터 중 D FF의 최초 준비 단계 1개만 미초기화 출력을 검사하지 않습니다. 나머지 59개 단계에서 Q와 Qb를 검사합니다. 수정 JK는 추가 4,984개 벡터와 내부 21개 출력 검사도 모두 통과했습니다. 테스트 실패 시 verify.py가 중단됩니다. Logisim은 벡터 실패에도 종료 코드가 0일 수 있으므로 `Failed: 0` 문구도 검사합니다.
 
 ## Logisim 사용법
 
@@ -39,12 +39,12 @@ RS Latch, D Latch, positive-edge D Flip-Flop, JK Flip-Flop, and D Flip-Flop with
 - RS: NOR 2개, Q = NOT(R OR Qb), Qb = NOT(S OR Q).
 - D Latch: NAND 5개, 두 입력을 묶은 NAND로 D를 반전.
 - D FF: Master D Latch(클록 0에서 열림), Slave D Latch(클록 1에서 열림), NOT 게이트. G2-G6은 Master, G7-G11은 Slave.
-- JK FF: Dnext = J*Qb + (NOT K)*Q를 NAND로 구현하고 NAND Master-Slave에 입력. Q/Qb 피드백이 포함됨. 반전도 NAND로 구현.
+- JK FF: 활성 Low 비동기 Clear 입력 `clr_n` 추가. `clr_n=0`이면 데이터 경로를 차단하고 Master/Slave 모두 Q=0으로 초기화합니다. 시작 시 입력 기본값 0이므로 Clear가 적용됩니다. `clr_n=1`로 바꿔 정상 동작을 시험하세요. Dnext = J*Qb + (NOT K)*Q를 NAND로 구현하고 NAND Master-Slave에 입력. Q/Qb 피드백이 포함됨. 반전도 NAND로 구현.
 - Async D FF: Master/Slave 모두 비동기 제어. clrn=NOT clr, setn=NOT(set AND clrn), idle=clrn AND setn. 제어 중에는 데이터 경로를 차단. clr가 set보다 우선.
 
 ## 주의할 동작
 
-- 전원을 켠 직후 상태는 보장하지 않습니다. 각 테스트는 유효한 Reset/Set/쓰기/클록 에지로 초기화합니다.
+- JK는 시작 시 `clr_n=0`으로 Clear되어 Q=0,Qb=1이 됩니다. 다른 저장회로는 유효한 Reset/Set/쓰기/클록 에지로 초기화합니다.
 - NOR RS에서 S=R=1이면 Q=Qb=0입니다. 두 입력을 동시에 0으로 해제한 상태는 보장할 수 없으므로 Reset을 거쳐 복구합니다.
 - 비동기 set/clr은 클록 없이 동작합니다. 두 신호가 모두 1이면 Q=0, Qb=1입니다.
 - 데이터와 클록에 setup/hold 여유를 둡니다. 게이트 모델의 1 ns 지연과 단계당 30 ns는 논리 검증용이며 실소자의 메타안정성/전파지연 분석이 아닙니다.
@@ -79,3 +79,9 @@ java -jar logisim-evolution-5.0.0-all.jar --test-vector d_ff tests/d_ff.txt logi
 
 - https://ghdl.github.io/ghdl/using/Synthesis.html
 - https://github.com/logisim-evolution/logisim-evolution/blob/main/docs/test_vector.md
+
+## JK 초기 E 개선 (2026-11-11)
+
+기존 버전은 초기 E가 유효한 클록 입력 후 해제되었습니다. 수정본은 활성 Low Clear를 추가하여 클록 없이 초기화합니다. clk=1에서도 Clear가 우선하고, 높은 클록에서 Clear를 해제해도 Q는 다음 상승 에지까지 유지됩니다. 정상 JK의 Hold/Set/Reset/Toggle 기능은 유지됩니다.
+
+추가 검증은 `python verify_jk_reset.py`로 재현합니다. 초기 J/K/CLK 8조합, 비동기 Clear와 해제, 반복 토글 및 높은 클록 유지가 포함됩니다. `results/jk_ff_stress_logisim.log`와 `results/jk_ff_stress_internal.log`에 각각 4,984개 통과 기록이 있습니다.

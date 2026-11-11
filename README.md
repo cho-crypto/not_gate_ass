@@ -12,8 +12,8 @@ RS Latch, D Latch, D Flip-Flop, JK Flip-Flop, 비동기 Set/Clear D Flip-Flop의
 - [시뮬레이션 파형과 검증 로그](sequential_logic/results/)
 - [생성된 합성 넷리스트](sequential_logic/synthesis/)
 
-Logisim 53개 순차 벡터 통과. VHDL RTL, 게이트 모델 및 합성 넷리스트의 동작을 검증했습니다.
-최초 준비 벡터 2개를 제외한 51개 단계에서 Q와 Qb를 검사했습니다.
+Logisim 60개 기본 순차 벡터 및 수정 JK 추가 4,984개 벡터 통과. VHDL RTL, 게이트 모델 및 합성 넷리스트의 동작을 검증했습니다.
+D FF 최초 준비 벡터 1개를 제외한 기본 59개 단계에서 Q와 Qb를 검사했습니다. JK에 활성 Low 비동기 Clear(`clr_n`)를 추가했으며, 시작 시 0으로 초기화하고 1로 해제해 사용합니다. 내부 21개 출력도 4,984단계에서 모두 정상값을 확인했습니다.
 
 
 ## Assignment-2 (VHDL_1)

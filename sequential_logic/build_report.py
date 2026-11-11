@@ -120,16 +120,16 @@ notes={
 'rs_latch':['NOR 게이트 2개의 출력을 서로 반대쪽 입력으로 연결하여 상태를 저장한다.','S=1,R=0: Set / S=0,R=1: Reset / S=0,R=0: Hold.','S=R=1에서는 Q=Qb=0이 되어 상보 관계가 깨진다. 금지 상태이다.','금지 상태에서 두 입력을 동시에 해제한 결과는 보장하지 않는다. Reset을 거쳐 복구한다.'],
 'd_latch':['D의 반전과 입력 게이팅, 교차 결합 NAND 쌍으로 총 5개의 NAND 게이트를 사용한다.','en=1에서는 Q가 D를 따라가며, en=0에서는 이전 값을 유지한다.','반전은 NAND의 두 입력을 묶어 구현했다. 기본 Latch 부품은 사용하지 않았다.'],
 'd_ff':['Master는 clk=0에서 열리고, Slave는 clk=1에서 열린다. 두 래치와 인버터로 구성했다.','clk 상승 에지에서 Master에 저장된 D가 Slave로 전달된다.','D가 클록의 높은 구간 또는 낮은 구간에서 바뀌어도 최종 Q는 다음 상승 에지까지 유지된다.'],
-'jk_ff':['다음 상태식 Dnext = J·Qb + (NOT K)·Q를 NAND 게이트로 구현했다.','Q와 Qb를 입력 논리에 피드백하고, NAND Master-Slave 구조로 상승 에지에서만 저장한다.','J,K=00: Hold / 10: Set / 01: Reset / 11: Toggle. clk 반전도 NAND로 구성했다.','Toggle은 에지당 한 번만 발생한다. 레벨 민감 JK 래치의 반복 토글을 피한다.'],
+'jk_ff':['다음 상태식 Dnext = J·Qb + (NOT K)·Q를 NAND 게이트로 구현했다.','Q와 Qb를 입력 논리에 피드백하고, NAND Master-Slave 구조로 상승 에지에서만 저장한다.','J,K=00: Hold / 10: Set / 01: Reset / 11: Toggle. clk 반전도 NAND로 구성했다.','clr_n=0은 비동기 Clear이다. 데이터 경로를 차단하고 Master/Slave를 함께 초기화한다.','시작 시 clr_n=0으로 Q=0,Qb=1을 확정하고, clr_n=1로 해제 후 상승 에지에서 동작한다.'],
 'd_ff_async':['Clear를 먼저 적용하고, Set은 Clear가 0일 때만 유효하도록 구성했다.','clrn=NOT clr, setn=NOT(set AND clrn), idle=clrn AND setn.','비동기 제어 중에는 데이터 경로를 차단하고 Master와 Slave 모두에 동일한 제어를 적용한다.','Clear와 Set은 클록 에지를 기다리지 않는다. 두 신호가 0이면 정상 D 플립플롭으로 동작한다.']}
 head('순차논리회로 5종 구현 및 검증','RS Latch / D Latch / D Flip-Flop / JK Flip-Flop / Asynchronous Set-Clear D Flip-Flop')
 lines(38,490,['1. 과제 목적', '게이트 수준 Logisim 회로와 VHDL 구현이 같은 논리 기능을 수행하는지 검증한다.'],12,24)
 text(38,413,'2. 구현 및 검증 방법',13,True)
-lines(38,389,['Logisim: 개별 NOR/NAND/NOT 게이트와 Tunnel 배선만 사용. 기본 Latch/Flip-Flop 부품 없음.','VHDL: RTL 소스 5개를 작성하고 GHDL에서 컴파일, 시뮬레이션 및 범용 논리 합성을 수행.','합성된 VHDL 넷리스트도 다시 컴파일하고 동일한 테스트벤치로 재검증했다.','게이트 모델: Logisim과 같은 게이트 연결에 1 ns 지연을 주고 RTL과 출력을 비교했다.','파형은 실제 GHDL VCD에서 생성했고, 회로도는 제출 회로/합성 넷리스트에서 생성했다.'],10,22)
-text(38,263,'3. 결과 요약',13,True)
+lines(38,389,['Logisim: 개별 NOR/NAND/NOT 게이트와 Tunnel 배선만 사용. 기본 Latch/Flip-Flop 부품 없음.','VHDL: RTL 소스 5개를 작성하고 GHDL에서 컴파일, 시뮬레이션 및 범용 논리 합성을 수행.','합성된 VHDL 넷리스트도 다시 컴파일하고 동일한 테스트벤치로 재검증했다.','게이트 모델: Logisim과 같은 게이트 연결에 1 ns 지연을 주고 RTL과 출력을 비교했다.','파형은 실제 GHDL VCD에서 생성했다. 수정 JK는 4,984개 추가 벡터 및 내부 21개 출력도 통과했다.'],10,22)
+text(38,263,'3. 결과 요약 (JK Clear 추가 수정본)',13,True)
 for i,c in enumerate(D):
  y=237-i*24;name=c['name'];count=len(c['tests']);text(45,y,f'{titles[name]:48s}',10);text(440,y,f'Logisim {count}/{count} PASS | RTL / Gates / Synth PASS',10,True,GREEN)
-lines(38,91,['초기 상태는 보장하지 않는다. RS는 Reset, D Latch는 en=1에서 D=0,','D/JK 플립플롭은 유효한 첫 상승 에지, 비동기 D 플립플롭은 Clear로 초기화한다.'],9,15)
+lines(38,91,['초기 상태는 보장하지 않는다. RS는 Reset, D Latch는 en=1에서 D=0,','D FF는 첫 유효 상승 에지, JK FF는 clr_n=0, 비동기 D FF는 clr=1로 초기화한다.'],9,15)
 cv.showPage()
 for num,c in enumerate(D,1):
  name=c['name'];head(f'{num}. {titles[name]} - 게이트 회로','Logisim gate-level implementation | All matching tunnel labels are electrically connected')
@@ -150,15 +150,15 @@ for num,c in enumerate(D,1):
  log=(R/'results'/f'{name}_logisim.log').read_text(encoding='utf-8-sig');assert f'Passed: {len(c["tests"])}, Failed: 0' in log
  assert 'ALL PASS '+name in (R/'results'/f'{name}_simulation.log').read_text(encoding='utf-8-sig')
  assert 'ALL PASS '+name in (R/'results'/f'{name}_netlist_simulation.log').read_text(encoding='utf-8-sig')
- text(38,283,'Step     입력 ('+', '.join(c['inputs'])+')                  Q / Qb       확인 동작                                      결과',9,True)
- rowheight=min(16,225/len(c['tests']))
+ text(40,283,'Step',9,True);text(90,283,'입력 ('+', '.join(c['inputs'])+')',9,True);text(262,283,'Q / Qb',9,True);text(365,283,'확인 동작',9,True);text(730,283,'결과',9,True)
+ rowheight=min(16,180/len(c['tests']))
  for i,(vals,q,qb,desc) in enumerate(c['tests']):
   yy=262-i*rowheight;iv=', '.join(str(vals[k]) for k in c['inputs']);ov='unchecked' if q is None else f'{q} / {qb}'
   text(40,yy,str(i+1),8);text(90,yy,iv,8);text(262,yy,ov,8);text(365,yy,desc,8);text(730,yy,'PASS' if q is not None else 'INIT',8,True,GREEN)
- lines(38,45,['각 단계는 30 ns 유지 후 검사했다. 최초 미초기화 단계는 출력 비교를 제외했다.','1 ns 게이트 지연은 동작 검증용이며 실제 소자의 타이밍/메타안정성을 예측하는 값이 아니다.'],8,12)
+ lines(38,45,['각 단계는 30 ns 유지 후 검사했다. D FF의 최초 준비 단계만 출력 비교를 제외했다.','1 ns 게이트 지연은 동작 검증용이며 실제 소자의 타이밍/메타안정성을 예측하는 값이 아니다.'],8,12)
  cv.showPage()
 head('재현 방법 및 제출 파일','Reproducible verification and deliverables')
-lines(38,495,['1. Logisim','logisim/sequential_logic.circ를 열고 왼쪽에서 원하는 회로를 선택한다.','각 회로의 입력 Pin을 Poke 도구로 클릭한다. tests/*.txt 순서로 입력을 적용한다.','Simulate > Test Vector에서 해당 txt 파일을 불러오면 순차 테스트를 실행할 수 있다.','이 회로는 게이트만 사용하므로 VHDL Simulation Enabled 또는 Questa 연동이 필요 없다.','','2. VHDL 검증 및 합성','GHDL 6.0.0과 Java 21 이상을 준비한 뒤 README의 실행 명령을 사용한다.','verify.py는 RTL, 1 ns 게이트 모델, 합성 넷리스트, Logisim 순차 벡터를 검증한다.','results/에는 로그와 VCD 파형, synthesis/에는 생성된 범용 합성 넷리스트가 있다.','','3. 제출 구성','vhdl/*.vhd / testbench/*.vhd / logisim/*.circ / output/pdf/*.pdf','추가 검증 자료: tests/, results/, synthesis/, figures/, README.md.'],11,24)
+lines(38,495,['1. Logisim','logisim/sequential_logic.circ를 열고 왼쪽에서 원하는 회로를 선택한다.','각 회로의 입력 Pin을 Poke 도구로 클릭한다. tests/*.txt 순서로 입력을 적용한다.','Simulate > Test Vector에서 해당 txt 파일을 불러오면 순차 테스트를 실행할 수 있다.','JK는 clr_n=0에서 초기화되고 clr_n=1로 바꿔 사용한다. VHDL/Questa 연동은 필요 없다.','','2. VHDL 검증 및 합성','GHDL 6.0.0과 Java 21 이상을 준비한 뒤 README의 실행 명령을 사용한다.','verify.py는 RTL, 1 ns 게이트 모델, 합성 넷리스트, Logisim 순차 벡터를 검증한다.','results/에는 로그와 VCD 파형, synthesis/에는 생성된 범용 합성 넷리스트가 있다.','','3. 제출 구성','vhdl/*.vhd / testbench/*.vhd / logisim/*.circ / output/pdf/*.pdf','추가 검증 자료: tests/, results/, synthesis/, figures/, README.md.'],11,24)
 lines(38,100,['참고 도구 문서','GHDL: https://ghdl.github.io/ghdl/using/Synthesis.html','Logisim Test Vector: https://github.com/logisim-evolution/logisim-evolution/blob/main/docs/test_vector.md'],8,16)
 cv.showPage();cv.save()
 # Render complete report for visual QA.

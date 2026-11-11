@@ -15,11 +15,14 @@ class Circuit:
  def alatch(self,p,d,en,q,qb):
   dn=self.inv(p+'dn',d);sb=self.nand(p+'sb',d,en);rb=self.nand(p+'rb',dn,en)
   self.nand3(p+'qs',q,sb,qb,'setn');self.nand3(p+'qr',qb,rb,q,'clrn')
+ def rlatch(self,p,d,en,q,qb):
+  dn=self.inv(p+'dn',d);sb=self.nand(p+'sb',d,en);rb=self.nand(p+'rb',dn,en)
+  self.nand(q,sb,qb);self.nand3(p+'clear_',qb,rb,q,'clr_n')
 cs=[]
 c=Circuit('rs_latch',['s','r']);c.gate('NOR','q','r','qb');c.gate('NOR','qb','s','q');cs.append(c)
 c=Circuit('d_latch',['d','en']);c.latch('', 'd','en','q','qb');cs.append(c)
 c=Circuit('d_ff',['d','clk']);c.gate('NOT','clkn','clk');c.latch('m_', 'd','clkn','mq','mqb');c.latch('s_', 'mq','clk','q','qb');cs.append(c)
-c=Circuit('jk_ff',['j','k','clk']);c.inv('clkn','clk');c.inv('kn','k');c.nand('jterm','j','qb');c.nand('kterm','kn','q');c.nand('next_d','jterm','kterm');c.latch('m_','next_d','clkn','mq','mqb');c.latch('s_','mq','clk','q','qb');cs.append(c)
+c=Circuit('jk_ff',['j','k','clk','clr_n']);c.inv('clkn','clk');c.inv('kn','k');c.nand('jterm','j','qb');c.nand('kterm','kn','q');c.nand('next_d','jterm','kterm');c.nand('men_n','clkn','clr_n');c.inv('men','men_n');c.nand('sen_n','clk','clr_n');c.inv('sen','sen_n');c.rlatch('m_','next_d','men','mq','mqb');c.rlatch('s_','mq','sen','q','qb');cs.append(c)
 c=Circuit('d_ff_async',['d','clk','set','clr']);c.inv('clkn','clk');c.inv('clrn','clr');c.nand('setn','set','clrn');c.nand('busy_n','clr','clr');c.nand('idle_n','clrn','setn');c.inv('idle','idle_n');c.nand('men_n','clkn','idle');c.inv('men','men_n');c.nand('sen_n','clk','idle');c.inv('sen','sen_n');c.alatch('m_','d','men','mq','mqb');c.alatch('s_','mq','sen','q','qb');cs.append(c)
 # Remove unused node.
 cs[-1].gates=[g for g in cs[-1].gates if g[1]!='busy_n']
@@ -40,9 +43,11 @@ rtl={
     if rising_edge(clk) then q_i <= d; end if;
   end process;
   q <= q_i; qb <= not q_i;''',
-'jk_ff':'''  process(clk)
+'jk_ff':'''  -- Active-low asynchronous Clear, common to master and slave.
+  process(clk, clr_n)
   begin
-    if rising_edge(clk) then
+    if clr_n = '0' then q_i <= '0';
+    elsif rising_edge(clk) then
       if j = '0' and k = '1' then q_i <= '0';
       elsif j = '1' and k = '0' then q_i <= '1';
       elsif j = '1' and k = '1' then q_i <= not q_i;
@@ -80,6 +85,12 @@ tests={
 'd_ff':[(dict(d=0,clk=0),None,None,'Prepare D=0'),(dict(d=0,clk=1),0,1,'Rising captures 0'),(dict(d=1,clk=1),0,1,'High phase holds'),(dict(d=1,clk=0),0,1,'Falling holds'),(dict(d=0,clk=0),0,1,'Low phase change'),(dict(d=1,clk=0),0,1,'Prepare D=1'),(dict(d=1,clk=1),1,0,'Rising captures 1'),(dict(d=0,clk=1),1,0,'High phase holds 1'),(dict(d=0,clk=0),1,0,'Falling holds 1'),(dict(d=0,clk=1),0,1,'Rising captures 0')],
 'jk_ff':[(dict(j=0,k=1,clk=0),None,None,'Prepare Reset'),(dict(j=0,k=1,clk=1),0,1,'Reset'),(dict(j=0,k=0,clk=1),0,1,'High holds'),(dict(j=0,k=0,clk=0),0,1,'Prepare Hold'),(dict(j=0,k=0,clk=1),0,1,'Hold 0'),(dict(j=1,k=0,clk=0),0,1,'Prepare Set'),(dict(j=1,k=0,clk=1),1,0,'Set'),(dict(j=0,k=0,clk=0),1,0,'Prepare Hold 1'),(dict(j=0,k=0,clk=1),1,0,'Hold 1'),(dict(j=1,k=1,clk=0),1,0,'Prepare Toggle'),(dict(j=1,k=1,clk=1),0,1,'Toggle to 0'),(dict(j=1,k=1,clk=0),0,1,'Falling holds'),(dict(j=1,k=1,clk=1),1,0,'Toggle to 1'),(dict(j=0,k=1,clk=0),1,0,'Prepare Reset again'),(dict(j=0,k=1,clk=1),0,1,'Reset again')],
 'd_ff_async':[(dict(d=0,clk=0,set=0,clr=1),0,1,'Async Clear at low'),(dict(d=0,clk=0,set=1,clr=1),0,1,'Clear wins both high'),(dict(d=0,clk=0,set=1,clr=0),1,0,'Async Set no edge'),(dict(d=0,clk=0,set=0,clr=0),1,0,'Release Set holds'),(dict(d=0,clk=1,set=0,clr=0),0,1,'Normal rising captures 0'),(dict(d=1,clk=1,set=0,clr=0),0,1,'High D change holds'),(dict(d=1,clk=1,set=1,clr=0),1,0,'Async Set while high'),(dict(d=1,clk=1,set=1,clr=1),0,1,'Async Clear overrides Set'),(dict(d=1,clk=1,set=0,clr=1),0,1,'Clear maintained'),(dict(d=1,clk=1,set=0,clr=0),0,1,'Release Clear no edge'),(dict(d=1,clk=0,set=0,clr=0),0,1,'Falling holds'),(dict(d=1,clk=1,set=0,clr=0),1,0,'Normal rising captures 1'),(dict(d=1,clk=0,set=0,clr=0),1,0,'Return low')]}
+for vals,q,qb,desc in tests['jk_ff']: vals['clr_n']=1
+# Assert reset at power-up; release away from the clock edge.
+tests['jk_ff']=[(dict(j=0,k=0,clk=0,clr_n=0),0,1,'Startup Clear no clock'),(dict(j=0,k=0,clk=0,clr_n=1),0,1,'Release Clear holds')]+tests['jk_ff']
+# First old preparation row now has a defined reset state.
+v,_,_,d=tests['jk_ff'][2]; tests['jk_ff'][2]=(v,0,1,d)
+tests['jk_ff'] += [(dict(j=1,k=1,clk=1,clr_n=0),0,1,'Async Clear at high'),(dict(j=1,k=1,clk=1,clr_n=1),0,1,'Release Clear high holds'),(dict(j=1,k=1,clk=0,clr_n=1),0,1,'Prepare Toggle after Clear'),(dict(j=1,k=1,clk=1,clr_n=1),1,0,'Toggle after Clear'),(dict(j=1,k=1,clk=1,clr_n=0),0,1,'Clear overrides Toggle')]
 for c in cs:
  rows=tests[c.name];pins=c.inputs+['q','qb'];txt=' '.join(pins+['<set>','<seq>'])+'\n'
  for n,(vals,q,qb,desc) in enumerate(rows,1): txt+=' '.join([str(vals[i]) for i in c.inputs]+['<DC>' if v is None else str(v) for v in [q,qb]]+['1',str(n)])+' # '+desc+'\n'

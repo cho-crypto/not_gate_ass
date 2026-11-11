@@ -1,17 +1,24 @@
-tmp/tb_jk_ff_synth.vhd:17:5:@30ns:(report note): PASS step 1: Prepare Reset
-tmp/tb_jk_ff_synth.vhd:23:5:@60ns:(report note): PASS step 2: Reset
-tmp/tb_jk_ff_synth.vhd:29:5:@90ns:(report note): PASS step 3: High holds
-tmp/tb_jk_ff_synth.vhd:35:5:@120ns:(report note): PASS step 4: Prepare Hold
-tmp/tb_jk_ff_synth.vhd:41:5:@150ns:(report note): PASS step 5: Hold 0
-tmp/tb_jk_ff_synth.vhd:47:5:@180ns:(report note): PASS step 6: Prepare Set
-tmp/tb_jk_ff_synth.vhd:53:5:@210ns:(report note): PASS step 7: Set
-tmp/tb_jk_ff_synth.vhd:59:5:@240ns:(report note): PASS step 8: Prepare Hold 1
-tmp/tb_jk_ff_synth.vhd:65:5:@270ns:(report note): PASS step 9: Hold 1
-tmp/tb_jk_ff_synth.vhd:71:5:@300ns:(report note): PASS step 10: Prepare Toggle
-tmp/tb_jk_ff_synth.vhd:77:5:@330ns:(report note): PASS step 11: Toggle to 0
-tmp/tb_jk_ff_synth.vhd:83:5:@360ns:(report note): PASS step 12: Falling holds
-tmp/tb_jk_ff_synth.vhd:89:5:@390ns:(report note): PASS step 13: Toggle to 1
-tmp/tb_jk_ff_synth.vhd:95:5:@420ns:(report note): PASS step 14: Prepare Reset again
-tmp/tb_jk_ff_synth.vhd:101:5:@450ns:(report note): PASS step 15: Reset again
-tmp/tb_jk_ff_synth.vhd:102:5:@450ns:(report note): ALL PASS jk_ff
-simulation finished @450ns
+tmp/tb_jk_ff_synth.vhd:20:5:@30ns:(report note): PASS step 1: Startup Clear no clock
+tmp/tb_jk_ff_synth.vhd:26:5:@60ns:(report note): PASS step 2: Release Clear holds
+tmp/tb_jk_ff_synth.vhd:32:5:@90ns:(report note): PASS step 3: Prepare Reset
+tmp/tb_jk_ff_synth.vhd:38:5:@120ns:(report note): PASS step 4: Reset
+tmp/tb_jk_ff_synth.vhd:44:5:@150ns:(report note): PASS step 5: High holds
+tmp/tb_jk_ff_synth.vhd:50:5:@180ns:(report note): PASS step 6: Prepare Hold
+tmp/tb_jk_ff_synth.vhd:56:5:@210ns:(report note): PASS step 7: Hold 0
+tmp/tb_jk_ff_synth.vhd:62:5:@240ns:(report note): PASS step 8: Prepare Set
+tmp/tb_jk_ff_synth.vhd:68:5:@270ns:(report note): PASS step 9: Set
+tmp/tb_jk_ff_synth.vhd:74:5:@300ns:(report note): PASS step 10: Prepare Hold 1
+tmp/tb_jk_ff_synth.vhd:80:5:@330ns:(report note): PASS step 11: Hold 1
+tmp/tb_jk_ff_synth.vhd:86:5:@360ns:(report note): PASS step 12: Prepare Toggle
+tmp/tb_jk_ff_synth.vhd:92:5:@390ns:(report note): PASS step 13: Toggle to 0
+tmp/tb_jk_ff_synth.vhd:98:5:@420ns:(report note): PASS step 14: Falling holds
+tmp/tb_jk_ff_synth.vhd:104:5:@450ns:(report note): PASS step 15: Toggle to 1
+tmp/tb_jk_ff_synth.vhd:110:5:@480ns:(report note): PASS step 16: Prepare Reset again
+tmp/tb_jk_ff_synth.vhd:116:5:@510ns:(report note): PASS step 17: Reset again
+tmp/tb_jk_ff_synth.vhd:122:5:@540ns:(report note): PASS step 18: Async Clear at high
+tmp/tb_jk_ff_synth.vhd:128:5:@570ns:(report note): PASS step 19: Release Clear high holds
+tmp/tb_jk_ff_synth.vhd:134:5:@600ns:(report note): PASS step 20: Prepare Toggle after Clear
+tmp/tb_jk_ff_synth.vhd:140:5:@630ns:(report note): PASS step 21: Toggle after Clear
+tmp/tb_jk_ff_synth.vhd:146:5:@660ns:(report note): PASS step 22: Clear overrides Toggle
+tmp/tb_jk_ff_synth.vhd:147:5:@660ns:(report note): ALL PASS jk_ff
+simulation finished @660ns

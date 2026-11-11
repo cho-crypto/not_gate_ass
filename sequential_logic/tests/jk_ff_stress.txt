@@ -1,0 +1,4985 @@
+j k clk clr_n q qb <set> <seq>
+0 0 0 0 0 1 1 1 # Cold reset
+0 0 0 0 0 1 1 2 # Reset holds
+0 0 0 1 0 1 1 3 # Release reset
+1 1 0 1 0 1 1 4 # Falling/prepare
+1 1 0 1 0 1 1 5 # Low hold
+1 1 1 1 1 0 1 6 # Rising
+1 1 1 1 1 0 1 7 # High hold
+1 1 1 1 1 0 1 8 # High hold
+1 1 1 1 1 0 1 9 # High hold
+1 1 1 0 0 1 1 10 # Async clear at high
+1 1 1 1 0 1 1 11 # Release clear high
+1 1 0 1 0 1 1 12 # Falling/prepare
+1 1 0 1 0 1 1 13 # Low hold
+1 1 1 1 1 0 1 14 # Rising
+1 1 1 1 1 0 1 15 # High hold
+1 1 1 1 1 0 1 16 # High hold
+1 1 1 1 1 0 1 17 # High hold
+1 1 0 1 1 0 1 18 # Falling/prepare
+1 1 0 1 1 0 1 19 # Low hold
+1 1 1 1 0 1 1 20 # Rising
+1 1 1 1 0 1 1 21 # High hold
+1 1 1 1 0 1 1 22 # High hold
+1 1 1 1 0 1 1 23 # High hold
+1 1 0 1 0 1 1 24 # Falling/prepare
+1 1 0 1 0 1 1 25 # Low hold
+1 1 1 1 1 0 1 26 # Rising
+1 1 1 1 1 0 1 27 # High hold
+1 1 1 1 1 0 1 28 # High hold
+1 1 1 1 1 0 1 29 # High hold
+1 1 0 1 1 0 1 30 # Falling/prepare
+1 1 0 1 1 0 1 31 # Low hold
+1 1 1 1 0 1 1 32 # Rising
+1 1 1 1 0 1 1 33 # High hold
+1 1 1 1 0 1 1 34 # High hold
+1 1 1 1 0 1 1 35 # High hold
+1 1 0 1 0 1 1 36 # Falling/prepare
+1 1 0 1 0 1 1 37 # Low hold
+1 1 1 1 1 0 1 38 # Rising
+1 1 1 1 1 0 1 39 # High hold
+1 1 1 1 1 0 1 40 # High hold
+1 1 1 1 1 0 1 41 # High hold
+1 1 0 1 1 0 1 42 # Falling/prepare
+1 1 0 1 1 0 1 43 # Low hold
+1 1 1 1 0 1 1 44 # Rising
+1 1 1 1 0 1 1 45 # High hold
+1 1 1 1 0 1 1 46 # High hold
+1 1 1 1 0 1 1 47 # High hold
+1 1 0 1 0 1 1 48 # Falling/prepare
+1 1 0 1 0 1 1 49 # Low hold
+1 1 1 1 1 0 1 50 # Rising
+1 1 1 1 1 0 1 51 # High hold
+1 1 1 1 1 0 1 52 # High hold
+1 1 1 1 1 0 1 53 # High hold
+1 1 0 1 1 0 1 54 # Falling/prepare
+1 1 0 1 1 0 1 55 # Low hold
+1 1 1 1 0 1 1 56 # Rising
+1 1 1 1 0 1 1 57 # High hold
+1 1 1 1 0 1 1 58 # High hold
+1 1 1 1 0 1 1 59 # High hold
+1 1 0 1 0 1 1 60 # Falling/prepare
+1 1 0 1 0 1 1 61 # Low hold
+1 1 1 1 1 0 1 62 # Rising
+1 1 1 1 1 0 1 63 # High hold
+1 1 1 1 1 0 1 64 # High hold
+1 1 1 1 1 0 1 65 # High hold
+1 1 0 1 1 0 1 66 # Falling/prepare
+1 1 0 1 1 0 1 67 # Low hold
+1 1 1 1 0 1 1 68 # Rising
+1 1 1 1 0 1 1 69 # High hold
+1 1 1 1 0 1 1 70 # High hold
+1 1 1 1 0 1 1 71 # High hold
+1 1 1 0 0 1 1 72 # Async clear at high
+1 1 1 1 0 1 1 73 # Release clear high
+1 1 0 1 0 1 1 74 # Falling/prepare
+1 1 0 1 0 1 1 75 # Low hold
+1 1 1 1 1 0 1 76 # Rising
+1 1 1 1 1 0 1 77 # High hold
+1 1 1 1 1 0 1 78 # High hold
+1 1 1 1 1 0 1 79 # High hold
+1 1 0 1 1 0 1 80 # Falling/prepare
+1 1 0 1 1 0 1 81 # Low hold
+1 1 1 1 0 1 1 82 # Rising
+1 1 1 1 0 1 1 83 # High hold
+1 1 1 1 0 1 1 84 # High hold
+1 1 1 1 0 1 1 85 # High hold
+1 1 0 1 0 1 1 86 # Falling/prepare
+1 1 0 1 0 1 1 87 # Low hold
+1 1 1 1 1 0 1 88 # Rising
+1 1 1 1 1 0 1 89 # High hold
+1 1 1 1 1 0 1 90 # High hold
+1 1 1 1 1 0 1 91 # High hold
+1 1 0 1 1 0 1 92 # Falling/prepare
+1 1 0 1 1 0 1 93 # Low hold
+1 1 1 1 0 1 1 94 # Rising
+1 1 1 1 0 1 1 95 # High hold
+1 1 1 1 0 1 1 96 # High hold
+1 1 1 1 0 1 1 97 # High hold
+1 1 0 1 0 1 1 98 # Falling/prepare
+1 1 0 1 0 1 1 99 # Low hold
+1 1 1 1 1 0 1 100 # Rising
+1 1 1 1 1 0 1 101 # High hold
+1 1 1 1 1 0 1 102 # High hold
+1 1 1 1 1 0 1 103 # High hold
+1 1 0 1 1 0 1 104 # Falling/prepare
+1 1 0 1 1 0 1 105 # Low hold
+1 1 1 1 0 1 1 106 # Rising
+1 1 1 1 0 1 1 107 # High hold
+1 1 1 1 0 1 1 108 # High hold
+1 1 1 1 0 1 1 109 # High hold
+1 1 0 1 0 1 1 110 # Falling/prepare
+1 1 0 1 0 1 1 111 # Low hold
+1 1 1 1 1 0 1 112 # Rising
+1 1 1 1 1 0 1 113 # High hold
+1 1 1 1 1 0 1 114 # High hold
+1 1 1 1 1 0 1 115 # High hold
+1 1 0 1 1 0 1 116 # Falling/prepare
+1 1 0 1 1 0 1 117 # Low hold
+1 1 1 1 0 1 1 118 # Rising
+1 1 1 1 0 1 1 119 # High hold
+1 1 1 1 0 1 1 120 # High hold
+1 1 1 1 0 1 1 121 # High hold
+1 1 0 1 0 1 1 122 # Falling/prepare
+1 1 0 1 0 1 1 123 # Low hold
+1 1 1 1 1 0 1 124 # Rising
+1 1 1 1 1 0 1 125 # High hold
+1 1 1 1 1 0 1 126 # High hold
+1 1 1 1 1 0 1 127 # High hold
+1 1 0 1 1 0 1 128 # Falling/prepare
+1 1 0 1 1 0 1 129 # Low hold
+1 1 1 1 0 1 1 130 # Rising
+1 1 1 1 0 1 1 131 # High hold
+1 1 1 1 0 1 1 132 # High hold
+1 1 1 1 0 1 1 133 # High hold
+1 1 1 0 0 1 1 134 # Async clear at high
+1 1 1 1 0 1 1 135 # Release clear high
+1 1 0 1 0 1 1 136 # Falling/prepare
+1 1 0 1 0 1 1 137 # Low hold
+1 1 1 1 1 0 1 138 # Rising
+1 1 1 1 1 0 1 139 # High hold
+1 1 1 1 1 0 1 140 # High hold
+1 1 1 1 1 0 1 141 # High hold
+1 1 0 1 1 0 1 142 # Falling/prepare
+1 1 0 1 1 0 1 143 # Low hold
+1 1 1 1 0 1 1 144 # Rising
+1 1 1 1 0 1 1 145 # High hold
+1 1 1 1 0 1 1 146 # High hold
+1 1 1 1 0 1 1 147 # High hold
+1 1 0 1 0 1 1 148 # Falling/prepare
+1 1 0 1 0 1 1 149 # Low hold
+1 1 1 1 1 0 1 150 # Rising
+1 1 1 1 1 0 1 151 # High hold
+1 1 1 1 1 0 1 152 # High hold
+1 1 1 1 1 0 1 153 # High hold
+1 1 0 1 1 0 1 154 # Falling/prepare
+1 1 0 1 1 0 1 155 # Low hold
+1 1 1 1 0 1 1 156 # Rising
+1 1 1 1 0 1 1 157 # High hold
+1 1 1 1 0 1 1 158 # High hold
+1 1 1 1 0 1 1 159 # High hold
+1 1 0 1 0 1 1 160 # Falling/prepare
+1 1 0 1 0 1 1 161 # Low hold
+1 1 1 1 1 0 1 162 # Rising
+1 1 1 1 1 0 1 163 # High hold
+1 1 1 1 1 0 1 164 # High hold
+1 1 1 1 1 0 1 165 # High hold
+1 1 0 1 1 0 1 166 # Falling/prepare
+1 1 0 1 1 0 1 167 # Low hold
+1 1 1 1 0 1 1 168 # Rising
+1 1 1 1 0 1 1 169 # High hold
+1 1 1 1 0 1 1 170 # High hold
+1 1 1 1 0 1 1 171 # High hold
+1 1 0 1 0 1 1 172 # Falling/prepare
+1 1 0 1 0 1 1 173 # Low hold
+1 1 1 1 1 0 1 174 # Rising
+1 1 1 1 1 0 1 175 # High hold
+1 1 1 1 1 0 1 176 # High hold
+1 1 1 1 1 0 1 177 # High hold
+1 1 0 1 1 0 1 178 # Falling/prepare
+1 1 0 1 1 0 1 179 # Low hold
+1 1 1 1 0 1 1 180 # Rising
+1 1 1 1 0 1 1 181 # High hold
+1 1 1 1 0 1 1 182 # High hold
+1 1 1 1 0 1 1 183 # High hold
+1 1 0 1 0 1 1 184 # Falling/prepare
+1 1 0 1 0 1 1 185 # Low hold
+1 1 1 1 1 0 1 186 # Rising
+1 1 1 1 1 0 1 187 # High hold
+1 1 1 1 1 0 1 188 # High hold
+1 1 1 1 1 0 1 189 # High hold
+1 1 0 1 1 0 1 190 # Falling/prepare
+1 1 0 1 1 0 1 191 # Low hold
+1 1 1 1 0 1 1 192 # Rising
+1 1 1 1 0 1 1 193 # High hold
+1 1 1 1 0 1 1 194 # High hold
+1 1 1 1 0 1 1 195 # High hold
+1 1 1 0 0 1 1 196 # Async clear at high
+1 1 1 1 0 1 1 197 # Release clear high
+1 1 0 1 0 1 1 198 # Falling/prepare
+1 1 0 1 0 1 1 199 # Low hold
+1 1 1 1 1 0 1 200 # Rising
+1 1 1 1 1 0 1 201 # High hold
+1 1 1 1 1 0 1 202 # High hold
+1 1 1 1 1 0 1 203 # High hold
+1 1 0 1 1 0 1 204 # Falling/prepare
+1 1 0 1 1 0 1 205 # Low hold
+1 1 1 1 0 1 1 206 # Rising
+1 1 1 1 0 1 1 207 # High hold
+1 1 1 1 0 1 1 208 # High hold
+1 1 1 1 0 1 1 209 # High hold
+1 1 0 1 0 1 1 210 # Falling/prepare
+1 1 0 1 0 1 1 211 # Low hold
+1 1 1 1 1 0 1 212 # Rising
+1 1 1 1 1 0 1 213 # High hold
+1 1 1 1 1 0 1 214 # High hold
+1 1 1 1 1 0 1 215 # High hold
+1 1 0 1 1 0 1 216 # Falling/prepare
+1 1 0 1 1 0 1 217 # Low hold
+1 1 1 1 0 1 1 218 # Rising
+1 1 1 1 0 1 1 219 # High hold
+1 1 1 1 0 1 1 220 # High hold
+1 1 1 1 0 1 1 221 # High hold
+1 1 0 1 0 1 1 222 # Falling/prepare
+1 1 0 1 0 1 1 223 # Low hold
+1 1 1 1 1 0 1 224 # Rising
+1 1 1 1 1 0 1 225 # High hold
+1 1 1 1 1 0 1 226 # High hold
+1 1 1 1 1 0 1 227 # High hold
+1 1 0 1 1 0 1 228 # Falling/prepare
+1 1 0 1 1 0 1 229 # Low hold
+1 1 1 1 0 1 1 230 # Rising
+1 1 1 1 0 1 1 231 # High hold
+1 1 1 1 0 1 1 232 # High hold
+1 1 1 1 0 1 1 233 # High hold
+1 1 0 1 0 1 1 234 # Falling/prepare
+1 1 0 1 0 1 1 235 # Low hold
+1 1 1 1 1 0 1 236 # Rising
+1 1 1 1 1 0 1 237 # High hold
+1 1 1 1 1 0 1 238 # High hold
+1 1 1 1 1 0 1 239 # High hold
+1 1 0 1 1 0 1 240 # Falling/prepare
+1 1 0 1 1 0 1 241 # Low hold
+1 1 1 1 0 1 1 242 # Rising
+1 1 1 1 0 1 1 243 # High hold
+1 1 1 1 0 1 1 244 # High hold
+1 1 1 1 0 1 1 245 # High hold
+1 1 0 1 0 1 1 246 # Falling/prepare
+1 1 0 1 0 1 1 247 # Low hold
+1 1 1 1 1 0 1 248 # Rising
+1 1 1 1 1 0 1 249 # High hold
+1 1 1 1 1 0 1 250 # High hold
+1 1 1 1 1 0 1 251 # High hold
+1 1 0 1 1 0 1 252 # Falling/prepare
+1 1 0 1 1 0 1 253 # Low hold
+1 1 1 1 0 1 1 254 # Rising
+1 1 1 1 0 1 1 255 # High hold
+1 1 1 1 0 1 1 256 # High hold
+1 1 1 1 0 1 1 257 # High hold
+1 1 1 0 0 1 1 258 # Async clear at high
+1 1 1 1 0 1 1 259 # Release clear high
+1 1 0 1 0 1 1 260 # Falling/prepare
+1 1 0 1 0 1 1 261 # Low hold
+1 1 1 1 1 0 1 262 # Rising
+1 1 1 1 1 0 1 263 # High hold
+1 1 1 1 1 0 1 264 # High hold
+1 1 1 1 1 0 1 265 # High hold
+1 1 0 1 1 0 1 266 # Falling/prepare
+1 1 0 1 1 0 1 267 # Low hold
+1 1 1 1 0 1 1 268 # Rising
+1 1 1 1 0 1 1 269 # High hold
+1 1 1 1 0 1 1 270 # High hold
+1 1 1 1 0 1 1 271 # High hold
+1 1 0 1 0 1 1 272 # Falling/prepare
+1 1 0 1 0 1 1 273 # Low hold
+1 1 1 1 1 0 1 274 # Rising
+1 1 1 1 1 0 1 275 # High hold
+1 1 1 1 1 0 1 276 # High hold
+1 1 1 1 1 0 1 277 # High hold
+1 1 0 1 1 0 1 278 # Falling/prepare
+1 1 0 1 1 0 1 279 # Low hold
+1 1 1 1 0 1 1 280 # Rising
+1 1 1 1 0 1 1 281 # High hold
+1 1 1 1 0 1 1 282 # High hold
+1 1 1 1 0 1 1 283 # High hold
+1 1 0 1 0 1 1 284 # Falling/prepare
+1 1 0 1 0 1 1 285 # Low hold
+1 1 1 1 1 0 1 286 # Rising
+1 1 1 1 1 0 1 287 # High hold
+1 1 1 1 1 0 1 288 # High hold
+1 1 1 1 1 0 1 289 # High hold
+1 1 0 1 1 0 1 290 # Falling/prepare
+1 1 0 1 1 0 1 291 # Low hold
+1 1 1 1 0 1 1 292 # Rising
+1 1 1 1 0 1 1 293 # High hold
+1 1 1 1 0 1 1 294 # High hold
+1 1 1 1 0 1 1 295 # High hold
+1 1 0 1 0 1 1 296 # Falling/prepare
+1 1 0 1 0 1 1 297 # Low hold
+1 1 1 1 1 0 1 298 # Rising
+1 1 1 1 1 0 1 299 # High hold
+1 1 1 1 1 0 1 300 # High hold
+1 1 1 1 1 0 1 301 # High hold
+1 1 0 1 1 0 1 302 # Falling/prepare
+1 1 0 1 1 0 1 303 # Low hold
+1 1 1 1 0 1 1 304 # Rising
+1 1 1 1 0 1 1 305 # High hold
+1 1 1 1 0 1 1 306 # High hold
+1 1 1 1 0 1 1 307 # High hold
+1 1 0 1 0 1 1 308 # Falling/prepare
+1 1 0 1 0 1 1 309 # Low hold
+1 1 1 1 1 0 1 310 # Rising
+1 1 1 1 1 0 1 311 # High hold
+1 1 1 1 1 0 1 312 # High hold
+1 1 1 1 1 0 1 313 # High hold
+0 0 0 1 1 0 1 314 # Falling/prepare
+0 0 0 1 1 0 1 315 # Low hold
+0 0 1 1 1 0 1 316 # Rising
+0 0 1 1 1 0 1 317 # High hold
+0 0 1 1 1 0 1 318 # High hold
+0 0 1 1 1 0 1 319 # High hold
+1 1 1 0 0 1 1 320 # Async clear at high
+1 1 1 1 0 1 1 321 # Release clear high
+1 0 0 1 0 1 1 322 # Falling/prepare
+1 0 0 1 0 1 1 323 # Low hold
+1 0 1 1 1 0 1 324 # Rising
+1 0 1 1 1 0 1 325 # High hold
+1 0 1 1 1 0 1 326 # High hold
+1 0 1 1 1 0 1 327 # High hold
+1 1 0 1 1 0 1 328 # Falling/prepare
+1 1 0 1 1 0 1 329 # Low hold
+1 1 1 1 0 1 1 330 # Rising
+1 1 1 1 0 1 1 331 # High hold
+1 1 1 1 0 1 1 332 # High hold
+1 1 1 1 0 1 1 333 # High hold
+0 0 0 1 0 1 1 334 # Falling/prepare
+0 0 0 1 0 1 1 335 # Low hold
+0 0 1 1 0 1 1 336 # Rising
+0 0 1 1 0 1 1 337 # High hold
+0 0 1 1 0 1 1 338 # High hold
+0 0 1 1 0 1 1 339 # High hold
+0 1 0 1 0 1 1 340 # Falling/prepare
+0 1 0 1 0 1 1 341 # Low hold
+0 1 1 1 0 1 1 342 # Rising
+0 1 1 1 0 1 1 343 # High hold
+0 1 1 1 0 1 1 344 # High hold
+0 1 1 1 0 1 1 345 # High hold
+0 1 0 1 0 1 1 346 # Falling/prepare
+0 1 0 1 0 1 1 347 # Low hold
+0 1 1 1 0 1 1 348 # Rising
+0 1 1 1 0 1 1 349 # High hold
+0 1 1 1 0 1 1 350 # High hold
+0 1 1 1 0 1 1 351 # High hold
+0 0 0 1 0 1 1 352 # Falling/prepare
+0 0 0 1 0 1 1 353 # Low hold
+0 0 1 1 0 1 1 354 # Rising
+0 0 1 1 0 1 1 355 # High hold
+0 0 1 1 0 1 1 356 # High hold
+0 0 1 1 0 1 1 357 # High hold
+1 0 0 1 0 1 1 358 # Falling/prepare
+1 0 0 1 0 1 1 359 # Low hold
+1 0 1 1 1 0 1 360 # Rising
+1 0 1 1 1 0 1 361 # High hold
+1 0 1 1 1 0 1 362 # High hold
+1 0 1 1 1 0 1 363 # High hold
+1 1 0 1 1 0 1 364 # Falling/prepare
+1 1 0 1 1 0 1 365 # Low hold
+1 1 1 1 0 1 1 366 # Rising
+1 1 1 1 0 1 1 367 # High hold
+1 1 1 1 0 1 1 368 # High hold
+1 1 1 1 0 1 1 369 # High hold
+1 1 0 1 0 1 1 370 # Falling/prepare
+1 1 0 1 0 1 1 371 # Low hold
+1 1 1 1 1 0 1 372 # Rising
+1 1 1 1 1 0 1 373 # High hold
+1 1 1 1 1 0 1 374 # High hold
+1 1 1 1 1 0 1 375 # High hold
+1 0 0 1 1 0 1 376 # Falling/prepare
+1 0 0 1 1 0 1 377 # Low hold
+1 0 1 1 1 0 1 378 # Rising
+1 0 1 1 1 0 1 379 # High hold
+1 0 1 1 1 0 1 380 # High hold
+1 0 1 1 1 0 1 381 # High hold
+1 1 1 0 0 1 1 382 # Async clear at high
+1 1 1 1 0 1 1 383 # Release clear high
+0 1 0 1 0 1 1 384 # Falling/prepare
+0 1 0 1 0 1 1 385 # Low hold
+0 1 1 1 0 1 1 386 # Rising
+0 1 1 1 0 1 1 387 # High hold
+0 1 1 1 0 1 1 388 # High hold
+0 1 1 1 0 1 1 389 # High hold
+1 1 0 1 0 1 1 390 # Falling/prepare
+1 1 0 1 0 1 1 391 # Low hold
+1 1 1 1 1 0 1 392 # Rising
+1 1 1 1 1 0 1 393 # High hold
+1 1 1 1 1 0 1 394 # High hold
+1 1 1 1 1 0 1 395 # High hold
+0 1 0 1 1 0 1 396 # Falling/prepare
+0 1 0 1 1 0 1 397 # Low hold
+0 1 1 1 0 1 1 398 # Rising
+0 1 1 1 0 1 1 399 # High hold
+0 1 1 1 0 1 1 400 # High hold
+0 1 1 1 0 1 1 401 # High hold
+0 0 0 1 0 1 1 402 # Falling/prepare
+0 0 0 1 0 1 1 403 # Low hold
+0 0 1 1 0 1 1 404 # Rising
+0 0 1 1 0 1 1 405 # High hold
+0 0 1 1 0 1 1 406 # High hold
+0 0 1 1 0 1 1 407 # High hold
+1 1 0 1 0 1 1 408 # Falling/prepare
+1 1 0 1 0 1 1 409 # Low hold
+1 1 1 1 1 0 1 410 # Rising
+1 1 1 1 1 0 1 411 # High hold
+1 1 1 1 1 0 1 412 # High hold
+1 1 1 1 1 0 1 413 # High hold
+0 0 0 1 1 0 1 414 # Falling/prepare
+0 0 0 1 1 0 1 415 # Low hold
+0 0 1 1 1 0 1 416 # Rising
+0 0 1 1 1 0 1 417 # High hold
+0 0 1 1 1 0 1 418 # High hold
+0 0 1 1 1 0 1 419 # High hold
+1 0 0 1 1 0 1 420 # Falling/prepare
+1 0 0 1 1 0 1 421 # Low hold
+1 0 1 1 1 0 1 422 # Rising
+1 0 1 1 1 0 1 423 # High hold
+1 0 1 1 1 0 1 424 # High hold
+1 0 1 1 1 0 1 425 # High hold
+0 0 0 1 1 0 1 426 # Falling/prepare
+0 0 0 1 1 0 1 427 # Low hold
+0 0 1 1 1 0 1 428 # Rising
+0 0 1 1 1 0 1 429 # High hold
+0 0 1 1 1 0 1 430 # High hold
+0 0 1 1 1 0 1 431 # High hold
+0 0 0 1 1 0 1 432 # Falling/prepare
+0 0 0 1 1 0 1 433 # Low hold
+0 0 1 1 1 0 1 434 # Rising
+0 0 1 1 1 0 1 435 # High hold
+0 0 1 1 1 0 1 436 # High hold
+0 0 1 1 1 0 1 437 # High hold
+1 1 0 1 1 0 1 438 # Falling/prepare
+1 1 0 1 1 0 1 439 # Low hold
+1 1 1 1 0 1 1 440 # Rising
+1 1 1 1 0 1 1 441 # High hold
+1 1 1 1 0 1 1 442 # High hold
+1 1 1 1 0 1 1 443 # High hold
+1 1 1 0 0 1 1 444 # Async clear at high
+1 1 1 1 0 1 1 445 # Release clear high
+0 1 0 1 0 1 1 446 # Falling/prepare
+0 1 0 1 0 1 1 447 # Low hold
+0 1 1 1 0 1 1 448 # Rising
+0 1 1 1 0 1 1 449 # High hold
+0 1 1 1 0 1 1 450 # High hold
+0 1 1 1 0 1 1 451 # High hold
+0 0 0 1 0 1 1 452 # Falling/prepare
+0 0 0 1 0 1 1 453 # Low hold
+0 0 1 1 0 1 1 454 # Rising
+0 0 1 1 0 1 1 455 # High hold
+0 0 1 1 0 1 1 456 # High hold
+0 0 1 1 0 1 1 457 # High hold
+1 0 0 1 0 1 1 458 # Falling/prepare
+1 0 0 1 0 1 1 459 # Low hold
+1 0 1 1 1 0 1 460 # Rising
+1 0 1 1 1 0 1 461 # High hold
+1 0 1 1 1 0 1 462 # High hold
+1 0 1 1 1 0 1 463 # High hold
+1 1 0 1 1 0 1 464 # Falling/prepare
+1 1 0 1 1 0 1 465 # Low hold
+1 1 1 1 0 1 1 466 # Rising
+1 1 1 1 0 1 1 467 # High hold
+1 1 1 1 0 1 1 468 # High hold
+1 1 1 1 0 1 1 469 # High hold
+1 1 0 1 0 1 1 470 # Falling/prepare
+1 1 0 1 0 1 1 471 # Low hold
+1 1 1 1 1 0 1 472 # Rising
+1 1 1 1 1 0 1 473 # High hold
+1 1 1 1 1 0 1 474 # High hold
+1 1 1 1 1 0 1 475 # High hold
+1 0 0 1 1 0 1 476 # Falling/prepare
+1 0 0 1 1 0 1 477 # Low hold
+1 0 1 1 1 0 1 478 # Rising
+1 0 1 1 1 0 1 479 # High hold
+1 0 1 1 1 0 1 480 # High hold
+1 0 1 1 1 0 1 481 # High hold
+1 0 0 1 1 0 1 482 # Falling/prepare
+1 0 0 1 1 0 1 483 # Low hold
+1 0 1 1 1 0 1 484 # Rising
+1 0 1 1 1 0 1 485 # High hold
+1 0 1 1 1 0 1 486 # High hold
+1 0 1 1 1 0 1 487 # High hold
+1 0 0 1 1 0 1 488 # Falling/prepare
+1 0 0 1 1 0 1 489 # Low hold
+1 0 1 1 1 0 1 490 # Rising
+1 0 1 1 1 0 1 491 # High hold
+1 0 1 1 1 0 1 492 # High hold
+1 0 1 1 1 0 1 493 # High hold
+0 0 0 1 1 0 1 494 # Falling/prepare
+0 0 0 1 1 0 1 495 # Low hold
+0 0 1 1 1 0 1 496 # Rising
+0 0 1 1 1 0 1 497 # High hold
+0 0 1 1 1 0 1 498 # High hold
+0 0 1 1 1 0 1 499 # High hold
+1 1 0 1 1 0 1 500 # Falling/prepare
+1 1 0 1 1 0 1 501 # Low hold
+1 1 1 1 0 1 1 502 # Rising
+1 1 1 1 0 1 1 503 # High hold
+1 1 1 1 0 1 1 504 # High hold
+1 1 1 1 0 1 1 505 # High hold
+1 1 1 0 0 1 1 506 # Async clear at high
+1 1 1 1 0 1 1 507 # Release clear high
+0 0 0 1 0 1 1 508 # Falling/prepare
+0 0 0 1 0 1 1 509 # Low hold
+0 0 1 1 0 1 1 510 # Rising
+0 0 1 1 0 1 1 511 # High hold
+0 0 1 1 0 1 1 512 # High hold
+0 0 1 1 0 1 1 513 # High hold
+0 0 0 1 0 1 1 514 # Falling/prepare
+0 0 0 1 0 1 1 515 # Low hold
+0 0 1 1 0 1 1 516 # Rising
+0 0 1 1 0 1 1 517 # High hold
+0 0 1 1 0 1 1 518 # High hold
+0 0 1 1 0 1 1 519 # High hold
+0 1 0 1 0 1 1 520 # Falling/prepare
+0 1 0 1 0 1 1 521 # Low hold
+0 1 1 1 0 1 1 522 # Rising
+0 1 1 1 0 1 1 523 # High hold
+0 1 1 1 0 1 1 524 # High hold
+0 1 1 1 0 1 1 525 # High hold
+1 0 0 1 0 1 1 526 # Falling/prepare
+1 0 0 1 0 1 1 527 # Low hold
+1 0 1 1 1 0 1 528 # Rising
+1 0 1 1 1 0 1 529 # High hold
+1 0 1 1 1 0 1 530 # High hold
+1 0 1 1 1 0 1 531 # High hold
+1 1 0 1 1 0 1 532 # Falling/prepare
+1 1 0 1 1 0 1 533 # Low hold
+1 1 1 1 0 1 1 534 # Rising
+1 1 1 1 0 1 1 535 # High hold
+1 1 1 1 0 1 1 536 # High hold
+1 1 1 1 0 1 1 537 # High hold
+0 1 0 1 0 1 1 538 # Falling/prepare
+0 1 0 1 0 1 1 539 # Low hold
+0 1 1 1 0 1 1 540 # Rising
+0 1 1 1 0 1 1 541 # High hold
+0 1 1 1 0 1 1 542 # High hold
+0 1 1 1 0 1 1 543 # High hold
+1 0 0 1 0 1 1 544 # Falling/prepare
+1 0 0 1 0 1 1 545 # Low hold
+1 0 1 1 1 0 1 546 # Rising
+1 0 1 1 1 0 1 547 # High hold
+1 0 1 1 1 0 1 548 # High hold
+1 0 1 1 1 0 1 549 # High hold
+0 0 0 1 1 0 1 550 # Falling/prepare
+0 0 0 1 1 0 1 551 # Low hold
+0 0 1 1 1 0 1 552 # Rising
+0 0 1 1 1 0 1 553 # High hold
+0 0 1 1 1 0 1 554 # High hold
+0 0 1 1 1 0 1 555 # High hold
+1 1 0 1 1 0 1 556 # Falling/prepare
+1 1 0 1 1 0 1 557 # Low hold
+1 1 1 1 0 1 1 558 # Rising
+1 1 1 1 0 1 1 559 # High hold
+1 1 1 1 0 1 1 560 # High hold
+1 1 1 1 0 1 1 561 # High hold
+0 0 0 1 0 1 1 562 # Falling/prepare
+0 0 0 1 0 1 1 563 # Low hold
+0 0 1 1 0 1 1 564 # Rising
+0 0 1 1 0 1 1 565 # High hold
+0 0 1 1 0 1 1 566 # High hold
+0 0 1 1 0 1 1 567 # High hold
+1 1 1 0 0 1 1 568 # Async clear at high
+1 1 1 1 0 1 1 569 # Release clear high
+0 0 0 1 0 1 1 570 # Falling/prepare
+0 0 0 1 0 1 1 571 # Low hold
+0 0 1 1 0 1 1 572 # Rising
+0 0 1 1 0 1 1 573 # High hold
+0 0 1 1 0 1 1 574 # High hold
+0 0 1 1 0 1 1 575 # High hold
+0 1 0 1 0 1 1 576 # Falling/prepare
+0 1 0 1 0 1 1 577 # Low hold
+0 1 1 1 0 1 1 578 # Rising
+0 1 1 1 0 1 1 579 # High hold
+0 1 1 1 0 1 1 580 # High hold
+0 1 1 1 0 1 1 581 # High hold
+0 0 0 1 0 1 1 582 # Falling/prepare
+0 0 0 1 0 1 1 583 # Low hold
+0 0 1 1 0 1 1 584 # Rising
+0 0 1 1 0 1 1 585 # High hold
+0 0 1 1 0 1 1 586 # High hold
+0 0 1 1 0 1 1 587 # High hold
+1 1 0 1 0 1 1 588 # Falling/prepare
+1 1 0 1 0 1 1 589 # Low hold
+1 1 1 1 1 0 1 590 # Rising
+1 1 1 1 1 0 1 591 # High hold
+1 1 1 1 1 0 1 592 # High hold
+1 1 1 1 1 0 1 593 # High hold
+1 1 0 1 1 0 1 594 # Falling/prepare
+1 1 0 1 1 0 1 595 # Low hold
+1 1 1 1 0 1 1 596 # Rising
+1 1 1 1 0 1 1 597 # High hold
+1 1 1 1 0 1 1 598 # High hold
+1 1 1 1 0 1 1 599 # High hold
+0 1 0 1 0 1 1 600 # Falling/prepare
+0 1 0 1 0 1 1 601 # Low hold
+0 1 1 1 0 1 1 602 # Rising
+0 1 1 1 0 1 1 603 # High hold
+0 1 1 1 0 1 1 604 # High hold
+0 1 1 1 0 1 1 605 # High hold
+0 0 0 1 0 1 1 606 # Falling/prepare
+0 0 0 1 0 1 1 607 # Low hold
+0 0 1 1 0 1 1 608 # Rising
+0 0 1 1 0 1 1 609 # High hold
+0 0 1 1 0 1 1 610 # High hold
+0 0 1 1 0 1 1 611 # High hold
+0 0 0 1 0 1 1 612 # Falling/prepare
+0 0 0 1 0 1 1 613 # Low hold
+0 0 1 1 0 1 1 614 # Rising
+0 0 1 1 0 1 1 615 # High hold
+0 0 1 1 0 1 1 616 # High hold
+0 0 1 1 0 1 1 617 # High hold
+1 1 0 1 0 1 1 618 # Falling/prepare
+1 1 0 1 0 1 1 619 # Low hold
+1 1 1 1 1 0 1 620 # Rising
+1 1 1 1 1 0 1 621 # High hold
+1 1 1 1 1 0 1 622 # High hold
+1 1 1 1 1 0 1 623 # High hold
+0 0 1 0 0 1 2 1 # Cold reset
+0 0 1 0 0 1 2 2 # Reset holds
+0 0 1 1 0 1 2 3 # Release reset
+1 1 0 1 0 1 2 4 # Falling/prepare
+1 1 0 1 0 1 2 5 # Low hold
+1 1 1 1 1 0 2 6 # Rising
+1 1 1 1 1 0 2 7 # High hold
+1 1 1 1 1 0 2 8 # High hold
+1 1 1 1 1 0 2 9 # High hold
+1 1 1 0 0 1 2 10 # Async clear at high
+1 1 1 1 0 1 2 11 # Release clear high
+1 1 0 1 0 1 2 12 # Falling/prepare
+1 1 0 1 0 1 2 13 # Low hold
+1 1 1 1 1 0 2 14 # Rising
+1 1 1 1 1 0 2 15 # High hold
+1 1 1 1 1 0 2 16 # High hold
+1 1 1 1 1 0 2 17 # High hold
+1 1 0 1 1 0 2 18 # Falling/prepare
+1 1 0 1 1 0 2 19 # Low hold
+1 1 1 1 0 1 2 20 # Rising
+1 1 1 1 0 1 2 21 # High hold
+1 1 1 1 0 1 2 22 # High hold
+1 1 1 1 0 1 2 23 # High hold
+1 1 0 1 0 1 2 24 # Falling/prepare
+1 1 0 1 0 1 2 25 # Low hold
+1 1 1 1 1 0 2 26 # Rising
+1 1 1 1 1 0 2 27 # High hold
+1 1 1 1 1 0 2 28 # High hold
+1 1 1 1 1 0 2 29 # High hold
+1 1 0 1 1 0 2 30 # Falling/prepare
+1 1 0 1 1 0 2 31 # Low hold
+1 1 1 1 0 1 2 32 # Rising
+1 1 1 1 0 1 2 33 # High hold
+1 1 1 1 0 1 2 34 # High hold
+1 1 1 1 0 1 2 35 # High hold
+1 1 0 1 0 1 2 36 # Falling/prepare
+1 1 0 1 0 1 2 37 # Low hold
+1 1 1 1 1 0 2 38 # Rising
+1 1 1 1 1 0 2 39 # High hold
+1 1 1 1 1 0 2 40 # High hold
+1 1 1 1 1 0 2 41 # High hold
+1 1 0 1 1 0 2 42 # Falling/prepare
+1 1 0 1 1 0 2 43 # Low hold
+1 1 1 1 0 1 2 44 # Rising
+1 1 1 1 0 1 2 45 # High hold
+1 1 1 1 0 1 2 46 # High hold
+1 1 1 1 0 1 2 47 # High hold
+1 1 0 1 0 1 2 48 # Falling/prepare
+1 1 0 1 0 1 2 49 # Low hold
+1 1 1 1 1 0 2 50 # Rising
+1 1 1 1 1 0 2 51 # High hold
+1 1 1 1 1 0 2 52 # High hold
+1 1 1 1 1 0 2 53 # High hold
+1 1 0 1 1 0 2 54 # Falling/prepare
+1 1 0 1 1 0 2 55 # Low hold
+1 1 1 1 0 1 2 56 # Rising
+1 1 1 1 0 1 2 57 # High hold
+1 1 1 1 0 1 2 58 # High hold
+1 1 1 1 0 1 2 59 # High hold
+1 1 0 1 0 1 2 60 # Falling/prepare
+1 1 0 1 0 1 2 61 # Low hold
+1 1 1 1 1 0 2 62 # Rising
+1 1 1 1 1 0 2 63 # High hold
+1 1 1 1 1 0 2 64 # High hold
+1 1 1 1 1 0 2 65 # High hold
+1 1 0 1 1 0 2 66 # Falling/prepare
+1 1 0 1 1 0 2 67 # Low hold
+1 1 1 1 0 1 2 68 # Rising
+1 1 1 1 0 1 2 69 # High hold
+1 1 1 1 0 1 2 70 # High hold
+1 1 1 1 0 1 2 71 # High hold
+1 1 1 0 0 1 2 72 # Async clear at high
+1 1 1 1 0 1 2 73 # Release clear high
+1 1 0 1 0 1 2 74 # Falling/prepare
+1 1 0 1 0 1 2 75 # Low hold
+1 1 1 1 1 0 2 76 # Rising
+1 1 1 1 1 0 2 77 # High hold
+1 1 1 1 1 0 2 78 # High hold
+1 1 1 1 1 0 2 79 # High hold
+1 1 0 1 1 0 2 80 # Falling/prepare
+1 1 0 1 1 0 2 81 # Low hold
+1 1 1 1 0 1 2 82 # Rising
+1 1 1 1 0 1 2 83 # High hold
+1 1 1 1 0 1 2 84 # High hold
+1 1 1 1 0 1 2 85 # High hold
+1 1 0 1 0 1 2 86 # Falling/prepare
+1 1 0 1 0 1 2 87 # Low hold
+1 1 1 1 1 0 2 88 # Rising
+1 1 1 1 1 0 2 89 # High hold
+1 1 1 1 1 0 2 90 # High hold
+1 1 1 1 1 0 2 91 # High hold
+1 1 0 1 1 0 2 92 # Falling/prepare
+1 1 0 1 1 0 2 93 # Low hold
+1 1 1 1 0 1 2 94 # Rising
+1 1 1 1 0 1 2 95 # High hold
+1 1 1 1 0 1 2 96 # High hold
+1 1 1 1 0 1 2 97 # High hold
+1 1 0 1 0 1 2 98 # Falling/prepare
+1 1 0 1 0 1 2 99 # Low hold
+1 1 1 1 1 0 2 100 # Rising
+1 1 1 1 1 0 2 101 # High hold
+1 1 1 1 1 0 2 102 # High hold
+1 1 1 1 1 0 2 103 # High hold
+1 1 0 1 1 0 2 104 # Falling/prepare
+1 1 0 1 1 0 2 105 # Low hold
+1 1 1 1 0 1 2 106 # Rising
+1 1 1 1 0 1 2 107 # High hold
+1 1 1 1 0 1 2 108 # High hold
+1 1 1 1 0 1 2 109 # High hold
+1 1 0 1 0 1 2 110 # Falling/prepare
+1 1 0 1 0 1 2 111 # Low hold
+1 1 1 1 1 0 2 112 # Rising
+1 1 1 1 1 0 2 113 # High hold
+1 1 1 1 1 0 2 114 # High hold
+1 1 1 1 1 0 2 115 # High hold
+1 1 0 1 1 0 2 116 # Falling/prepare
+1 1 0 1 1 0 2 117 # Low hold
+1 1 1 1 0 1 2 118 # Rising
+1 1 1 1 0 1 2 119 # High hold
+1 1 1 1 0 1 2 120 # High hold
+1 1 1 1 0 1 2 121 # High hold
+1 1 0 1 0 1 2 122 # Falling/prepare
+1 1 0 1 0 1 2 123 # Low hold
+1 1 1 1 1 0 2 124 # Rising
+1 1 1 1 1 0 2 125 # High hold
+1 1 1 1 1 0 2 126 # High hold
+1 1 1 1 1 0 2 127 # High hold
+1 1 0 1 1 0 2 128 # Falling/prepare
+1 1 0 1 1 0 2 129 # Low hold
+1 1 1 1 0 1 2 130 # Rising
+1 1 1 1 0 1 2 131 # High hold
+1 1 1 1 0 1 2 132 # High hold
+1 1 1 1 0 1 2 133 # High hold
+1 1 1 0 0 1 2 134 # Async clear at high
+1 1 1 1 0 1 2 135 # Release clear high
+1 1 0 1 0 1 2 136 # Falling/prepare
+1 1 0 1 0 1 2 137 # Low hold
+1 1 1 1 1 0 2 138 # Rising
+1 1 1 1 1 0 2 139 # High hold
+1 1 1 1 1 0 2 140 # High hold
+1 1 1 1 1 0 2 141 # High hold
+1 1 0 1 1 0 2 142 # Falling/prepare
+1 1 0 1 1 0 2 143 # Low hold
+1 1 1 1 0 1 2 144 # Rising
+1 1 1 1 0 1 2 145 # High hold
+1 1 1 1 0 1 2 146 # High hold
+1 1 1 1 0 1 2 147 # High hold
+1 1 0 1 0 1 2 148 # Falling/prepare
+1 1 0 1 0 1 2 149 # Low hold
+1 1 1 1 1 0 2 150 # Rising
+1 1 1 1 1 0 2 151 # High hold
+1 1 1 1 1 0 2 152 # High hold
+1 1 1 1 1 0 2 153 # High hold
+1 1 0 1 1 0 2 154 # Falling/prepare
+1 1 0 1 1 0 2 155 # Low hold
+1 1 1 1 0 1 2 156 # Rising
+1 1 1 1 0 1 2 157 # High hold
+1 1 1 1 0 1 2 158 # High hold
+1 1 1 1 0 1 2 159 # High hold
+1 1 0 1 0 1 2 160 # Falling/prepare
+1 1 0 1 0 1 2 161 # Low hold
+1 1 1 1 1 0 2 162 # Rising
+1 1 1 1 1 0 2 163 # High hold
+1 1 1 1 1 0 2 164 # High hold
+1 1 1 1 1 0 2 165 # High hold
+1 1 0 1 1 0 2 166 # Falling/prepare
+1 1 0 1 1 0 2 167 # Low hold
+1 1 1 1 0 1 2 168 # Rising
+1 1 1 1 0 1 2 169 # High hold
+1 1 1 1 0 1 2 170 # High hold
+1 1 1 1 0 1 2 171 # High hold
+1 1 0 1 0 1 2 172 # Falling/prepare
+1 1 0 1 0 1 2 173 # Low hold
+1 1 1 1 1 0 2 174 # Rising
+1 1 1 1 1 0 2 175 # High hold
+1 1 1 1 1 0 2 176 # High hold
+1 1 1 1 1 0 2 177 # High hold
+1 1 0 1 1 0 2 178 # Falling/prepare
+1 1 0 1 1 0 2 179 # Low hold
+1 1 1 1 0 1 2 180 # Rising
+1 1 1 1 0 1 2 181 # High hold
+1 1 1 1 0 1 2 182 # High hold
+1 1 1 1 0 1 2 183 # High hold
+1 1 0 1 0 1 2 184 # Falling/prepare
+1 1 0 1 0 1 2 185 # Low hold
+1 1 1 1 1 0 2 186 # Rising
+1 1 1 1 1 0 2 187 # High hold
+1 1 1 1 1 0 2 188 # High hold
+1 1 1 1 1 0 2 189 # High hold
+1 1 0 1 1 0 2 190 # Falling/prepare
+1 1 0 1 1 0 2 191 # Low hold
+1 1 1 1 0 1 2 192 # Rising
+1 1 1 1 0 1 2 193 # High hold
+1 1 1 1 0 1 2 194 # High hold
+1 1 1 1 0 1 2 195 # High hold
+1 1 1 0 0 1 2 196 # Async clear at high
+1 1 1 1 0 1 2 197 # Release clear high
+1 1 0 1 0 1 2 198 # Falling/prepare
+1 1 0 1 0 1 2 199 # Low hold
+1 1 1 1 1 0 2 200 # Rising
+1 1 1 1 1 0 2 201 # High hold
+1 1 1 1 1 0 2 202 # High hold
+1 1 1 1 1 0 2 203 # High hold
+1 1 0 1 1 0 2 204 # Falling/prepare
+1 1 0 1 1 0 2 205 # Low hold
+1 1 1 1 0 1 2 206 # Rising
+1 1 1 1 0 1 2 207 # High hold
+1 1 1 1 0 1 2 208 # High hold
+1 1 1 1 0 1 2 209 # High hold
+1 1 0 1 0 1 2 210 # Falling/prepare
+1 1 0 1 0 1 2 211 # Low hold
+1 1 1 1 1 0 2 212 # Rising
+1 1 1 1 1 0 2 213 # High hold
+1 1 1 1 1 0 2 214 # High hold
+1 1 1 1 1 0 2 215 # High hold
+1 1 0 1 1 0 2 216 # Falling/prepare
+1 1 0 1 1 0 2 217 # Low hold
+1 1 1 1 0 1 2 218 # Rising
+1 1 1 1 0 1 2 219 # High hold
+1 1 1 1 0 1 2 220 # High hold
+1 1 1 1 0 1 2 221 # High hold
+1 1 0 1 0 1 2 222 # Falling/prepare
+1 1 0 1 0 1 2 223 # Low hold
+1 1 1 1 1 0 2 224 # Rising
+1 1 1 1 1 0 2 225 # High hold
+1 1 1 1 1 0 2 226 # High hold
+1 1 1 1 1 0 2 227 # High hold
+1 1 0 1 1 0 2 228 # Falling/prepare
+1 1 0 1 1 0 2 229 # Low hold
+1 1 1 1 0 1 2 230 # Rising
+1 1 1 1 0 1 2 231 # High hold
+1 1 1 1 0 1 2 232 # High hold
+1 1 1 1 0 1 2 233 # High hold
+1 1 0 1 0 1 2 234 # Falling/prepare
+1 1 0 1 0 1 2 235 # Low hold
+1 1 1 1 1 0 2 236 # Rising
+1 1 1 1 1 0 2 237 # High hold
+1 1 1 1 1 0 2 238 # High hold
+1 1 1 1 1 0 2 239 # High hold
+1 1 0 1 1 0 2 240 # Falling/prepare
+1 1 0 1 1 0 2 241 # Low hold
+1 1 1 1 0 1 2 242 # Rising
+1 1 1 1 0 1 2 243 # High hold
+1 1 1 1 0 1 2 244 # High hold
+1 1 1 1 0 1 2 245 # High hold
+1 1 0 1 0 1 2 246 # Falling/prepare
+1 1 0 1 0 1 2 247 # Low hold
+1 1 1 1 1 0 2 248 # Rising
+1 1 1 1 1 0 2 249 # High hold
+1 1 1 1 1 0 2 250 # High hold
+1 1 1 1 1 0 2 251 # High hold
+1 1 0 1 1 0 2 252 # Falling/prepare
+1 1 0 1 1 0 2 253 # Low hold
+1 1 1 1 0 1 2 254 # Rising
+1 1 1 1 0 1 2 255 # High hold
+1 1 1 1 0 1 2 256 # High hold
+1 1 1 1 0 1 2 257 # High hold
+1 1 1 0 0 1 2 258 # Async clear at high
+1 1 1 1 0 1 2 259 # Release clear high
+1 1 0 1 0 1 2 260 # Falling/prepare
+1 1 0 1 0 1 2 261 # Low hold
+1 1 1 1 1 0 2 262 # Rising
+1 1 1 1 1 0 2 263 # High hold
+1 1 1 1 1 0 2 264 # High hold
+1 1 1 1 1 0 2 265 # High hold
+1 1 0 1 1 0 2 266 # Falling/prepare
+1 1 0 1 1 0 2 267 # Low hold
+1 1 1 1 0 1 2 268 # Rising
+1 1 1 1 0 1 2 269 # High hold
+1 1 1 1 0 1 2 270 # High hold
+1 1 1 1 0 1 2 271 # High hold
+1 1 0 1 0 1 2 272 # Falling/prepare
+1 1 0 1 0 1 2 273 # Low hold
+1 1 1 1 1 0 2 274 # Rising
+1 1 1 1 1 0 2 275 # High hold
+1 1 1 1 1 0 2 276 # High hold
+1 1 1 1 1 0 2 277 # High hold
+1 1 0 1 1 0 2 278 # Falling/prepare
+1 1 0 1 1 0 2 279 # Low hold
+1 1 1 1 0 1 2 280 # Rising
+1 1 1 1 0 1 2 281 # High hold
+1 1 1 1 0 1 2 282 # High hold
+1 1 1 1 0 1 2 283 # High hold
+1 1 0 1 0 1 2 284 # Falling/prepare
+1 1 0 1 0 1 2 285 # Low hold
+1 1 1 1 1 0 2 286 # Rising
+1 1 1 1 1 0 2 287 # High hold
+1 1 1 1 1 0 2 288 # High hold
+1 1 1 1 1 0 2 289 # High hold
+1 1 0 1 1 0 2 290 # Falling/prepare
+1 1 0 1 1 0 2 291 # Low hold
+1 1 1 1 0 1 2 292 # Rising
+1 1 1 1 0 1 2 293 # High hold
+1 1 1 1 0 1 2 294 # High hold
+1 1 1 1 0 1 2 295 # High hold
+1 1 0 1 0 1 2 296 # Falling/prepare
+1 1 0 1 0 1 2 297 # Low hold
+1 1 1 1 1 0 2 298 # Rising
+1 1 1 1 1 0 2 299 # High hold
+1 1 1 1 1 0 2 300 # High hold
+1 1 1 1 1 0 2 301 # High hold
+1 1 0 1 1 0 2 302 # Falling/prepare
+1 1 0 1 1 0 2 303 # Low hold
+1 1 1 1 0 1 2 304 # Rising
+1 1 1 1 0 1 2 305 # High hold
+1 1 1 1 0 1 2 306 # High hold
+1 1 1 1 0 1 2 307 # High hold
+1 1 0 1 0 1 2 308 # Falling/prepare
+1 1 0 1 0 1 2 309 # Low hold
+1 1 1 1 1 0 2 310 # Rising
+1 1 1 1 1 0 2 311 # High hold
+1 1 1 1 1 0 2 312 # High hold
+1 1 1 1 1 0 2 313 # High hold
+1 0 0 1 1 0 2 314 # Falling/prepare
+1 0 0 1 1 0 2 315 # Low hold
+1 0 1 1 1 0 2 316 # Rising
+1 0 1 1 1 0 2 317 # High hold
+1 0 1 1 1 0 2 318 # High hold
+1 0 1 1 1 0 2 319 # High hold
+1 1 1 0 0 1 2 320 # Async clear at high
+1 1 1 1 0 1 2 321 # Release clear high
+1 1 0 1 0 1 2 322 # Falling/prepare
+1 1 0 1 0 1 2 323 # Low hold
+1 1 1 1 1 0 2 324 # Rising
+1 1 1 1 1 0 2 325 # High hold
+1 1 1 1 1 0 2 326 # High hold
+1 1 1 1 1 0 2 327 # High hold
+1 0 0 1 1 0 2 328 # Falling/prepare
+1 0 0 1 1 0 2 329 # Low hold
+1 0 1 1 1 0 2 330 # Rising
+1 0 1 1 1 0 2 331 # High hold
+1 0 1 1 1 0 2 332 # High hold
+1 0 1 1 1 0 2 333 # High hold
+1 1 0 1 1 0 2 334 # Falling/prepare
+1 1 0 1 1 0 2 335 # Low hold
+1 1 1 1 0 1 2 336 # Rising
+1 1 1 1 0 1 2 337 # High hold
+1 1 1 1 0 1 2 338 # High hold
+1 1 1 1 0 1 2 339 # High hold
+1 0 0 1 0 1 2 340 # Falling/prepare
+1 0 0 1 0 1 2 341 # Low hold
+1 0 1 1 1 0 2 342 # Rising
+1 0 1 1 1 0 2 343 # High hold
+1 0 1 1 1 0 2 344 # High hold
+1 0 1 1 1 0 2 345 # High hold
+1 1 0 1 1 0 2 346 # Falling/prepare
+1 1 0 1 1 0 2 347 # Low hold
+1 1 1 1 0 1 2 348 # Rising
+1 1 1 1 0 1 2 349 # High hold
+1 1 1 1 0 1 2 350 # High hold
+1 1 1 1 0 1 2 351 # High hold
+1 1 0 1 0 1 2 352 # Falling/prepare
+1 1 0 1 0 1 2 353 # Low hold
+1 1 1 1 1 0 2 354 # Rising
+1 1 1 1 1 0 2 355 # High hold
+1 1 1 1 1 0 2 356 # High hold
+1 1 1 1 1 0 2 357 # High hold
+0 1 0 1 1 0 2 358 # Falling/prepare
+0 1 0 1 1 0 2 359 # Low hold
+0 1 1 1 0 1 2 360 # Rising
+0 1 1 1 0 1 2 361 # High hold
+0 1 1 1 0 1 2 362 # High hold
+0 1 1 1 0 1 2 363 # High hold
+0 0 0 1 0 1 2 364 # Falling/prepare
+0 0 0 1 0 1 2 365 # Low hold
+0 0 1 1 0 1 2 366 # Rising
+0 0 1 1 0 1 2 367 # High hold
+0 0 1 1 0 1 2 368 # High hold
+0 0 1 1 0 1 2 369 # High hold
+1 1 0 1 0 1 2 370 # Falling/prepare
+1 1 0 1 0 1 2 371 # Low hold
+1 1 1 1 1 0 2 372 # Rising
+1 1 1 1 1 0 2 373 # High hold
+1 1 1 1 1 0 2 374 # High hold
+1 1 1 1 1 0 2 375 # High hold
+1 0 0 1 1 0 2 376 # Falling/prepare
+1 0 0 1 1 0 2 377 # Low hold
+1 0 1 1 1 0 2 378 # Rising
+1 0 1 1 1 0 2 379 # High hold
+1 0 1 1 1 0 2 380 # High hold
+1 0 1 1 1 0 2 381 # High hold
+1 1 1 0 0 1 2 382 # Async clear at high
+1 1 1 1 0 1 2 383 # Release clear high
+1 0 0 1 0 1 2 384 # Falling/prepare
+1 0 0 1 0 1 2 385 # Low hold
+1 0 1 1 1 0 2 386 # Rising
+1 0 1 1 1 0 2 387 # High hold
+1 0 1 1 1 0 2 388 # High hold
+1 0 1 1 1 0 2 389 # High hold
+1 1 0 1 1 0 2 390 # Falling/prepare
+1 1 0 1 1 0 2 391 # Low hold
+1 1 1 1 0 1 2 392 # Rising
+1 1 1 1 0 1 2 393 # High hold
+1 1 1 1 0 1 2 394 # High hold
+1 1 1 1 0 1 2 395 # High hold
+0 1 0 1 0 1 2 396 # Falling/prepare
+0 1 0 1 0 1 2 397 # Low hold
+0 1 1 1 0 1 2 398 # Rising
+0 1 1 1 0 1 2 399 # High hold
+0 1 1 1 0 1 2 400 # High hold
+0 1 1 1 0 1 2 401 # High hold
+1 0 0 1 0 1 2 402 # Falling/prepare
+1 0 0 1 0 1 2 403 # Low hold
+1 0 1 1 1 0 2 404 # Rising
+1 0 1 1 1 0 2 405 # High hold
+1 0 1 1 1 0 2 406 # High hold
+1 0 1 1 1 0 2 407 # High hold
+0 0 0 1 1 0 2 408 # Falling/prepare
+0 0 0 1 1 0 2 409 # Low hold
+0 0 1 1 1 0 2 410 # Rising
+0 0 1 1 1 0 2 411 # High hold
+0 0 1 1 1 0 2 412 # High hold
+0 0 1 1 1 0 2 413 # High hold
+0 0 0 1 1 0 2 414 # Falling/prepare
+0 0 0 1 1 0 2 415 # Low hold
+0 0 1 1 1 0 2 416 # Rising
+0 0 1 1 1 0 2 417 # High hold
+0 0 1 1 1 0 2 418 # High hold
+0 0 1 1 1 0 2 419 # High hold
+1 1 0 1 1 0 2 420 # Falling/prepare
+1 1 0 1 1 0 2 421 # Low hold
+1 1 1 1 0 1 2 422 # Rising
+1 1 1 1 0 1 2 423 # High hold
+1 1 1 1 0 1 2 424 # High hold
+1 1 1 1 0 1 2 425 # High hold
+1 1 0 1 0 1 2 426 # Falling/prepare
+1 1 0 1 0 1 2 427 # Low hold
+1 1 1 1 1 0 2 428 # Rising
+1 1 1 1 1 0 2 429 # High hold
+1 1 1 1 1 0 2 430 # High hold
+1 1 1 1 1 0 2 431 # High hold
+0 1 0 1 1 0 2 432 # Falling/prepare
+0 1 0 1 1 0 2 433 # Low hold
+0 1 1 1 0 1 2 434 # Rising
+0 1 1 1 0 1 2 435 # High hold
+0 1 1 1 0 1 2 436 # High hold
+0 1 1 1 0 1 2 437 # High hold
+1 0 0 1 0 1 2 438 # Falling/prepare
+1 0 0 1 0 1 2 439 # Low hold
+1 0 1 1 1 0 2 440 # Rising
+1 0 1 1 1 0 2 441 # High hold
+1 0 1 1 1 0 2 442 # High hold
+1 0 1 1 1 0 2 443 # High hold
+1 1 1 0 0 1 2 444 # Async clear at high
+1 1 1 1 0 1 2 445 # Release clear high
+1 1 0 1 0 1 2 446 # Falling/prepare
+1 1 0 1 0 1 2 447 # Low hold
+1 1 1 1 1 0 2 448 # Rising
+1 1 1 1 1 0 2 449 # High hold
+1 1 1 1 1 0 2 450 # High hold
+1 1 1 1 1 0 2 451 # High hold
+1 0 0 1 1 0 2 452 # Falling/prepare
+1 0 0 1 1 0 2 453 # Low hold
+1 0 1 1 1 0 2 454 # Rising
+1 0 1 1 1 0 2 455 # High hold
+1 0 1 1 1 0 2 456 # High hold
+1 0 1 1 1 0 2 457 # High hold
+1 1 0 1 1 0 2 458 # Falling/prepare
+1 1 0 1 1 0 2 459 # Low hold
+1 1 1 1 0 1 2 460 # Rising
+1 1 1 1 0 1 2 461 # High hold
+1 1 1 1 0 1 2 462 # High hold
+1 1 1 1 0 1 2 463 # High hold
+0 0 0 1 0 1 2 464 # Falling/prepare
+0 0 0 1 0 1 2 465 # Low hold
+0 0 1 1 0 1 2 466 # Rising
+0 0 1 1 0 1 2 467 # High hold
+0 0 1 1 0 1 2 468 # High hold
+0 0 1 1 0 1 2 469 # High hold
+0 0 0 1 0 1 2 470 # Falling/prepare
+0 0 0 1 0 1 2 471 # Low hold
+0 0 1 1 0 1 2 472 # Rising
+0 0 1 1 0 1 2 473 # High hold
+0 0 1 1 0 1 2 474 # High hold
+0 0 1 1 0 1 2 475 # High hold
+1 1 0 1 0 1 2 476 # Falling/prepare
+1 1 0 1 0 1 2 477 # Low hold
+1 1 1 1 1 0 2 478 # Rising
+1 1 1 1 1 0 2 479 # High hold
+1 1 1 1 1 0 2 480 # High hold
+1 1 1 1 1 0 2 481 # High hold
+0 0 0 1 1 0 2 482 # Falling/prepare
+0 0 0 1 1 0 2 483 # Low hold
+0 0 1 1 1 0 2 484 # Rising
+0 0 1 1 1 0 2 485 # High hold
+0 0 1 1 1 0 2 486 # High hold
+0 0 1 1 1 0 2 487 # High hold
+1 0 0 1 1 0 2 488 # Falling/prepare
+1 0 0 1 1 0 2 489 # Low hold
+1 0 1 1 1 0 2 490 # Rising
+1 0 1 1 1 0 2 491 # High hold
+1 0 1 1 1 0 2 492 # High hold
+1 0 1 1 1 0 2 493 # High hold
+0 0 0 1 1 0 2 494 # Falling/prepare
+0 0 0 1 1 0 2 495 # Low hold
+0 0 1 1 1 0 2 496 # Rising
+0 0 1 1 1 0 2 497 # High hold
+0 0 1 1 1 0 2 498 # High hold
+0 0 1 1 1 0 2 499 # High hold
+0 0 0 1 1 0 2 500 # Falling/prepare
+0 0 0 1 1 0 2 501 # Low hold
+0 0 1 1 1 0 2 502 # Rising
+0 0 1 1 1 0 2 503 # High hold
+0 0 1 1 1 0 2 504 # High hold
+0 0 1 1 1 0 2 505 # High hold
+1 1 1 0 0 1 2 506 # Async clear at high
+1 1 1 1 0 1 2 507 # Release clear high
+0 0 0 1 0 1 2 508 # Falling/prepare
+0 0 0 1 0 1 2 509 # Low hold
+0 0 1 1 0 1 2 510 # Rising
+0 0 1 1 0 1 2 511 # High hold
+0 0 1 1 0 1 2 512 # High hold
+0 0 1 1 0 1 2 513 # High hold
+1 0 0 1 0 1 2 514 # Falling/prepare
+1 0 0 1 0 1 2 515 # Low hold
+1 0 1 1 1 0 2 516 # Rising
+1 0 1 1 1 0 2 517 # High hold
+1 0 1 1 1 0 2 518 # High hold
+1 0 1 1 1 0 2 519 # High hold
+1 1 0 1 1 0 2 520 # Falling/prepare
+1 1 0 1 1 0 2 521 # Low hold
+1 1 1 1 0 1 2 522 # Rising
+1 1 1 1 0 1 2 523 # High hold
+1 1 1 1 0 1 2 524 # High hold
+1 1 1 1 0 1 2 525 # High hold
+0 0 0 1 0 1 2 526 # Falling/prepare
+0 0 0 1 0 1 2 527 # Low hold
+0 0 1 1 0 1 2 528 # Rising
+0 0 1 1 0 1 2 529 # High hold
+0 0 1 1 0 1 2 530 # High hold
+0 0 1 1 0 1 2 531 # High hold
+1 0 0 1 0 1 2 532 # Falling/prepare
+1 0 0 1 0 1 2 533 # Low hold
+1 0 1 1 1 0 2 534 # Rising
+1 0 1 1 1 0 2 535 # High hold
+1 0 1 1 1 0 2 536 # High hold
+1 0 1 1 1 0 2 537 # High hold
+1 0 0 1 1 0 2 538 # Falling/prepare
+1 0 0 1 1 0 2 539 # Low hold
+1 0 1 1 1 0 2 540 # Rising
+1 0 1 1 1 0 2 541 # High hold
+1 0 1 1 1 0 2 542 # High hold
+1 0 1 1 1 0 2 543 # High hold
+0 1 0 1 1 0 2 544 # Falling/prepare
+0 1 0 1 1 0 2 545 # Low hold
+0 1 1 1 0 1 2 546 # Rising
+0 1 1 1 0 1 2 547 # High hold
+0 1 1 1 0 1 2 548 # High hold
+0 1 1 1 0 1 2 549 # High hold
+1 1 0 1 0 1 2 550 # Falling/prepare
+1 1 0 1 0 1 2 551 # Low hold
+1 1 1 1 1 0 2 552 # Rising
+1 1 1 1 1 0 2 553 # High hold
+1 1 1 1 1 0 2 554 # High hold
+1 1 1 1 1 0 2 555 # High hold
+1 0 0 1 1 0 2 556 # Falling/prepare
+1 0 0 1 1 0 2 557 # Low hold
+1 0 1 1 1 0 2 558 # Rising
+1 0 1 1 1 0 2 559 # High hold
+1 0 1 1 1 0 2 560 # High hold
+1 0 1 1 1 0 2 561 # High hold
+1 0 0 1 1 0 2 562 # Falling/prepare
+1 0 0 1 1 0 2 563 # Low hold
+1 0 1 1 1 0 2 564 # Rising
+1 0 1 1 1 0 2 565 # High hold
+1 0 1 1 1 0 2 566 # High hold
+1 0 1 1 1 0 2 567 # High hold
+1 1 1 0 0 1 2 568 # Async clear at high
+1 1 1 1 0 1 2 569 # Release clear high
+0 0 0 1 0 1 2 570 # Falling/prepare
+0 0 0 1 0 1 2 571 # Low hold
+0 0 1 1 0 1 2 572 # Rising
+0 0 1 1 0 1 2 573 # High hold
+0 0 1 1 0 1 2 574 # High hold
+0 0 1 1 0 1 2 575 # High hold
+0 0 0 1 0 1 2 576 # Falling/prepare
+0 0 0 1 0 1 2 577 # Low hold
+0 0 1 1 0 1 2 578 # Rising
+0 0 1 1 0 1 2 579 # High hold
+0 0 1 1 0 1 2 580 # High hold
+0 0 1 1 0 1 2 581 # High hold
+0 1 0 1 0 1 2 582 # Falling/prepare
+0 1 0 1 0 1 2 583 # Low hold
+0 1 1 1 0 1 2 584 # Rising
+0 1 1 1 0 1 2 585 # High hold
+0 1 1 1 0 1 2 586 # High hold
+0 1 1 1 0 1 2 587 # High hold
+0 0 0 1 0 1 2 588 # Falling/prepare
+0 0 0 1 0 1 2 589 # Low hold
+0 0 1 1 0 1 2 590 # Rising
+0 0 1 1 0 1 2 591 # High hold
+0 0 1 1 0 1 2 592 # High hold
+0 0 1 1 0 1 2 593 # High hold
+1 1 0 1 0 1 2 594 # Falling/prepare
+1 1 0 1 0 1 2 595 # Low hold
+1 1 1 1 1 0 2 596 # Rising
+1 1 1 1 1 0 2 597 # High hold
+1 1 1 1 1 0 2 598 # High hold
+1 1 1 1 1 0 2 599 # High hold
+1 1 0 1 1 0 2 600 # Falling/prepare
+1 1 0 1 1 0 2 601 # Low hold
+1 1 1 1 0 1 2 602 # Rising
+1 1 1 1 0 1 2 603 # High hold
+1 1 1 1 0 1 2 604 # High hold
+1 1 1 1 0 1 2 605 # High hold
+1 0 0 1 0 1 2 606 # Falling/prepare
+1 0 0 1 0 1 2 607 # Low hold
+1 0 1 1 1 0 2 608 # Rising
+1 0 1 1 1 0 2 609 # High hold
+1 0 1 1 1 0 2 610 # High hold
+1 0 1 1 1 0 2 611 # High hold
+0 0 0 1 1 0 2 612 # Falling/prepare
+0 0 0 1 1 0 2 613 # Low hold
+0 0 1 1 1 0 2 614 # Rising
+0 0 1 1 1 0 2 615 # High hold
+0 0 1 1 1 0 2 616 # High hold
+0 0 1 1 1 0 2 617 # High hold
+1 0 0 1 1 0 2 618 # Falling/prepare
+1 0 0 1 1 0 2 619 # Low hold
+1 0 1 1 1 0 2 620 # Rising
+1 0 1 1 1 0 2 621 # High hold
+1 0 1 1 1 0 2 622 # High hold
+1 0 1 1 1 0 2 623 # High hold
+0 1 0 0 0 1 3 1 # Cold reset
+0 1 0 0 0 1 3 2 # Reset holds
+0 1 0 1 0 1 3 3 # Release reset
+1 1 0 1 0 1 3 4 # Falling/prepare
+1 1 0 1 0 1 3 5 # Low hold
+1 1 1 1 1 0 3 6 # Rising
+1 1 1 1 1 0 3 7 # High hold
+1 1 1 1 1 0 3 8 # High hold
+1 1 1 1 1 0 3 9 # High hold
+1 1 1 0 0 1 3 10 # Async clear at high
+1 1 1 1 0 1 3 11 # Release clear high
+1 1 0 1 0 1 3 12 # Falling/prepare
+1 1 0 1 0 1 3 13 # Low hold
+1 1 1 1 1 0 3 14 # Rising
+1 1 1 1 1 0 3 15 # High hold
+1 1 1 1 1 0 3 16 # High hold
+1 1 1 1 1 0 3 17 # High hold
+1 1 0 1 1 0 3 18 # Falling/prepare
+1 1 0 1 1 0 3 19 # Low hold
+1 1 1 1 0 1 3 20 # Rising
+1 1 1 1 0 1 3 21 # High hold
+1 1 1 1 0 1 3 22 # High hold
+1 1 1 1 0 1 3 23 # High hold
+1 1 0 1 0 1 3 24 # Falling/prepare
+1 1 0 1 0 1 3 25 # Low hold
+1 1 1 1 1 0 3 26 # Rising
+1 1 1 1 1 0 3 27 # High hold
+1 1 1 1 1 0 3 28 # High hold
+1 1 1 1 1 0 3 29 # High hold
+1 1 0 1 1 0 3 30 # Falling/prepare
+1 1 0 1 1 0 3 31 # Low hold
+1 1 1 1 0 1 3 32 # Rising
+1 1 1 1 0 1 3 33 # High hold
+1 1 1 1 0 1 3 34 # High hold
+1 1 1 1 0 1 3 35 # High hold
+1 1 0 1 0 1 3 36 # Falling/prepare
+1 1 0 1 0 1 3 37 # Low hold
+1 1 1 1 1 0 3 38 # Rising
+1 1 1 1 1 0 3 39 # High hold
+1 1 1 1 1 0 3 40 # High hold
+1 1 1 1 1 0 3 41 # High hold
+1 1 0 1 1 0 3 42 # Falling/prepare
+1 1 0 1 1 0 3 43 # Low hold
+1 1 1 1 0 1 3 44 # Rising
+1 1 1 1 0 1 3 45 # High hold
+1 1 1 1 0 1 3 46 # High hold
+1 1 1 1 0 1 3 47 # High hold
+1 1 0 1 0 1 3 48 # Falling/prepare
+1 1 0 1 0 1 3 49 # Low hold
+1 1 1 1 1 0 3 50 # Rising
+1 1 1 1 1 0 3 51 # High hold
+1 1 1 1 1 0 3 52 # High hold
+1 1 1 1 1 0 3 53 # High hold
+1 1 0 1 1 0 3 54 # Falling/prepare
+1 1 0 1 1 0 3 55 # Low hold
+1 1 1 1 0 1 3 56 # Rising
+1 1 1 1 0 1 3 57 # High hold
+1 1 1 1 0 1 3 58 # High hold
+1 1 1 1 0 1 3 59 # High hold
+1 1 0 1 0 1 3 60 # Falling/prepare
+1 1 0 1 0 1 3 61 # Low hold
+1 1 1 1 1 0 3 62 # Rising
+1 1 1 1 1 0 3 63 # High hold
+1 1 1 1 1 0 3 64 # High hold
+1 1 1 1 1 0 3 65 # High hold
+1 1 0 1 1 0 3 66 # Falling/prepare
+1 1 0 1 1 0 3 67 # Low hold
+1 1 1 1 0 1 3 68 # Rising
+1 1 1 1 0 1 3 69 # High hold
+1 1 1 1 0 1 3 70 # High hold
+1 1 1 1 0 1 3 71 # High hold
+1 1 1 0 0 1 3 72 # Async clear at high
+1 1 1 1 0 1 3 73 # Release clear high
+1 1 0 1 0 1 3 74 # Falling/prepare
+1 1 0 1 0 1 3 75 # Low hold
+1 1 1 1 1 0 3 76 # Rising
+1 1 1 1 1 0 3 77 # High hold
+1 1 1 1 1 0 3 78 # High hold
+1 1 1 1 1 0 3 79 # High hold
+1 1 0 1 1 0 3 80 # Falling/prepare
+1 1 0 1 1 0 3 81 # Low hold
+1 1 1 1 0 1 3 82 # Rising
+1 1 1 1 0 1 3 83 # High hold
+1 1 1 1 0 1 3 84 # High hold
+1 1 1 1 0 1 3 85 # High hold
+1 1 0 1 0 1 3 86 # Falling/prepare
+1 1 0 1 0 1 3 87 # Low hold
+1 1 1 1 1 0 3 88 # Rising
+1 1 1 1 1 0 3 89 # High hold
+1 1 1 1 1 0 3 90 # High hold
+1 1 1 1 1 0 3 91 # High hold
+1 1 0 1 1 0 3 92 # Falling/prepare
+1 1 0 1 1 0 3 93 # Low hold
+1 1 1 1 0 1 3 94 # Rising
+1 1 1 1 0 1 3 95 # High hold
+1 1 1 1 0 1 3 96 # High hold
+1 1 1 1 0 1 3 97 # High hold
+1 1 0 1 0 1 3 98 # Falling/prepare
+1 1 0 1 0 1 3 99 # Low hold
+1 1 1 1 1 0 3 100 # Rising
+1 1 1 1 1 0 3 101 # High hold
+1 1 1 1 1 0 3 102 # High hold
+1 1 1 1 1 0 3 103 # High hold
+1 1 0 1 1 0 3 104 # Falling/prepare
+1 1 0 1 1 0 3 105 # Low hold
+1 1 1 1 0 1 3 106 # Rising
+1 1 1 1 0 1 3 107 # High hold
+1 1 1 1 0 1 3 108 # High hold
+1 1 1 1 0 1 3 109 # High hold
+1 1 0 1 0 1 3 110 # Falling/prepare
+1 1 0 1 0 1 3 111 # Low hold
+1 1 1 1 1 0 3 112 # Rising
+1 1 1 1 1 0 3 113 # High hold
+1 1 1 1 1 0 3 114 # High hold
+1 1 1 1 1 0 3 115 # High hold
+1 1 0 1 1 0 3 116 # Falling/prepare
+1 1 0 1 1 0 3 117 # Low hold
+1 1 1 1 0 1 3 118 # Rising
+1 1 1 1 0 1 3 119 # High hold
+1 1 1 1 0 1 3 120 # High hold
+1 1 1 1 0 1 3 121 # High hold
+1 1 0 1 0 1 3 122 # Falling/prepare
+1 1 0 1 0 1 3 123 # Low hold
+1 1 1 1 1 0 3 124 # Rising
+1 1 1 1 1 0 3 125 # High hold
+1 1 1 1 1 0 3 126 # High hold
+1 1 1 1 1 0 3 127 # High hold
+1 1 0 1 1 0 3 128 # Falling/prepare
+1 1 0 1 1 0 3 129 # Low hold
+1 1 1 1 0 1 3 130 # Rising
+1 1 1 1 0 1 3 131 # High hold
+1 1 1 1 0 1 3 132 # High hold
+1 1 1 1 0 1 3 133 # High hold
+1 1 1 0 0 1 3 134 # Async clear at high
+1 1 1 1 0 1 3 135 # Release clear high
+1 1 0 1 0 1 3 136 # Falling/prepare
+1 1 0 1 0 1 3 137 # Low hold
+1 1 1 1 1 0 3 138 # Rising
+1 1 1 1 1 0 3 139 # High hold
+1 1 1 1 1 0 3 140 # High hold
+1 1 1 1 1 0 3 141 # High hold
+1 1 0 1 1 0 3 142 # Falling/prepare
+1 1 0 1 1 0 3 143 # Low hold
+1 1 1 1 0 1 3 144 # Rising
+1 1 1 1 0 1 3 145 # High hold
+1 1 1 1 0 1 3 146 # High hold
+1 1 1 1 0 1 3 147 # High hold
+1 1 0 1 0 1 3 148 # Falling/prepare
+1 1 0 1 0 1 3 149 # Low hold
+1 1 1 1 1 0 3 150 # Rising
+1 1 1 1 1 0 3 151 # High hold
+1 1 1 1 1 0 3 152 # High hold
+1 1 1 1 1 0 3 153 # High hold
+1 1 0 1 1 0 3 154 # Falling/prepare
+1 1 0 1 1 0 3 155 # Low hold
+1 1 1 1 0 1 3 156 # Rising
+1 1 1 1 0 1 3 157 # High hold
+1 1 1 1 0 1 3 158 # High hold
+1 1 1 1 0 1 3 159 # High hold
+1 1 0 1 0 1 3 160 # Falling/prepare
+1 1 0 1 0 1 3 161 # Low hold
+1 1 1 1 1 0 3 162 # Rising
+1 1 1 1 1 0 3 163 # High hold
+1 1 1 1 1 0 3 164 # High hold
+1 1 1 1 1 0 3 165 # High hold
+1 1 0 1 1 0 3 166 # Falling/prepare
+1 1 0 1 1 0 3 167 # Low hold
+1 1 1 1 0 1 3 168 # Rising
+1 1 1 1 0 1 3 169 # High hold
+1 1 1 1 0 1 3 170 # High hold
+1 1 1 1 0 1 3 171 # High hold
+1 1 0 1 0 1 3 172 # Falling/prepare
+1 1 0 1 0 1 3 173 # Low hold
+1 1 1 1 1 0 3 174 # Rising
+1 1 1 1 1 0 3 175 # High hold
+1 1 1 1 1 0 3 176 # High hold
+1 1 1 1 1 0 3 177 # High hold
+1 1 0 1 1 0 3 178 # Falling/prepare
+1 1 0 1 1 0 3 179 # Low hold
+1 1 1 1 0 1 3 180 # Rising
+1 1 1 1 0 1 3 181 # High hold
+1 1 1 1 0 1 3 182 # High hold
+1 1 1 1 0 1 3 183 # High hold
+1 1 0 1 0 1 3 184 # Falling/prepare
+1 1 0 1 0 1 3 185 # Low hold
+1 1 1 1 1 0 3 186 # Rising
+1 1 1 1 1 0 3 187 # High hold
+1 1 1 1 1 0 3 188 # High hold
+1 1 1 1 1 0 3 189 # High hold
+1 1 0 1 1 0 3 190 # Falling/prepare
+1 1 0 1 1 0 3 191 # Low hold
+1 1 1 1 0 1 3 192 # Rising
+1 1 1 1 0 1 3 193 # High hold
+1 1 1 1 0 1 3 194 # High hold
+1 1 1 1 0 1 3 195 # High hold
+1 1 1 0 0 1 3 196 # Async clear at high
+1 1 1 1 0 1 3 197 # Release clear high
+1 1 0 1 0 1 3 198 # Falling/prepare
+1 1 0 1 0 1 3 199 # Low hold
+1 1 1 1 1 0 3 200 # Rising
+1 1 1 1 1 0 3 201 # High hold
+1 1 1 1 1 0 3 202 # High hold
+1 1 1 1 1 0 3 203 # High hold
+1 1 0 1 1 0 3 204 # Falling/prepare
+1 1 0 1 1 0 3 205 # Low hold
+1 1 1 1 0 1 3 206 # Rising
+1 1 1 1 0 1 3 207 # High hold
+1 1 1 1 0 1 3 208 # High hold
+1 1 1 1 0 1 3 209 # High hold
+1 1 0 1 0 1 3 210 # Falling/prepare
+1 1 0 1 0 1 3 211 # Low hold
+1 1 1 1 1 0 3 212 # Rising
+1 1 1 1 1 0 3 213 # High hold
+1 1 1 1 1 0 3 214 # High hold
+1 1 1 1 1 0 3 215 # High hold
+1 1 0 1 1 0 3 216 # Falling/prepare
+1 1 0 1 1 0 3 217 # Low hold
+1 1 1 1 0 1 3 218 # Rising
+1 1 1 1 0 1 3 219 # High hold
+1 1 1 1 0 1 3 220 # High hold
+1 1 1 1 0 1 3 221 # High hold
+1 1 0 1 0 1 3 222 # Falling/prepare
+1 1 0 1 0 1 3 223 # Low hold
+1 1 1 1 1 0 3 224 # Rising
+1 1 1 1 1 0 3 225 # High hold
+1 1 1 1 1 0 3 226 # High hold
+1 1 1 1 1 0 3 227 # High hold
+1 1 0 1 1 0 3 228 # Falling/prepare
+1 1 0 1 1 0 3 229 # Low hold
+1 1 1 1 0 1 3 230 # Rising
+1 1 1 1 0 1 3 231 # High hold
+1 1 1 1 0 1 3 232 # High hold
+1 1 1 1 0 1 3 233 # High hold
+1 1 0 1 0 1 3 234 # Falling/prepare
+1 1 0 1 0 1 3 235 # Low hold
+1 1 1 1 1 0 3 236 # Rising
+1 1 1 1 1 0 3 237 # High hold
+1 1 1 1 1 0 3 238 # High hold
+1 1 1 1 1 0 3 239 # High hold
+1 1 0 1 1 0 3 240 # Falling/prepare
+1 1 0 1 1 0 3 241 # Low hold
+1 1 1 1 0 1 3 242 # Rising
+1 1 1 1 0 1 3 243 # High hold
+1 1 1 1 0 1 3 244 # High hold
+1 1 1 1 0 1 3 245 # High hold
+1 1 0 1 0 1 3 246 # Falling/prepare
+1 1 0 1 0 1 3 247 # Low hold
+1 1 1 1 1 0 3 248 # Rising
+1 1 1 1 1 0 3 249 # High hold
+1 1 1 1 1 0 3 250 # High hold
+1 1 1 1 1 0 3 251 # High hold
+1 1 0 1 1 0 3 252 # Falling/prepare
+1 1 0 1 1 0 3 253 # Low hold
+1 1 1 1 0 1 3 254 # Rising
+1 1 1 1 0 1 3 255 # High hold
+1 1 1 1 0 1 3 256 # High hold
+1 1 1 1 0 1 3 257 # High hold
+1 1 1 0 0 1 3 258 # Async clear at high
+1 1 1 1 0 1 3 259 # Release clear high
+1 1 0 1 0 1 3 260 # Falling/prepare
+1 1 0 1 0 1 3 261 # Low hold
+1 1 1 1 1 0 3 262 # Rising
+1 1 1 1 1 0 3 263 # High hold
+1 1 1 1 1 0 3 264 # High hold
+1 1 1 1 1 0 3 265 # High hold
+1 1 0 1 1 0 3 266 # Falling/prepare
+1 1 0 1 1 0 3 267 # Low hold
+1 1 1 1 0 1 3 268 # Rising
+1 1 1 1 0 1 3 269 # High hold
+1 1 1 1 0 1 3 270 # High hold
+1 1 1 1 0 1 3 271 # High hold
+1 1 0 1 0 1 3 272 # Falling/prepare
+1 1 0 1 0 1 3 273 # Low hold
+1 1 1 1 1 0 3 274 # Rising
+1 1 1 1 1 0 3 275 # High hold
+1 1 1 1 1 0 3 276 # High hold
+1 1 1 1 1 0 3 277 # High hold
+1 1 0 1 1 0 3 278 # Falling/prepare
+1 1 0 1 1 0 3 279 # Low hold
+1 1 1 1 0 1 3 280 # Rising
+1 1 1 1 0 1 3 281 # High hold
+1 1 1 1 0 1 3 282 # High hold
+1 1 1 1 0 1 3 283 # High hold
+1 1 0 1 0 1 3 284 # Falling/prepare
+1 1 0 1 0 1 3 285 # Low hold
+1 1 1 1 1 0 3 286 # Rising
+1 1 1 1 1 0 3 287 # High hold
+1 1 1 1 1 0 3 288 # High hold
+1 1 1 1 1 0 3 289 # High hold
+1 1 0 1 1 0 3 290 # Falling/prepare
+1 1 0 1 1 0 3 291 # Low hold
+1 1 1 1 0 1 3 292 # Rising
+1 1 1 1 0 1 3 293 # High hold
+1 1 1 1 0 1 3 294 # High hold
+1 1 1 1 0 1 3 295 # High hold
+1 1 0 1 0 1 3 296 # Falling/prepare
+1 1 0 1 0 1 3 297 # Low hold
+1 1 1 1 1 0 3 298 # Rising
+1 1 1 1 1 0 3 299 # High hold
+1 1 1 1 1 0 3 300 # High hold
+1 1 1 1 1 0 3 301 # High hold
+1 1 0 1 1 0 3 302 # Falling/prepare
+1 1 0 1 1 0 3 303 # Low hold
+1 1 1 1 0 1 3 304 # Rising
+1 1 1 1 0 1 3 305 # High hold
+1 1 1 1 0 1 3 306 # High hold
+1 1 1 1 0 1 3 307 # High hold
+1 1 0 1 0 1 3 308 # Falling/prepare
+1 1 0 1 0 1 3 309 # Low hold
+1 1 1 1 1 0 3 310 # Rising
+1 1 1 1 1 0 3 311 # High hold
+1 1 1 1 1 0 3 312 # High hold
+1 1 1 1 1 0 3 313 # High hold
+1 1 0 1 1 0 3 314 # Falling/prepare
+1 1 0 1 1 0 3 315 # Low hold
+1 1 1 1 0 1 3 316 # Rising
+1 1 1 1 0 1 3 317 # High hold
+1 1 1 1 0 1 3 318 # High hold
+1 1 1 1 0 1 3 319 # High hold
+1 1 1 0 0 1 3 320 # Async clear at high
+1 1 1 1 0 1 3 321 # Release clear high
+0 0 0 1 0 1 3 322 # Falling/prepare
+0 0 0 1 0 1 3 323 # Low hold
+0 0 1 1 0 1 3 324 # Rising
+0 0 1 1 0 1 3 325 # High hold
+0 0 1 1 0 1 3 326 # High hold
+0 0 1 1 0 1 3 327 # High hold
+1 0 0 1 0 1 3 328 # Falling/prepare
+1 0 0 1 0 1 3 329 # Low hold
+1 0 1 1 1 0 3 330 # Rising
+1 0 1 1 1 0 3 331 # High hold
+1 0 1 1 1 0 3 332 # High hold
+1 0 1 1 1 0 3 333 # High hold
+1 0 0 1 1 0 3 334 # Falling/prepare
+1 0 0 1 1 0 3 335 # Low hold
+1 0 1 1 1 0 3 336 # Rising
+1 0 1 1 1 0 3 337 # High hold
+1 0 1 1 1 0 3 338 # High hold
+1 0 1 1 1 0 3 339 # High hold
+0 0 0 1 1 0 3 340 # Falling/prepare
+0 0 0 1 1 0 3 341 # Low hold
+0 0 1 1 1 0 3 342 # Rising
+0 0 1 1 1 0 3 343 # High hold
+0 0 1 1 1 0 3 344 # High hold
+0 0 1 1 1 0 3 345 # High hold
+1 1 0 1 1 0 3 346 # Falling/prepare
+1 1 0 1 1 0 3 347 # Low hold
+1 1 1 1 0 1 3 348 # Rising
+1 1 1 1 0 1 3 349 # High hold
+1 1 1 1 0 1 3 350 # High hold
+1 1 1 1 0 1 3 351 # High hold
+1 1 0 1 0 1 3 352 # Falling/prepare
+1 1 0 1 0 1 3 353 # Low hold
+1 1 1 1 1 0 3 354 # Rising
+1 1 1 1 1 0 3 355 # High hold
+1 1 1 1 1 0 3 356 # High hold
+1 1 1 1 1 0 3 357 # High hold
+0 0 0 1 1 0 3 358 # Falling/prepare
+0 0 0 1 1 0 3 359 # Low hold
+0 0 1 1 1 0 3 360 # Rising
+0 0 1 1 1 0 3 361 # High hold
+0 0 1 1 1 0 3 362 # High hold
+0 0 1 1 1 0 3 363 # High hold
+1 0 0 1 1 0 3 364 # Falling/prepare
+1 0 0 1 1 0 3 365 # Low hold
+1 0 1 1 1 0 3 366 # Rising
+1 0 1 1 1 0 3 367 # High hold
+1 0 1 1 1 0 3 368 # High hold
+1 0 1 1 1 0 3 369 # High hold
+0 0 0 1 1 0 3 370 # Falling/prepare
+0 0 0 1 1 0 3 371 # Low hold
+0 0 1 1 1 0 3 372 # Rising
+0 0 1 1 1 0 3 373 # High hold
+0 0 1 1 1 0 3 374 # High hold
+0 0 1 1 1 0 3 375 # High hold
+0 0 0 1 1 0 3 376 # Falling/prepare
+0 0 0 1 1 0 3 377 # Low hold
+0 0 1 1 1 0 3 378 # Rising
+0 0 1 1 1 0 3 379 # High hold
+0 0 1 1 1 0 3 380 # High hold
+0 0 1 1 1 0 3 381 # High hold
+1 1 1 0 0 1 3 382 # Async clear at high
+1 1 1 1 0 1 3 383 # Release clear high
+1 0 0 1 0 1 3 384 # Falling/prepare
+1 0 0 1 0 1 3 385 # Low hold
+1 0 1 1 1 0 3 386 # Rising
+1 0 1 1 1 0 3 387 # High hold
+1 0 1 1 1 0 3 388 # High hold
+1 0 1 1 1 0 3 389 # High hold
+0 1 0 1 1 0 3 390 # Falling/prepare
+0 1 0 1 1 0 3 391 # Low hold
+0 1 1 1 0 1 3 392 # Rising
+0 1 1 1 0 1 3 393 # High hold
+0 1 1 1 0 1 3 394 # High hold
+0 1 1 1 0 1 3 395 # High hold
+1 1 0 1 0 1 3 396 # Falling/prepare
+1 1 0 1 0 1 3 397 # Low hold
+1 1 1 1 1 0 3 398 # Rising
+1 1 1 1 1 0 3 399 # High hold
+1 1 1 1 1 0 3 400 # High hold
+1 1 1 1 1 0 3 401 # High hold
+1 0 0 1 1 0 3 402 # Falling/prepare
+1 0 0 1 1 0 3 403 # Low hold
+1 0 1 1 1 0 3 404 # Rising
+1 0 1 1 1 0 3 405 # High hold
+1 0 1 1 1 0 3 406 # High hold
+1 0 1 1 1 0 3 407 # High hold
+0 1 0 1 1 0 3 408 # Falling/prepare
+0 1 0 1 1 0 3 409 # Low hold
+0 1 1 1 0 1 3 410 # Rising
+0 1 1 1 0 1 3 411 # High hold
+0 1 1 1 0 1 3 412 # High hold
+0 1 1 1 0 1 3 413 # High hold
+1 0 0 1 0 1 3 414 # Falling/prepare
+1 0 0 1 0 1 3 415 # Low hold
+1 0 1 1 1 0 3 416 # Rising
+1 0 1 1 1 0 3 417 # High hold
+1 0 1 1 1 0 3 418 # High hold
+1 0 1 1 1 0 3 419 # High hold
+0 0 0 1 1 0 3 420 # Falling/prepare
+0 0 0 1 1 0 3 421 # Low hold
+0 0 1 1 1 0 3 422 # Rising
+0 0 1 1 1 0 3 423 # High hold
+0 0 1 1 1 0 3 424 # High hold
+0 0 1 1 1 0 3 425 # High hold
+0 1 0 1 1 0 3 426 # Falling/prepare
+0 1 0 1 1 0 3 427 # Low hold
+0 1 1 1 0 1 3 428 # Rising
+0 1 1 1 0 1 3 429 # High hold
+0 1 1 1 0 1 3 430 # High hold
+0 1 1 1 0 1 3 431 # High hold
+1 0 0 1 0 1 3 432 # Falling/prepare
+1 0 0 1 0 1 3 433 # Low hold
+1 0 1 1 1 0 3 434 # Rising
+1 0 1 1 1 0 3 435 # High hold
+1 0 1 1 1 0 3 436 # High hold
+1 0 1 1 1 0 3 437 # High hold
+1 0 0 1 1 0 3 438 # Falling/prepare
+1 0 0 1 1 0 3 439 # Low hold
+1 0 1 1 1 0 3 440 # Rising
+1 0 1 1 1 0 3 441 # High hold
+1 0 1 1 1 0 3 442 # High hold
+1 0 1 1 1 0 3 443 # High hold
+1 1 1 0 0 1 3 444 # Async clear at high
+1 1 1 1 0 1 3 445 # Release clear high
+0 0 0 1 0 1 3 446 # Falling/prepare
+0 0 0 1 0 1 3 447 # Low hold
+0 0 1 1 0 1 3 448 # Rising
+0 0 1 1 0 1 3 449 # High hold
+0 0 1 1 0 1 3 450 # High hold
+0 0 1 1 0 1 3 451 # High hold
+0 1 0 1 0 1 3 452 # Falling/prepare
+0 1 0 1 0 1 3 453 # Low hold
+0 1 1 1 0 1 3 454 # Rising
+0 1 1 1 0 1 3 455 # High hold
+0 1 1 1 0 1 3 456 # High hold
+0 1 1 1 0 1 3 457 # High hold
+1 1 0 1 0 1 3 458 # Falling/prepare
+1 1 0 1 0 1 3 459 # Low hold
+1 1 1 1 1 0 3 460 # Rising
+1 1 1 1 1 0 3 461 # High hold
+1 1 1 1 1 0 3 462 # High hold
+1 1 1 1 1 0 3 463 # High hold
+0 0 0 1 1 0 3 464 # Falling/prepare
+0 0 0 1 1 0 3 465 # Low hold
+0 0 1 1 1 0 3 466 # Rising
+0 0 1 1 1 0 3 467 # High hold
+0 0 1 1 1 0 3 468 # High hold
+0 0 1 1 1 0 3 469 # High hold
+1 1 0 1 1 0 3 470 # Falling/prepare
+1 1 0 1 1 0 3 471 # Low hold
+1 1 1 1 0 1 3 472 # Rising
+1 1 1 1 0 1 3 473 # High hold
+1 1 1 1 0 1 3 474 # High hold
+1 1 1 1 0 1 3 475 # High hold
+0 0 0 1 0 1 3 476 # Falling/prepare
+0 0 0 1 0 1 3 477 # Low hold
+0 0 1 1 0 1 3 478 # Rising
+0 0 1 1 0 1 3 479 # High hold
+0 0 1 1 0 1 3 480 # High hold
+0 0 1 1 0 1 3 481 # High hold
+0 0 0 1 0 1 3 482 # Falling/prepare
+0 0 0 1 0 1 3 483 # Low hold
+0 0 1 1 0 1 3 484 # Rising
+0 0 1 1 0 1 3 485 # High hold
+0 0 1 1 0 1 3 486 # High hold
+0 0 1 1 0 1 3 487 # High hold
+1 0 0 1 0 1 3 488 # Falling/prepare
+1 0 0 1 0 1 3 489 # Low hold
+1 0 1 1 1 0 3 490 # Rising
+1 0 1 1 1 0 3 491 # High hold
+1 0 1 1 1 0 3 492 # High hold
+1 0 1 1 1 0 3 493 # High hold
+1 1 0 1 1 0 3 494 # Falling/prepare
+1 1 0 1 1 0 3 495 # Low hold
+1 1 1 1 0 1 3 496 # Rising
+1 1 1 1 0 1 3 497 # High hold
+1 1 1 1 0 1 3 498 # High hold
+1 1 1 1 0 1 3 499 # High hold
+0 1 0 1 0 1 3 500 # Falling/prepare
+0 1 0 1 0 1 3 501 # Low hold
+0 1 1 1 0 1 3 502 # Rising
+0 1 1 1 0 1 3 503 # High hold
+0 1 1 1 0 1 3 504 # High hold
+0 1 1 1 0 1 3 505 # High hold
+1 1 1 0 0 1 3 506 # Async clear at high
+1 1 1 1 0 1 3 507 # Release clear high
+1 0 0 1 0 1 3 508 # Falling/prepare
+1 0 0 1 0 1 3 509 # Low hold
+1 0 1 1 1 0 3 510 # Rising
+1 0 1 1 1 0 3 511 # High hold
+1 0 1 1 1 0 3 512 # High hold
+1 0 1 1 1 0 3 513 # High hold
+0 0 0 1 1 0 3 514 # Falling/prepare
+0 0 0 1 1 0 3 515 # Low hold
+0 0 1 1 1 0 3 516 # Rising
+0 0 1 1 1 0 3 517 # High hold
+0 0 1 1 1 0 3 518 # High hold
+0 0 1 1 1 0 3 519 # High hold
+0 1 0 1 1 0 3 520 # Falling/prepare
+0 1 0 1 1 0 3 521 # Low hold
+0 1 1 1 0 1 3 522 # Rising
+0 1 1 1 0 1 3 523 # High hold
+0 1 1 1 0 1 3 524 # High hold
+0 1 1 1 0 1 3 525 # High hold
+1 0 0 1 0 1 3 526 # Falling/prepare
+1 0 0 1 0 1 3 527 # Low hold
+1 0 1 1 1 0 3 528 # Rising
+1 0 1 1 1 0 3 529 # High hold
+1 0 1 1 1 0 3 530 # High hold
+1 0 1 1 1 0 3 531 # High hold
+0 0 0 1 1 0 3 532 # Falling/prepare
+0 0 0 1 1 0 3 533 # Low hold
+0 0 1 1 1 0 3 534 # Rising
+0 0 1 1 1 0 3 535 # High hold
+0 0 1 1 1 0 3 536 # High hold
+0 0 1 1 1 0 3 537 # High hold
+1 1 0 1 1 0 3 538 # Falling/prepare
+1 1 0 1 1 0 3 539 # Low hold
+1 1 1 1 0 1 3 540 # Rising
+1 1 1 1 0 1 3 541 # High hold
+1 1 1 1 0 1 3 542 # High hold
+1 1 1 1 0 1 3 543 # High hold
+0 1 0 1 0 1 3 544 # Falling/prepare
+0 1 0 1 0 1 3 545 # Low hold
+0 1 1 1 0 1 3 546 # Rising
+0 1 1 1 0 1 3 547 # High hold
+0 1 1 1 0 1 3 548 # High hold
+0 1 1 1 0 1 3 549 # High hold
+0 0 0 1 0 1 3 550 # Falling/prepare
+0 0 0 1 0 1 3 551 # Low hold
+0 0 1 1 0 1 3 552 # Rising
+0 0 1 1 0 1 3 553 # High hold
+0 0 1 1 0 1 3 554 # High hold
+0 0 1 1 0 1 3 555 # High hold
+1 1 0 1 0 1 3 556 # Falling/prepare
+1 1 0 1 0 1 3 557 # Low hold
+1 1 1 1 1 0 3 558 # Rising
+1 1 1 1 1 0 3 559 # High hold
+1 1 1 1 1 0 3 560 # High hold
+1 1 1 1 1 0 3 561 # High hold
+0 0 0 1 1 0 3 562 # Falling/prepare
+0 0 0 1 1 0 3 563 # Low hold
+0 0 1 1 1 0 3 564 # Rising
+0 0 1 1 1 0 3 565 # High hold
+0 0 1 1 1 0 3 566 # High hold
+0 0 1 1 1 0 3 567 # High hold
+1 1 1 0 0 1 3 568 # Async clear at high
+1 1 1 1 0 1 3 569 # Release clear high
+0 0 0 1 0 1 3 570 # Falling/prepare
+0 0 0 1 0 1 3 571 # Low hold
+0 0 1 1 0 1 3 572 # Rising
+0 0 1 1 0 1 3 573 # High hold
+0 0 1 1 0 1 3 574 # High hold
+0 0 1 1 0 1 3 575 # High hold
+0 0 0 1 0 1 3 576 # Falling/prepare
+0 0 0 1 0 1 3 577 # Low hold
+0 0 1 1 0 1 3 578 # Rising
+0 0 1 1 0 1 3 579 # High hold
+0 0 1 1 0 1 3 580 # High hold
+0 0 1 1 0 1 3 581 # High hold
+0 1 0 1 0 1 3 582 # Falling/prepare
+0 1 0 1 0 1 3 583 # Low hold
+0 1 1 1 0 1 3 584 # Rising
+0 1 1 1 0 1 3 585 # High hold
+0 1 1 1 0 1 3 586 # High hold
+0 1 1 1 0 1 3 587 # High hold
+0 1 0 1 0 1 3 588 # Falling/prepare
+0 1 0 1 0 1 3 589 # Low hold
+0 1 1 1 0 1 3 590 # Rising
+0 1 1 1 0 1 3 591 # High hold
+0 1 1 1 0 1 3 592 # High hold
+0 1 1 1 0 1 3 593 # High hold
+1 0 0 1 0 1 3 594 # Falling/prepare
+1 0 0 1 0 1 3 595 # Low hold
+1 0 1 1 1 0 3 596 # Rising
+1 0 1 1 1 0 3 597 # High hold
+1 0 1 1 1 0 3 598 # High hold
+1 0 1 1 1 0 3 599 # High hold
+0 1 0 1 1 0 3 600 # Falling/prepare
+0 1 0 1 1 0 3 601 # Low hold
+0 1 1 1 0 1 3 602 # Rising
+0 1 1 1 0 1 3 603 # High hold
+0 1 1 1 0 1 3 604 # High hold
+0 1 1 1 0 1 3 605 # High hold
+0 1 0 1 0 1 3 606 # Falling/prepare
+0 1 0 1 0 1 3 607 # Low hold
+0 1 1 1 0 1 3 608 # Rising
+0 1 1 1 0 1 3 609 # High hold
+0 1 1 1 0 1 3 610 # High hold
+0 1 1 1 0 1 3 611 # High hold
+1 0 0 1 0 1 3 612 # Falling/prepare
+1 0 0 1 0 1 3 613 # Low hold
+1 0 1 1 1 0 3 614 # Rising
+1 0 1 1 1 0 3 615 # High hold
+1 0 1 1 1 0 3 616 # High hold
+1 0 1 1 1 0 3 617 # High hold
+0 0 0 1 1 0 3 618 # Falling/prepare
+0 0 0 1 1 0 3 619 # Low hold
+0 0 1 1 1 0 3 620 # Rising
+0 0 1 1 1 0 3 621 # High hold
+0 0 1 1 1 0 3 622 # High hold
+0 0 1 1 1 0 3 623 # High hold
+0 1 1 0 0 1 4 1 # Cold reset
+0 1 1 0 0 1 4 2 # Reset holds
+0 1 1 1 0 1 4 3 # Release reset
+1 1 0 1 0 1 4 4 # Falling/prepare
+1 1 0 1 0 1 4 5 # Low hold
+1 1 1 1 1 0 4 6 # Rising
+1 1 1 1 1 0 4 7 # High hold
+1 1 1 1 1 0 4 8 # High hold
+1 1 1 1 1 0 4 9 # High hold
+1 1 1 0 0 1 4 10 # Async clear at high
+1 1 1 1 0 1 4 11 # Release clear high
+1 1 0 1 0 1 4 12 # Falling/prepare
+1 1 0 1 0 1 4 13 # Low hold
+1 1 1 1 1 0 4 14 # Rising
+1 1 1 1 1 0 4 15 # High hold
+1 1 1 1 1 0 4 16 # High hold
+1 1 1 1 1 0 4 17 # High hold
+1 1 0 1 1 0 4 18 # Falling/prepare
+1 1 0 1 1 0 4 19 # Low hold
+1 1 1 1 0 1 4 20 # Rising
+1 1 1 1 0 1 4 21 # High hold
+1 1 1 1 0 1 4 22 # High hold
+1 1 1 1 0 1 4 23 # High hold
+1 1 0 1 0 1 4 24 # Falling/prepare
+1 1 0 1 0 1 4 25 # Low hold
+1 1 1 1 1 0 4 26 # Rising
+1 1 1 1 1 0 4 27 # High hold
+1 1 1 1 1 0 4 28 # High hold
+1 1 1 1 1 0 4 29 # High hold
+1 1 0 1 1 0 4 30 # Falling/prepare
+1 1 0 1 1 0 4 31 # Low hold
+1 1 1 1 0 1 4 32 # Rising
+1 1 1 1 0 1 4 33 # High hold
+1 1 1 1 0 1 4 34 # High hold
+1 1 1 1 0 1 4 35 # High hold
+1 1 0 1 0 1 4 36 # Falling/prepare
+1 1 0 1 0 1 4 37 # Low hold
+1 1 1 1 1 0 4 38 # Rising
+1 1 1 1 1 0 4 39 # High hold
+1 1 1 1 1 0 4 40 # High hold
+1 1 1 1 1 0 4 41 # High hold
+1 1 0 1 1 0 4 42 # Falling/prepare
+1 1 0 1 1 0 4 43 # Low hold
+1 1 1 1 0 1 4 44 # Rising
+1 1 1 1 0 1 4 45 # High hold
+1 1 1 1 0 1 4 46 # High hold
+1 1 1 1 0 1 4 47 # High hold
+1 1 0 1 0 1 4 48 # Falling/prepare
+1 1 0 1 0 1 4 49 # Low hold
+1 1 1 1 1 0 4 50 # Rising
+1 1 1 1 1 0 4 51 # High hold
+1 1 1 1 1 0 4 52 # High hold
+1 1 1 1 1 0 4 53 # High hold
+1 1 0 1 1 0 4 54 # Falling/prepare
+1 1 0 1 1 0 4 55 # Low hold
+1 1 1 1 0 1 4 56 # Rising
+1 1 1 1 0 1 4 57 # High hold
+1 1 1 1 0 1 4 58 # High hold
+1 1 1 1 0 1 4 59 # High hold
+1 1 0 1 0 1 4 60 # Falling/prepare
+1 1 0 1 0 1 4 61 # Low hold
+1 1 1 1 1 0 4 62 # Rising
+1 1 1 1 1 0 4 63 # High hold
+1 1 1 1 1 0 4 64 # High hold
+1 1 1 1 1 0 4 65 # High hold
+1 1 0 1 1 0 4 66 # Falling/prepare
+1 1 0 1 1 0 4 67 # Low hold
+1 1 1 1 0 1 4 68 # Rising
+1 1 1 1 0 1 4 69 # High hold
+1 1 1 1 0 1 4 70 # High hold
+1 1 1 1 0 1 4 71 # High hold
+1 1 1 0 0 1 4 72 # Async clear at high
+1 1 1 1 0 1 4 73 # Release clear high
+1 1 0 1 0 1 4 74 # Falling/prepare
+1 1 0 1 0 1 4 75 # Low hold
+1 1 1 1 1 0 4 76 # Rising
+1 1 1 1 1 0 4 77 # High hold
+1 1 1 1 1 0 4 78 # High hold
+1 1 1 1 1 0 4 79 # High hold
+1 1 0 1 1 0 4 80 # Falling/prepare
+1 1 0 1 1 0 4 81 # Low hold
+1 1 1 1 0 1 4 82 # Rising
+1 1 1 1 0 1 4 83 # High hold
+1 1 1 1 0 1 4 84 # High hold
+1 1 1 1 0 1 4 85 # High hold
+1 1 0 1 0 1 4 86 # Falling/prepare
+1 1 0 1 0 1 4 87 # Low hold
+1 1 1 1 1 0 4 88 # Rising
+1 1 1 1 1 0 4 89 # High hold
+1 1 1 1 1 0 4 90 # High hold
+1 1 1 1 1 0 4 91 # High hold
+1 1 0 1 1 0 4 92 # Falling/prepare
+1 1 0 1 1 0 4 93 # Low hold
+1 1 1 1 0 1 4 94 # Rising
+1 1 1 1 0 1 4 95 # High hold
+1 1 1 1 0 1 4 96 # High hold
+1 1 1 1 0 1 4 97 # High hold
+1 1 0 1 0 1 4 98 # Falling/prepare
+1 1 0 1 0 1 4 99 # Low hold
+1 1 1 1 1 0 4 100 # Rising
+1 1 1 1 1 0 4 101 # High hold
+1 1 1 1 1 0 4 102 # High hold
+1 1 1 1 1 0 4 103 # High hold
+1 1 0 1 1 0 4 104 # Falling/prepare
+1 1 0 1 1 0 4 105 # Low hold
+1 1 1 1 0 1 4 106 # Rising
+1 1 1 1 0 1 4 107 # High hold
+1 1 1 1 0 1 4 108 # High hold
+1 1 1 1 0 1 4 109 # High hold
+1 1 0 1 0 1 4 110 # Falling/prepare
+1 1 0 1 0 1 4 111 # Low hold
+1 1 1 1 1 0 4 112 # Rising
+1 1 1 1 1 0 4 113 # High hold
+1 1 1 1 1 0 4 114 # High hold
+1 1 1 1 1 0 4 115 # High hold
+1 1 0 1 1 0 4 116 # Falling/prepare
+1 1 0 1 1 0 4 117 # Low hold
+1 1 1 1 0 1 4 118 # Rising
+1 1 1 1 0 1 4 119 # High hold
+1 1 1 1 0 1 4 120 # High hold
+1 1 1 1 0 1 4 121 # High hold
+1 1 0 1 0 1 4 122 # Falling/prepare
+1 1 0 1 0 1 4 123 # Low hold
+1 1 1 1 1 0 4 124 # Rising
+1 1 1 1 1 0 4 125 # High hold
+1 1 1 1 1 0 4 126 # High hold
+1 1 1 1 1 0 4 127 # High hold
+1 1 0 1 1 0 4 128 # Falling/prepare
+1 1 0 1 1 0 4 129 # Low hold
+1 1 1 1 0 1 4 130 # Rising
+1 1 1 1 0 1 4 131 # High hold
+1 1 1 1 0 1 4 132 # High hold
+1 1 1 1 0 1 4 133 # High hold
+1 1 1 0 0 1 4 134 # Async clear at high
+1 1 1 1 0 1 4 135 # Release clear high
+1 1 0 1 0 1 4 136 # Falling/prepare
+1 1 0 1 0 1 4 137 # Low hold
+1 1 1 1 1 0 4 138 # Rising
+1 1 1 1 1 0 4 139 # High hold
+1 1 1 1 1 0 4 140 # High hold
+1 1 1 1 1 0 4 141 # High hold
+1 1 0 1 1 0 4 142 # Falling/prepare
+1 1 0 1 1 0 4 143 # Low hold
+1 1 1 1 0 1 4 144 # Rising
+1 1 1 1 0 1 4 145 # High hold
+1 1 1 1 0 1 4 146 # High hold
+1 1 1 1 0 1 4 147 # High hold
+1 1 0 1 0 1 4 148 # Falling/prepare
+1 1 0 1 0 1 4 149 # Low hold
+1 1 1 1 1 0 4 150 # Rising
+1 1 1 1 1 0 4 151 # High hold
+1 1 1 1 1 0 4 152 # High hold
+1 1 1 1 1 0 4 153 # High hold
+1 1 0 1 1 0 4 154 # Falling/prepare
+1 1 0 1 1 0 4 155 # Low hold
+1 1 1 1 0 1 4 156 # Rising
+1 1 1 1 0 1 4 157 # High hold
+1 1 1 1 0 1 4 158 # High hold
+1 1 1 1 0 1 4 159 # High hold
+1 1 0 1 0 1 4 160 # Falling/prepare
+1 1 0 1 0 1 4 161 # Low hold
+1 1 1 1 1 0 4 162 # Rising
+1 1 1 1 1 0 4 163 # High hold
+1 1 1 1 1 0 4 164 # High hold
+1 1 1 1 1 0 4 165 # High hold
+1 1 0 1 1 0 4 166 # Falling/prepare
+1 1 0 1 1 0 4 167 # Low hold
+1 1 1 1 0 1 4 168 # Rising
+1 1 1 1 0 1 4 169 # High hold
+1 1 1 1 0 1 4 170 # High hold
+1 1 1 1 0 1 4 171 # High hold
+1 1 0 1 0 1 4 172 # Falling/prepare
+1 1 0 1 0 1 4 173 # Low hold
+1 1 1 1 1 0 4 174 # Rising
+1 1 1 1 1 0 4 175 # High hold
+1 1 1 1 1 0 4 176 # High hold
+1 1 1 1 1 0 4 177 # High hold
+1 1 0 1 1 0 4 178 # Falling/prepare
+1 1 0 1 1 0 4 179 # Low hold
+1 1 1 1 0 1 4 180 # Rising
+1 1 1 1 0 1 4 181 # High hold
+1 1 1 1 0 1 4 182 # High hold
+1 1 1 1 0 1 4 183 # High hold
+1 1 0 1 0 1 4 184 # Falling/prepare
+1 1 0 1 0 1 4 185 # Low hold
+1 1 1 1 1 0 4 186 # Rising
+1 1 1 1 1 0 4 187 # High hold
+1 1 1 1 1 0 4 188 # High hold
+1 1 1 1 1 0 4 189 # High hold
+1 1 0 1 1 0 4 190 # Falling/prepare
+1 1 0 1 1 0 4 191 # Low hold
+1 1 1 1 0 1 4 192 # Rising
+1 1 1 1 0 1 4 193 # High hold
+1 1 1 1 0 1 4 194 # High hold
+1 1 1 1 0 1 4 195 # High hold
+1 1 1 0 0 1 4 196 # Async clear at high
+1 1 1 1 0 1 4 197 # Release clear high
+1 1 0 1 0 1 4 198 # Falling/prepare
+1 1 0 1 0 1 4 199 # Low hold
+1 1 1 1 1 0 4 200 # Rising
+1 1 1 1 1 0 4 201 # High hold
+1 1 1 1 1 0 4 202 # High hold
+1 1 1 1 1 0 4 203 # High hold
+1 1 0 1 1 0 4 204 # Falling/prepare
+1 1 0 1 1 0 4 205 # Low hold
+1 1 1 1 0 1 4 206 # Rising
+1 1 1 1 0 1 4 207 # High hold
+1 1 1 1 0 1 4 208 # High hold
+1 1 1 1 0 1 4 209 # High hold
+1 1 0 1 0 1 4 210 # Falling/prepare
+1 1 0 1 0 1 4 211 # Low hold
+1 1 1 1 1 0 4 212 # Rising
+1 1 1 1 1 0 4 213 # High hold
+1 1 1 1 1 0 4 214 # High hold
+1 1 1 1 1 0 4 215 # High hold
+1 1 0 1 1 0 4 216 # Falling/prepare
+1 1 0 1 1 0 4 217 # Low hold
+1 1 1 1 0 1 4 218 # Rising
+1 1 1 1 0 1 4 219 # High hold
+1 1 1 1 0 1 4 220 # High hold
+1 1 1 1 0 1 4 221 # High hold
+1 1 0 1 0 1 4 222 # Falling/prepare
+1 1 0 1 0 1 4 223 # Low hold
+1 1 1 1 1 0 4 224 # Rising
+1 1 1 1 1 0 4 225 # High hold
+1 1 1 1 1 0 4 226 # High hold
+1 1 1 1 1 0 4 227 # High hold
+1 1 0 1 1 0 4 228 # Falling/prepare
+1 1 0 1 1 0 4 229 # Low hold
+1 1 1 1 0 1 4 230 # Rising
+1 1 1 1 0 1 4 231 # High hold
+1 1 1 1 0 1 4 232 # High hold
+1 1 1 1 0 1 4 233 # High hold
+1 1 0 1 0 1 4 234 # Falling/prepare
+1 1 0 1 0 1 4 235 # Low hold
+1 1 1 1 1 0 4 236 # Rising
+1 1 1 1 1 0 4 237 # High hold
+1 1 1 1 1 0 4 238 # High hold
+1 1 1 1 1 0 4 239 # High hold
+1 1 0 1 1 0 4 240 # Falling/prepare
+1 1 0 1 1 0 4 241 # Low hold
+1 1 1 1 0 1 4 242 # Rising
+1 1 1 1 0 1 4 243 # High hold
+1 1 1 1 0 1 4 244 # High hold
+1 1 1 1 0 1 4 245 # High hold
+1 1 0 1 0 1 4 246 # Falling/prepare
+1 1 0 1 0 1 4 247 # Low hold
+1 1 1 1 1 0 4 248 # Rising
+1 1 1 1 1 0 4 249 # High hold
+1 1 1 1 1 0 4 250 # High hold
+1 1 1 1 1 0 4 251 # High hold
+1 1 0 1 1 0 4 252 # Falling/prepare
+1 1 0 1 1 0 4 253 # Low hold
+1 1 1 1 0 1 4 254 # Rising
+1 1 1 1 0 1 4 255 # High hold
+1 1 1 1 0 1 4 256 # High hold
+1 1 1 1 0 1 4 257 # High hold
+1 1 1 0 0 1 4 258 # Async clear at high
+1 1 1 1 0 1 4 259 # Release clear high
+1 1 0 1 0 1 4 260 # Falling/prepare
+1 1 0 1 0 1 4 261 # Low hold
+1 1 1 1 1 0 4 262 # Rising
+1 1 1 1 1 0 4 263 # High hold
+1 1 1 1 1 0 4 264 # High hold
+1 1 1 1 1 0 4 265 # High hold
+1 1 0 1 1 0 4 266 # Falling/prepare
+1 1 0 1 1 0 4 267 # Low hold
+1 1 1 1 0 1 4 268 # Rising
+1 1 1 1 0 1 4 269 # High hold
+1 1 1 1 0 1 4 270 # High hold
+1 1 1 1 0 1 4 271 # High hold
+1 1 0 1 0 1 4 272 # Falling/prepare
+1 1 0 1 0 1 4 273 # Low hold
+1 1 1 1 1 0 4 274 # Rising
+1 1 1 1 1 0 4 275 # High hold
+1 1 1 1 1 0 4 276 # High hold
+1 1 1 1 1 0 4 277 # High hold
+1 1 0 1 1 0 4 278 # Falling/prepare
+1 1 0 1 1 0 4 279 # Low hold
+1 1 1 1 0 1 4 280 # Rising
+1 1 1 1 0 1 4 281 # High hold
+1 1 1 1 0 1 4 282 # High hold
+1 1 1 1 0 1 4 283 # High hold
+1 1 0 1 0 1 4 284 # Falling/prepare
+1 1 0 1 0 1 4 285 # Low hold
+1 1 1 1 1 0 4 286 # Rising
+1 1 1 1 1 0 4 287 # High hold
+1 1 1 1 1 0 4 288 # High hold
+1 1 1 1 1 0 4 289 # High hold
+1 1 0 1 1 0 4 290 # Falling/prepare
+1 1 0 1 1 0 4 291 # Low hold
+1 1 1 1 0 1 4 292 # Rising
+1 1 1 1 0 1 4 293 # High hold
+1 1 1 1 0 1 4 294 # High hold
+1 1 1 1 0 1 4 295 # High hold
+1 1 0 1 0 1 4 296 # Falling/prepare
+1 1 0 1 0 1 4 297 # Low hold
+1 1 1 1 1 0 4 298 # Rising
+1 1 1 1 1 0 4 299 # High hold
+1 1 1 1 1 0 4 300 # High hold
+1 1 1 1 1 0 4 301 # High hold
+1 1 0 1 1 0 4 302 # Falling/prepare
+1 1 0 1 1 0 4 303 # Low hold
+1 1 1 1 0 1 4 304 # Rising
+1 1 1 1 0 1 4 305 # High hold
+1 1 1 1 0 1 4 306 # High hold
+1 1 1 1 0 1 4 307 # High hold
+1 1 0 1 0 1 4 308 # Falling/prepare
+1 1 0 1 0 1 4 309 # Low hold
+1 1 1 1 1 0 4 310 # Rising
+1 1 1 1 1 0 4 311 # High hold
+1 1 1 1 1 0 4 312 # High hold
+1 1 1 1 1 0 4 313 # High hold
+0 0 0 1 1 0 4 314 # Falling/prepare
+0 0 0 1 1 0 4 315 # Low hold
+0 0 1 1 1 0 4 316 # Rising
+0 0 1 1 1 0 4 317 # High hold
+0 0 1 1 1 0 4 318 # High hold
+0 0 1 1 1 0 4 319 # High hold
+1 1 1 0 0 1 4 320 # Async clear at high
+1 1 1 1 0 1 4 321 # Release clear high
+0 0 0 1 0 1 4 322 # Falling/prepare
+0 0 0 1 0 1 4 323 # Low hold
+0 0 1 1 0 1 4 324 # Rising
+0 0 1 1 0 1 4 325 # High hold
+0 0 1 1 0 1 4 326 # High hold
+0 0 1 1 0 1 4 327 # High hold
+1 1 0 1 0 1 4 328 # Falling/prepare
+1 1 0 1 0 1 4 329 # Low hold
+1 1 1 1 1 0 4 330 # Rising
+1 1 1 1 1 0 4 331 # High hold
+1 1 1 1 1 0 4 332 # High hold
+1 1 1 1 1 0 4 333 # High hold
+1 1 0 1 1 0 4 334 # Falling/prepare
+1 1 0 1 1 0 4 335 # Low hold
+1 1 1 1 0 1 4 336 # Rising
+1 1 1 1 0 1 4 337 # High hold
+1 1 1 1 0 1 4 338 # High hold
+1 1 1 1 0 1 4 339 # High hold
+1 1 0 1 0 1 4 340 # Falling/prepare
+1 1 0 1 0 1 4 341 # Low hold
+1 1 1 1 1 0 4 342 # Rising
+1 1 1 1 1 0 4 343 # High hold
+1 1 1 1 1 0 4 344 # High hold
+1 1 1 1 1 0 4 345 # High hold
+1 1 0 1 1 0 4 346 # Falling/prepare
+1 1 0 1 1 0 4 347 # Low hold
+1 1 1 1 0 1 4 348 # Rising
+1 1 1 1 0 1 4 349 # High hold
+1 1 1 1 0 1 4 350 # High hold
+1 1 1 1 0 1 4 351 # High hold
+1 0 0 1 0 1 4 352 # Falling/prepare
+1 0 0 1 0 1 4 353 # Low hold
+1 0 1 1 1 0 4 354 # Rising
+1 0 1 1 1 0 4 355 # High hold
+1 0 1 1 1 0 4 356 # High hold
+1 0 1 1 1 0 4 357 # High hold
+0 0 0 1 1 0 4 358 # Falling/prepare
+0 0 0 1 1 0 4 359 # Low hold
+0 0 1 1 1 0 4 360 # Rising
+0 0 1 1 1 0 4 361 # High hold
+0 0 1 1 1 0 4 362 # High hold
+0 0 1 1 1 0 4 363 # High hold
+0 1 0 1 1 0 4 364 # Falling/prepare
+0 1 0 1 1 0 4 365 # Low hold
+0 1 1 1 0 1 4 366 # Rising
+0 1 1 1 0 1 4 367 # High hold
+0 1 1 1 0 1 4 368 # High hold
+0 1 1 1 0 1 4 369 # High hold
+0 1 0 1 0 1 4 370 # Falling/prepare
+0 1 0 1 0 1 4 371 # Low hold
+0 1 1 1 0 1 4 372 # Rising
+0 1 1 1 0 1 4 373 # High hold
+0 1 1 1 0 1 4 374 # High hold
+0 1 1 1 0 1 4 375 # High hold
+1 1 0 1 0 1 4 376 # Falling/prepare
+1 1 0 1 0 1 4 377 # Low hold
+1 1 1 1 1 0 4 378 # Rising
+1 1 1 1 1 0 4 379 # High hold
+1 1 1 1 1 0 4 380 # High hold
+1 1 1 1 1 0 4 381 # High hold
+1 1 1 0 0 1 4 382 # Async clear at high
+1 1 1 1 0 1 4 383 # Release clear high
+1 0 0 1 0 1 4 384 # Falling/prepare
+1 0 0 1 0 1 4 385 # Low hold
+1 0 1 1 1 0 4 386 # Rising
+1 0 1 1 1 0 4 387 # High hold
+1 0 1 1 1 0 4 388 # High hold
+1 0 1 1 1 0 4 389 # High hold
+0 1 0 1 1 0 4 390 # Falling/prepare
+0 1 0 1 1 0 4 391 # Low hold
+0 1 1 1 0 1 4 392 # Rising
+0 1 1 1 0 1 4 393 # High hold
+0 1 1 1 0 1 4 394 # High hold
+0 1 1 1 0 1 4 395 # High hold
+0 0 0 1 0 1 4 396 # Falling/prepare
+0 0 0 1 0 1 4 397 # Low hold
+0 0 1 1 0 1 4 398 # Rising
+0 0 1 1 0 1 4 399 # High hold
+0 0 1 1 0 1 4 400 # High hold
+0 0 1 1 0 1 4 401 # High hold
+0 0 0 1 0 1 4 402 # Falling/prepare
+0 0 0 1 0 1 4 403 # Low hold
+0 0 1 1 0 1 4 404 # Rising
+0 0 1 1 0 1 4 405 # High hold
+0 0 1 1 0 1 4 406 # High hold
+0 0 1 1 0 1 4 407 # High hold
+0 1 0 1 0 1 4 408 # Falling/prepare
+0 1 0 1 0 1 4 409 # Low hold
+0 1 1 1 0 1 4 410 # Rising
+0 1 1 1 0 1 4 411 # High hold
+0 1 1 1 0 1 4 412 # High hold
+0 1 1 1 0 1 4 413 # High hold
+1 1 0 1 0 1 4 414 # Falling/prepare
+1 1 0 1 0 1 4 415 # Low hold
+1 1 1 1 1 0 4 416 # Rising
+1 1 1 1 1 0 4 417 # High hold
+1 1 1 1 1 0 4 418 # High hold
+1 1 1 1 1 0 4 419 # High hold
+0 0 0 1 1 0 4 420 # Falling/prepare
+0 0 0 1 1 0 4 421 # Low hold
+0 0 1 1 1 0 4 422 # Rising
+0 0 1 1 1 0 4 423 # High hold
+0 0 1 1 1 0 4 424 # High hold
+0 0 1 1 1 0 4 425 # High hold
+1 1 0 1 1 0 4 426 # Falling/prepare
+1 1 0 1 1 0 4 427 # Low hold
+1 1 1 1 0 1 4 428 # Rising
+1 1 1 1 0 1 4 429 # High hold
+1 1 1 1 0 1 4 430 # High hold
+1 1 1 1 0 1 4 431 # High hold
+0 1 0 1 0 1 4 432 # Falling/prepare
+0 1 0 1 0 1 4 433 # Low hold
+0 1 1 1 0 1 4 434 # Rising
+0 1 1 1 0 1 4 435 # High hold
+0 1 1 1 0 1 4 436 # High hold
+0 1 1 1 0 1 4 437 # High hold
+0 1 0 1 0 1 4 438 # Falling/prepare
+0 1 0 1 0 1 4 439 # Low hold
+0 1 1 1 0 1 4 440 # Rising
+0 1 1 1 0 1 4 441 # High hold
+0 1 1 1 0 1 4 442 # High hold
+0 1 1 1 0 1 4 443 # High hold
+1 1 1 0 0 1 4 444 # Async clear at high
+1 1 1 1 0 1 4 445 # Release clear high
+1 1 0 1 0 1 4 446 # Falling/prepare
+1 1 0 1 0 1 4 447 # Low hold
+1 1 1 1 1 0 4 448 # Rising
+1 1 1 1 1 0 4 449 # High hold
+1 1 1 1 1 0 4 450 # High hold
+1 1 1 1 1 0 4 451 # High hold
+1 0 0 1 1 0 4 452 # Falling/prepare
+1 0 0 1 1 0 4 453 # Low hold
+1 0 1 1 1 0 4 454 # Rising
+1 0 1 1 1 0 4 455 # High hold
+1 0 1 1 1 0 4 456 # High hold
+1 0 1 1 1 0 4 457 # High hold
+1 0 0 1 1 0 4 458 # Falling/prepare
+1 0 0 1 1 0 4 459 # Low hold
+1 0 1 1 1 0 4 460 # Rising
+1 0 1 1 1 0 4 461 # High hold
+1 0 1 1 1 0 4 462 # High hold
+1 0 1 1 1 0 4 463 # High hold
+0 1 0 1 1 0 4 464 # Falling/prepare
+0 1 0 1 1 0 4 465 # Low hold
+0 1 1 1 0 1 4 466 # Rising
+0 1 1 1 0 1 4 467 # High hold
+0 1 1 1 0 1 4 468 # High hold
+0 1 1 1 0 1 4 469 # High hold
+0 0 0 1 0 1 4 470 # Falling/prepare
+0 0 0 1 0 1 4 471 # Low hold
+0 0 1 1 0 1 4 472 # Rising
+0 0 1 1 0 1 4 473 # High hold
+0 0 1 1 0 1 4 474 # High hold
+0 0 1 1 0 1 4 475 # High hold
+1 0 0 1 0 1 4 476 # Falling/prepare
+1 0 0 1 0 1 4 477 # Low hold
+1 0 1 1 1 0 4 478 # Rising
+1 0 1 1 1 0 4 479 # High hold
+1 0 1 1 1 0 4 480 # High hold
+1 0 1 1 1 0 4 481 # High hold
+1 0 0 1 1 0 4 482 # Falling/prepare
+1 0 0 1 1 0 4 483 # Low hold
+1 0 1 1 1 0 4 484 # Rising
+1 0 1 1 1 0 4 485 # High hold
+1 0 1 1 1 0 4 486 # High hold
+1 0 1 1 1 0 4 487 # High hold
+0 1 0 1 1 0 4 488 # Falling/prepare
+0 1 0 1 1 0 4 489 # Low hold
+0 1 1 1 0 1 4 490 # Rising
+0 1 1 1 0 1 4 491 # High hold
+0 1 1 1 0 1 4 492 # High hold
+0 1 1 1 0 1 4 493 # High hold
+0 0 0 1 0 1 4 494 # Falling/prepare
+0 0 0 1 0 1 4 495 # Low hold
+0 0 1 1 0 1 4 496 # Rising
+0 0 1 1 0 1 4 497 # High hold
+0 0 1 1 0 1 4 498 # High hold
+0 0 1 1 0 1 4 499 # High hold
+1 0 0 1 0 1 4 500 # Falling/prepare
+1 0 0 1 0 1 4 501 # Low hold
+1 0 1 1 1 0 4 502 # Rising
+1 0 1 1 1 0 4 503 # High hold
+1 0 1 1 1 0 4 504 # High hold
+1 0 1 1 1 0 4 505 # High hold
+1 1 1 0 0 1 4 506 # Async clear at high
+1 1 1 1 0 1 4 507 # Release clear high
+0 1 0 1 0 1 4 508 # Falling/prepare
+0 1 0 1 0 1 4 509 # Low hold
+0 1 1 1 0 1 4 510 # Rising
+0 1 1 1 0 1 4 511 # High hold
+0 1 1 1 0 1 4 512 # High hold
+0 1 1 1 0 1 4 513 # High hold
+1 1 0 1 0 1 4 514 # Falling/prepare
+1 1 0 1 0 1 4 515 # Low hold
+1 1 1 1 1 0 4 516 # Rising
+1 1 1 1 1 0 4 517 # High hold
+1 1 1 1 1 0 4 518 # High hold
+1 1 1 1 1 0 4 519 # High hold
+0 0 0 1 1 0 4 520 # Falling/prepare
+0 0 0 1 1 0 4 521 # Low hold
+0 0 1 1 1 0 4 522 # Rising
+0 0 1 1 1 0 4 523 # High hold
+0 0 1 1 1 0 4 524 # High hold
+0 0 1 1 1 0 4 525 # High hold
+1 0 0 1 1 0 4 526 # Falling/prepare
+1 0 0 1 1 0 4 527 # Low hold
+1 0 1 1 1 0 4 528 # Rising
+1 0 1 1 1 0 4 529 # High hold
+1 0 1 1 1 0 4 530 # High hold
+1 0 1 1 1 0 4 531 # High hold
+1 1 0 1 1 0 4 532 # Falling/prepare
+1 1 0 1 1 0 4 533 # Low hold
+1 1 1 1 0 1 4 534 # Rising
+1 1 1 1 0 1 4 535 # High hold
+1 1 1 1 0 1 4 536 # High hold
+1 1 1 1 0 1 4 537 # High hold
+0 1 0 1 0 1 4 538 # Falling/prepare
+0 1 0 1 0 1 4 539 # Low hold
+0 1 1 1 0 1 4 540 # Rising
+0 1 1 1 0 1 4 541 # High hold
+0 1 1 1 0 1 4 542 # High hold
+0 1 1 1 0 1 4 543 # High hold
+0 1 0 1 0 1 4 544 # Falling/prepare
+0 1 0 1 0 1 4 545 # Low hold
+0 1 1 1 0 1 4 546 # Rising
+0 1 1 1 0 1 4 547 # High hold
+0 1 1 1 0 1 4 548 # High hold
+0 1 1 1 0 1 4 549 # High hold
+1 0 0 1 0 1 4 550 # Falling/prepare
+1 0 0 1 0 1 4 551 # Low hold
+1 0 1 1 1 0 4 552 # Rising
+1 0 1 1 1 0 4 553 # High hold
+1 0 1 1 1 0 4 554 # High hold
+1 0 1 1 1 0 4 555 # High hold
+0 1 0 1 1 0 4 556 # Falling/prepare
+0 1 0 1 1 0 4 557 # Low hold
+0 1 1 1 0 1 4 558 # Rising
+0 1 1 1 0 1 4 559 # High hold
+0 1 1 1 0 1 4 560 # High hold
+0 1 1 1 0 1 4 561 # High hold
+1 1 0 1 0 1 4 562 # Falling/prepare
+1 1 0 1 0 1 4 563 # Low hold
+1 1 1 1 1 0 4 564 # Rising
+1 1 1 1 1 0 4 565 # High hold
+1 1 1 1 1 0 4 566 # High hold
+1 1 1 1 1 0 4 567 # High hold
+1 1 1 0 0 1 4 568 # Async clear at high
+1 1 1 1 0 1 4 569 # Release clear high
+0 0 0 1 0 1 4 570 # Falling/prepare
+0 0 0 1 0 1 4 571 # Low hold
+0 0 1 1 0 1 4 572 # Rising
+0 0 1 1 0 1 4 573 # High hold
+0 0 1 1 0 1 4 574 # High hold
+0 0 1 1 0 1 4 575 # High hold
+1 0 0 1 0 1 4 576 # Falling/prepare
+1 0 0 1 0 1 4 577 # Low hold
+1 0 1 1 1 0 4 578 # Rising
+1 0 1 1 1 0 4 579 # High hold
+1 0 1 1 1 0 4 580 # High hold
+1 0 1 1 1 0 4 581 # High hold
+0 1 0 1 1 0 4 582 # Falling/prepare
+0 1 0 1 1 0 4 583 # Low hold
+0 1 1 1 0 1 4 584 # Rising
+0 1 1 1 0 1 4 585 # High hold
+0 1 1 1 0 1 4 586 # High hold
+0 1 1 1 0 1 4 587 # High hold
+0 1 0 1 0 1 4 588 # Falling/prepare
+0 1 0 1 0 1 4 589 # Low hold
+0 1 1 1 0 1 4 590 # Rising
+0 1 1 1 0 1 4 591 # High hold
+0 1 1 1 0 1 4 592 # High hold
+0 1 1 1 0 1 4 593 # High hold
+1 1 0 1 0 1 4 594 # Falling/prepare
+1 1 0 1 0 1 4 595 # Low hold
+1 1 1 1 1 0 4 596 # Rising
+1 1 1 1 1 0 4 597 # High hold
+1 1 1 1 1 0 4 598 # High hold
+1 1 1 1 1 0 4 599 # High hold
+1 1 0 1 1 0 4 600 # Falling/prepare
+1 1 0 1 1 0 4 601 # Low hold
+1 1 1 1 0 1 4 602 # Rising
+1 1 1 1 0 1 4 603 # High hold
+1 1 1 1 0 1 4 604 # High hold
+1 1 1 1 0 1 4 605 # High hold
+0 1 0 1 0 1 4 606 # Falling/prepare
+0 1 0 1 0 1 4 607 # Low hold
+0 1 1 1 0 1 4 608 # Rising
+0 1 1 1 0 1 4 609 # High hold
+0 1 1 1 0 1 4 610 # High hold
+0 1 1 1 0 1 4 611 # High hold
+1 0 0 1 0 1 4 612 # Falling/prepare
+1 0 0 1 0 1 4 613 # Low hold
+1 0 1 1 1 0 4 614 # Rising
+1 0 1 1 1 0 4 615 # High hold
+1 0 1 1 1 0 4 616 # High hold
+1 0 1 1 1 0 4 617 # High hold
+0 1 0 1 1 0 4 618 # Falling/prepare
+0 1 0 1 1 0 4 619 # Low hold
+0 1 1 1 0 1 4 620 # Rising
+0 1 1 1 0 1 4 621 # High hold
+0 1 1 1 0 1 4 622 # High hold
+0 1 1 1 0 1 4 623 # High hold
+1 0 0 0 0 1 5 1 # Cold reset
+1 0 0 0 0 1 5 2 # Reset holds
+1 0 0 1 0 1 5 3 # Release reset
+1 1 0 1 0 1 5 4 # Falling/prepare
+1 1 0 1 0 1 5 5 # Low hold
+1 1 1 1 1 0 5 6 # Rising
+1 1 1 1 1 0 5 7 # High hold
+1 1 1 1 1 0 5 8 # High hold
+1 1 1 1 1 0 5 9 # High hold
+1 1 1 0 0 1 5 10 # Async clear at high
+1 1 1 1 0 1 5 11 # Release clear high
+1 1 0 1 0 1 5 12 # Falling/prepare
+1 1 0 1 0 1 5 13 # Low hold
+1 1 1 1 1 0 5 14 # Rising
+1 1 1 1 1 0 5 15 # High hold
+1 1 1 1 1 0 5 16 # High hold
+1 1 1 1 1 0 5 17 # High hold
+1 1 0 1 1 0 5 18 # Falling/prepare
+1 1 0 1 1 0 5 19 # Low hold
+1 1 1 1 0 1 5 20 # Rising
+1 1 1 1 0 1 5 21 # High hold
+1 1 1 1 0 1 5 22 # High hold
+1 1 1 1 0 1 5 23 # High hold
+1 1 0 1 0 1 5 24 # Falling/prepare
+1 1 0 1 0 1 5 25 # Low hold
+1 1 1 1 1 0 5 26 # Rising
+1 1 1 1 1 0 5 27 # High hold
+1 1 1 1 1 0 5 28 # High hold
+1 1 1 1 1 0 5 29 # High hold
+1 1 0 1 1 0 5 30 # Falling/prepare
+1 1 0 1 1 0 5 31 # Low hold
+1 1 1 1 0 1 5 32 # Rising
+1 1 1 1 0 1 5 33 # High hold
+1 1 1 1 0 1 5 34 # High hold
+1 1 1 1 0 1 5 35 # High hold
+1 1 0 1 0 1 5 36 # Falling/prepare
+1 1 0 1 0 1 5 37 # Low hold
+1 1 1 1 1 0 5 38 # Rising
+1 1 1 1 1 0 5 39 # High hold
+1 1 1 1 1 0 5 40 # High hold
+1 1 1 1 1 0 5 41 # High hold
+1 1 0 1 1 0 5 42 # Falling/prepare
+1 1 0 1 1 0 5 43 # Low hold
+1 1 1 1 0 1 5 44 # Rising
+1 1 1 1 0 1 5 45 # High hold
+1 1 1 1 0 1 5 46 # High hold
+1 1 1 1 0 1 5 47 # High hold
+1 1 0 1 0 1 5 48 # Falling/prepare
+1 1 0 1 0 1 5 49 # Low hold
+1 1 1 1 1 0 5 50 # Rising
+1 1 1 1 1 0 5 51 # High hold
+1 1 1 1 1 0 5 52 # High hold
+1 1 1 1 1 0 5 53 # High hold
+1 1 0 1 1 0 5 54 # Falling/prepare
+1 1 0 1 1 0 5 55 # Low hold
+1 1 1 1 0 1 5 56 # Rising
+1 1 1 1 0 1 5 57 # High hold
+1 1 1 1 0 1 5 58 # High hold
+1 1 1 1 0 1 5 59 # High hold
+1 1 0 1 0 1 5 60 # Falling/prepare
+1 1 0 1 0 1 5 61 # Low hold
+1 1 1 1 1 0 5 62 # Rising
+1 1 1 1 1 0 5 63 # High hold
+1 1 1 1 1 0 5 64 # High hold
+1 1 1 1 1 0 5 65 # High hold
+1 1 0 1 1 0 5 66 # Falling/prepare
+1 1 0 1 1 0 5 67 # Low hold
+1 1 1 1 0 1 5 68 # Rising
+1 1 1 1 0 1 5 69 # High hold
+1 1 1 1 0 1 5 70 # High hold
+1 1 1 1 0 1 5 71 # High hold
+1 1 1 0 0 1 5 72 # Async clear at high
+1 1 1 1 0 1 5 73 # Release clear high
+1 1 0 1 0 1 5 74 # Falling/prepare
+1 1 0 1 0 1 5 75 # Low hold
+1 1 1 1 1 0 5 76 # Rising
+1 1 1 1 1 0 5 77 # High hold
+1 1 1 1 1 0 5 78 # High hold
+1 1 1 1 1 0 5 79 # High hold
+1 1 0 1 1 0 5 80 # Falling/prepare
+1 1 0 1 1 0 5 81 # Low hold
+1 1 1 1 0 1 5 82 # Rising
+1 1 1 1 0 1 5 83 # High hold
+1 1 1 1 0 1 5 84 # High hold
+1 1 1 1 0 1 5 85 # High hold
+1 1 0 1 0 1 5 86 # Falling/prepare
+1 1 0 1 0 1 5 87 # Low hold
+1 1 1 1 1 0 5 88 # Rising
+1 1 1 1 1 0 5 89 # High hold
+1 1 1 1 1 0 5 90 # High hold
+1 1 1 1 1 0 5 91 # High hold
+1 1 0 1 1 0 5 92 # Falling/prepare
+1 1 0 1 1 0 5 93 # Low hold
+1 1 1 1 0 1 5 94 # Rising
+1 1 1 1 0 1 5 95 # High hold
+1 1 1 1 0 1 5 96 # High hold
+1 1 1 1 0 1 5 97 # High hold
+1 1 0 1 0 1 5 98 # Falling/prepare
+1 1 0 1 0 1 5 99 # Low hold
+1 1 1 1 1 0 5 100 # Rising
+1 1 1 1 1 0 5 101 # High hold
+1 1 1 1 1 0 5 102 # High hold
+1 1 1 1 1 0 5 103 # High hold
+1 1 0 1 1 0 5 104 # Falling/prepare
+1 1 0 1 1 0 5 105 # Low hold
+1 1 1 1 0 1 5 106 # Rising
+1 1 1 1 0 1 5 107 # High hold
+1 1 1 1 0 1 5 108 # High hold
+1 1 1 1 0 1 5 109 # High hold
+1 1 0 1 0 1 5 110 # Falling/prepare
+1 1 0 1 0 1 5 111 # Low hold
+1 1 1 1 1 0 5 112 # Rising
+1 1 1 1 1 0 5 113 # High hold
+1 1 1 1 1 0 5 114 # High hold
+1 1 1 1 1 0 5 115 # High hold
+1 1 0 1 1 0 5 116 # Falling/prepare
+1 1 0 1 1 0 5 117 # Low hold
+1 1 1 1 0 1 5 118 # Rising
+1 1 1 1 0 1 5 119 # High hold
+1 1 1 1 0 1 5 120 # High hold
+1 1 1 1 0 1 5 121 # High hold
+1 1 0 1 0 1 5 122 # Falling/prepare
+1 1 0 1 0 1 5 123 # Low hold
+1 1 1 1 1 0 5 124 # Rising
+1 1 1 1 1 0 5 125 # High hold
+1 1 1 1 1 0 5 126 # High hold
+1 1 1 1 1 0 5 127 # High hold
+1 1 0 1 1 0 5 128 # Falling/prepare
+1 1 0 1 1 0 5 129 # Low hold
+1 1 1 1 0 1 5 130 # Rising
+1 1 1 1 0 1 5 131 # High hold
+1 1 1 1 0 1 5 132 # High hold
+1 1 1 1 0 1 5 133 # High hold
+1 1 1 0 0 1 5 134 # Async clear at high
+1 1 1 1 0 1 5 135 # Release clear high
+1 1 0 1 0 1 5 136 # Falling/prepare
+1 1 0 1 0 1 5 137 # Low hold
+1 1 1 1 1 0 5 138 # Rising
+1 1 1 1 1 0 5 139 # High hold
+1 1 1 1 1 0 5 140 # High hold
+1 1 1 1 1 0 5 141 # High hold
+1 1 0 1 1 0 5 142 # Falling/prepare
+1 1 0 1 1 0 5 143 # Low hold
+1 1 1 1 0 1 5 144 # Rising
+1 1 1 1 0 1 5 145 # High hold
+1 1 1 1 0 1 5 146 # High hold
+1 1 1 1 0 1 5 147 # High hold
+1 1 0 1 0 1 5 148 # Falling/prepare
+1 1 0 1 0 1 5 149 # Low hold
+1 1 1 1 1 0 5 150 # Rising
+1 1 1 1 1 0 5 151 # High hold
+1 1 1 1 1 0 5 152 # High hold
+1 1 1 1 1 0 5 153 # High hold
+1 1 0 1 1 0 5 154 # Falling/prepare
+1 1 0 1 1 0 5 155 # Low hold
+1 1 1 1 0 1 5 156 # Rising
+1 1 1 1 0 1 5 157 # High hold
+1 1 1 1 0 1 5 158 # High hold
+1 1 1 1 0 1 5 159 # High hold
+1 1 0 1 0 1 5 160 # Falling/prepare
+1 1 0 1 0 1 5 161 # Low hold
+1 1 1 1 1 0 5 162 # Rising
+1 1 1 1 1 0 5 163 # High hold
+1 1 1 1 1 0 5 164 # High hold
+1 1 1 1 1 0 5 165 # High hold
+1 1 0 1 1 0 5 166 # Falling/prepare
+1 1 0 1 1 0 5 167 # Low hold
+1 1 1 1 0 1 5 168 # Rising
+1 1 1 1 0 1 5 169 # High hold
+1 1 1 1 0 1 5 170 # High hold
+1 1 1 1 0 1 5 171 # High hold
+1 1 0 1 0 1 5 172 # Falling/prepare
+1 1 0 1 0 1 5 173 # Low hold
+1 1 1 1 1 0 5 174 # Rising
+1 1 1 1 1 0 5 175 # High hold
+1 1 1 1 1 0 5 176 # High hold
+1 1 1 1 1 0 5 177 # High hold
+1 1 0 1 1 0 5 178 # Falling/prepare
+1 1 0 1 1 0 5 179 # Low hold
+1 1 1 1 0 1 5 180 # Rising
+1 1 1 1 0 1 5 181 # High hold
+1 1 1 1 0 1 5 182 # High hold
+1 1 1 1 0 1 5 183 # High hold
+1 1 0 1 0 1 5 184 # Falling/prepare
+1 1 0 1 0 1 5 185 # Low hold
+1 1 1 1 1 0 5 186 # Rising
+1 1 1 1 1 0 5 187 # High hold
+1 1 1 1 1 0 5 188 # High hold
+1 1 1 1 1 0 5 189 # High hold
+1 1 0 1 1 0 5 190 # Falling/prepare
+1 1 0 1 1 0 5 191 # Low hold
+1 1 1 1 0 1 5 192 # Rising
+1 1 1 1 0 1 5 193 # High hold
+1 1 1 1 0 1 5 194 # High hold
+1 1 1 1 0 1 5 195 # High hold
+1 1 1 0 0 1 5 196 # Async clear at high
+1 1 1 1 0 1 5 197 # Release clear high
+1 1 0 1 0 1 5 198 # Falling/prepare
+1 1 0 1 0 1 5 199 # Low hold
+1 1 1 1 1 0 5 200 # Rising
+1 1 1 1 1 0 5 201 # High hold
+1 1 1 1 1 0 5 202 # High hold
+1 1 1 1 1 0 5 203 # High hold
+1 1 0 1 1 0 5 204 # Falling/prepare
+1 1 0 1 1 0 5 205 # Low hold
+1 1 1 1 0 1 5 206 # Rising
+1 1 1 1 0 1 5 207 # High hold
+1 1 1 1 0 1 5 208 # High hold
+1 1 1 1 0 1 5 209 # High hold
+1 1 0 1 0 1 5 210 # Falling/prepare
+1 1 0 1 0 1 5 211 # Low hold
+1 1 1 1 1 0 5 212 # Rising
+1 1 1 1 1 0 5 213 # High hold
+1 1 1 1 1 0 5 214 # High hold
+1 1 1 1 1 0 5 215 # High hold
+1 1 0 1 1 0 5 216 # Falling/prepare
+1 1 0 1 1 0 5 217 # Low hold
+1 1 1 1 0 1 5 218 # Rising
+1 1 1 1 0 1 5 219 # High hold
+1 1 1 1 0 1 5 220 # High hold
+1 1 1 1 0 1 5 221 # High hold
+1 1 0 1 0 1 5 222 # Falling/prepare
+1 1 0 1 0 1 5 223 # Low hold
+1 1 1 1 1 0 5 224 # Rising
+1 1 1 1 1 0 5 225 # High hold
+1 1 1 1 1 0 5 226 # High hold
+1 1 1 1 1 0 5 227 # High hold
+1 1 0 1 1 0 5 228 # Falling/prepare
+1 1 0 1 1 0 5 229 # Low hold
+1 1 1 1 0 1 5 230 # Rising
+1 1 1 1 0 1 5 231 # High hold
+1 1 1 1 0 1 5 232 # High hold
+1 1 1 1 0 1 5 233 # High hold
+1 1 0 1 0 1 5 234 # Falling/prepare
+1 1 0 1 0 1 5 235 # Low hold
+1 1 1 1 1 0 5 236 # Rising
+1 1 1 1 1 0 5 237 # High hold
+1 1 1 1 1 0 5 238 # High hold
+1 1 1 1 1 0 5 239 # High hold
+1 1 0 1 1 0 5 240 # Falling/prepare
+1 1 0 1 1 0 5 241 # Low hold
+1 1 1 1 0 1 5 242 # Rising
+1 1 1 1 0 1 5 243 # High hold
+1 1 1 1 0 1 5 244 # High hold
+1 1 1 1 0 1 5 245 # High hold
+1 1 0 1 0 1 5 246 # Falling/prepare
+1 1 0 1 0 1 5 247 # Low hold
+1 1 1 1 1 0 5 248 # Rising
+1 1 1 1 1 0 5 249 # High hold
+1 1 1 1 1 0 5 250 # High hold
+1 1 1 1 1 0 5 251 # High hold
+1 1 0 1 1 0 5 252 # Falling/prepare
+1 1 0 1 1 0 5 253 # Low hold
+1 1 1 1 0 1 5 254 # Rising
+1 1 1 1 0 1 5 255 # High hold
+1 1 1 1 0 1 5 256 # High hold
+1 1 1 1 0 1 5 257 # High hold
+1 1 1 0 0 1 5 258 # Async clear at high
+1 1 1 1 0 1 5 259 # Release clear high
+1 1 0 1 0 1 5 260 # Falling/prepare
+1 1 0 1 0 1 5 261 # Low hold
+1 1 1 1 1 0 5 262 # Rising
+1 1 1 1 1 0 5 263 # High hold
+1 1 1 1 1 0 5 264 # High hold
+1 1 1 1 1 0 5 265 # High hold
+1 1 0 1 1 0 5 266 # Falling/prepare
+1 1 0 1 1 0 5 267 # Low hold
+1 1 1 1 0 1 5 268 # Rising
+1 1 1 1 0 1 5 269 # High hold
+1 1 1 1 0 1 5 270 # High hold
+1 1 1 1 0 1 5 271 # High hold
+1 1 0 1 0 1 5 272 # Falling/prepare
+1 1 0 1 0 1 5 273 # Low hold
+1 1 1 1 1 0 5 274 # Rising
+1 1 1 1 1 0 5 275 # High hold
+1 1 1 1 1 0 5 276 # High hold
+1 1 1 1 1 0 5 277 # High hold
+1 1 0 1 1 0 5 278 # Falling/prepare
+1 1 0 1 1 0 5 279 # Low hold
+1 1 1 1 0 1 5 280 # Rising
+1 1 1 1 0 1 5 281 # High hold
+1 1 1 1 0 1 5 282 # High hold
+1 1 1 1 0 1 5 283 # High hold
+1 1 0 1 0 1 5 284 # Falling/prepare
+1 1 0 1 0 1 5 285 # Low hold
+1 1 1 1 1 0 5 286 # Rising
+1 1 1 1 1 0 5 287 # High hold
+1 1 1 1 1 0 5 288 # High hold
+1 1 1 1 1 0 5 289 # High hold
+1 1 0 1 1 0 5 290 # Falling/prepare
+1 1 0 1 1 0 5 291 # Low hold
+1 1 1 1 0 1 5 292 # Rising
+1 1 1 1 0 1 5 293 # High hold
+1 1 1 1 0 1 5 294 # High hold
+1 1 1 1 0 1 5 295 # High hold
+1 1 0 1 0 1 5 296 # Falling/prepare
+1 1 0 1 0 1 5 297 # Low hold
+1 1 1 1 1 0 5 298 # Rising
+1 1 1 1 1 0 5 299 # High hold
+1 1 1 1 1 0 5 300 # High hold
+1 1 1 1 1 0 5 301 # High hold
+1 1 0 1 1 0 5 302 # Falling/prepare
+1 1 0 1 1 0 5 303 # Low hold
+1 1 1 1 0 1 5 304 # Rising
+1 1 1 1 0 1 5 305 # High hold
+1 1 1 1 0 1 5 306 # High hold
+1 1 1 1 0 1 5 307 # High hold
+1 1 0 1 0 1 5 308 # Falling/prepare
+1 1 0 1 0 1 5 309 # Low hold
+1 1 1 1 1 0 5 310 # Rising
+1 1 1 1 1 0 5 311 # High hold
+1 1 1 1 1 0 5 312 # High hold
+1 1 1 1 1 0 5 313 # High hold
+1 0 0 1 1 0 5 314 # Falling/prepare
+1 0 0 1 1 0 5 315 # Low hold
+1 0 1 1 1 0 5 316 # Rising
+1 0 1 1 1 0 5 317 # High hold
+1 0 1 1 1 0 5 318 # High hold
+1 0 1 1 1 0 5 319 # High hold
+1 1 1 0 0 1 5 320 # Async clear at high
+1 1 1 1 0 1 5 321 # Release clear high
+0 0 0 1 0 1 5 322 # Falling/prepare
+0 0 0 1 0 1 5 323 # Low hold
+0 0 1 1 0 1 5 324 # Rising
+0 0 1 1 0 1 5 325 # High hold
+0 0 1 1 0 1 5 326 # High hold
+0 0 1 1 0 1 5 327 # High hold
+1 0 0 1 0 1 5 328 # Falling/prepare
+1 0 0 1 0 1 5 329 # Low hold
+1 0 1 1 1 0 5 330 # Rising
+1 0 1 1 1 0 5 331 # High hold
+1 0 1 1 1 0 5 332 # High hold
+1 0 1 1 1 0 5 333 # High hold
+0 0 0 1 1 0 5 334 # Falling/prepare
+0 0 0 1 1 0 5 335 # Low hold
+0 0 1 1 1 0 5 336 # Rising
+0 0 1 1 1 0 5 337 # High hold
+0 0 1 1 1 0 5 338 # High hold
+0 0 1 1 1 0 5 339 # High hold
+1 0 0 1 1 0 5 340 # Falling/prepare
+1 0 0 1 1 0 5 341 # Low hold
+1 0 1 1 1 0 5 342 # Rising
+1 0 1 1 1 0 5 343 # High hold
+1 0 1 1 1 0 5 344 # High hold
+1 0 1 1 1 0 5 345 # High hold
+1 1 0 1 1 0 5 346 # Falling/prepare
+1 1 0 1 1 0 5 347 # Low hold
+1 1 1 1 0 1 5 348 # Rising
+1 1 1 1 0 1 5 349 # High hold
+1 1 1 1 0 1 5 350 # High hold
+1 1 1 1 0 1 5 351 # High hold
+0 1 0 1 0 1 5 352 # Falling/prepare
+0 1 0 1 0 1 5 353 # Low hold
+0 1 1 1 0 1 5 354 # Rising
+0 1 1 1 0 1 5 355 # High hold
+0 1 1 1 0 1 5 356 # High hold
+0 1 1 1 0 1 5 357 # High hold
+0 1 0 1 0 1 5 358 # Falling/prepare
+0 1 0 1 0 1 5 359 # Low hold
+0 1 1 1 0 1 5 360 # Rising
+0 1 1 1 0 1 5 361 # High hold
+0 1 1 1 0 1 5 362 # High hold
+0 1 1 1 0 1 5 363 # High hold
+1 0 0 1 0 1 5 364 # Falling/prepare
+1 0 0 1 0 1 5 365 # Low hold
+1 0 1 1 1 0 5 366 # Rising
+1 0 1 1 1 0 5 367 # High hold
+1 0 1 1 1 0 5 368 # High hold
+1 0 1 1 1 0 5 369 # High hold
+0 0 0 1 1 0 5 370 # Falling/prepare
+0 0 0 1 1 0 5 371 # Low hold
+0 0 1 1 1 0 5 372 # Rising
+0 0 1 1 1 0 5 373 # High hold
+0 0 1 1 1 0 5 374 # High hold
+0 0 1 1 1 0 5 375 # High hold
+1 1 0 1 1 0 5 376 # Falling/prepare
+1 1 0 1 1 0 5 377 # Low hold
+1 1 1 1 0 1 5 378 # Rising
+1 1 1 1 0 1 5 379 # High hold
+1 1 1 1 0 1 5 380 # High hold
+1 1 1 1 0 1 5 381 # High hold
+1 1 1 0 0 1 5 382 # Async clear at high
+1 1 1 1 0 1 5 383 # Release clear high
+1 1 0 1 0 1 5 384 # Falling/prepare
+1 1 0 1 0 1 5 385 # Low hold
+1 1 1 1 1 0 5 386 # Rising
+1 1 1 1 1 0 5 387 # High hold
+1 1 1 1 1 0 5 388 # High hold
+1 1 1 1 1 0 5 389 # High hold
+0 1 0 1 1 0 5 390 # Falling/prepare
+0 1 0 1 1 0 5 391 # Low hold
+0 1 1 1 0 1 5 392 # Rising
+0 1 1 1 0 1 5 393 # High hold
+0 1 1 1 0 1 5 394 # High hold
+0 1 1 1 0 1 5 395 # High hold
+1 0 0 1 0 1 5 396 # Falling/prepare
+1 0 0 1 0 1 5 397 # Low hold
+1 0 1 1 1 0 5 398 # Rising
+1 0 1 1 1 0 5 399 # High hold
+1 0 1 1 1 0 5 400 # High hold
+1 0 1 1 1 0 5 401 # High hold
+1 1 0 1 1 0 5 402 # Falling/prepare
+1 1 0 1 1 0 5 403 # Low hold
+1 1 1 1 0 1 5 404 # Rising
+1 1 1 1 0 1 5 405 # High hold
+1 1 1 1 0 1 5 406 # High hold
+1 1 1 1 0 1 5 407 # High hold
+1 0 0 1 0 1 5 408 # Falling/prepare
+1 0 0 1 0 1 5 409 # Low hold
+1 0 1 1 1 0 5 410 # Rising
+1 0 1 1 1 0 5 411 # High hold
+1 0 1 1 1 0 5 412 # High hold
+1 0 1 1 1 0 5 413 # High hold
+0 0 0 1 1 0 5 414 # Falling/prepare
+0 0 0 1 1 0 5 415 # Low hold
+0 0 1 1 1 0 5 416 # Rising
+0 0 1 1 1 0 5 417 # High hold
+0 0 1 1 1 0 5 418 # High hold
+0 0 1 1 1 0 5 419 # High hold
+1 1 0 1 1 0 5 420 # Falling/prepare
+1 1 0 1 1 0 5 421 # Low hold
+1 1 1 1 0 1 5 422 # Rising
+1 1 1 1 0 1 5 423 # High hold
+1 1 1 1 0 1 5 424 # High hold
+1 1 1 1 0 1 5 425 # High hold
+0 0 0 1 0 1 5 426 # Falling/prepare
+0 0 0 1 0 1 5 427 # Low hold
+0 0 1 1 0 1 5 428 # Rising
+0 0 1 1 0 1 5 429 # High hold
+0 0 1 1 0 1 5 430 # High hold
+0 0 1 1 0 1 5 431 # High hold
+1 1 0 1 0 1 5 432 # Falling/prepare
+1 1 0 1 0 1 5 433 # Low hold
+1 1 1 1 1 0 5 434 # Rising
+1 1 1 1 1 0 5 435 # High hold
+1 1 1 1 1 0 5 436 # High hold
+1 1 1 1 1 0 5 437 # High hold
+1 1 0 1 1 0 5 438 # Falling/prepare
+1 1 0 1 1 0 5 439 # Low hold
+1 1 1 1 0 1 5 440 # Rising
+1 1 1 1 0 1 5 441 # High hold
+1 1 1 1 0 1 5 442 # High hold
+1 1 1 1 0 1 5 443 # High hold
+1 1 1 0 0 1 5 444 # Async clear at high
+1 1 1 1 0 1 5 445 # Release clear high
+0 1 0 1 0 1 5 446 # Falling/prepare
+0 1 0 1 0 1 5 447 # Low hold
+0 1 1 1 0 1 5 448 # Rising
+0 1 1 1 0 1 5 449 # High hold
+0 1 1 1 0 1 5 450 # High hold
+0 1 1 1 0 1 5 451 # High hold
+0 1 0 1 0 1 5 452 # Falling/prepare
+0 1 0 1 0 1 5 453 # Low hold
+0 1 1 1 0 1 5 454 # Rising
+0 1 1 1 0 1 5 455 # High hold
+0 1 1 1 0 1 5 456 # High hold
+0 1 1 1 0 1 5 457 # High hold
+1 0 0 1 0 1 5 458 # Falling/prepare
+1 0 0 1 0 1 5 459 # Low hold
+1 0 1 1 1 0 5 460 # Rising
+1 0 1 1 1 0 5 461 # High hold
+1 0 1 1 1 0 5 462 # High hold
+1 0 1 1 1 0 5 463 # High hold
+0 1 0 1 1 0 5 464 # Falling/prepare
+0 1 0 1 1 0 5 465 # Low hold
+0 1 1 1 0 1 5 466 # Rising
+0 1 1 1 0 1 5 467 # High hold
+0 1 1 1 0 1 5 468 # High hold
+0 1 1 1 0 1 5 469 # High hold
+0 0 0 1 0 1 5 470 # Falling/prepare
+0 0 0 1 0 1 5 471 # Low hold
+0 0 1 1 0 1 5 472 # Rising
+0 0 1 1 0 1 5 473 # High hold
+0 0 1 1 0 1 5 474 # High hold
+0 0 1 1 0 1 5 475 # High hold
+1 0 0 1 0 1 5 476 # Falling/prepare
+1 0 0 1 0 1 5 477 # Low hold
+1 0 1 1 1 0 5 478 # Rising
+1 0 1 1 1 0 5 479 # High hold
+1 0 1 1 1 0 5 480 # High hold
+1 0 1 1 1 0 5 481 # High hold
+1 1 0 1 1 0 5 482 # Falling/prepare
+1 1 0 1 1 0 5 483 # Low hold
+1 1 1 1 0 1 5 484 # Rising
+1 1 1 1 0 1 5 485 # High hold
+1 1 1 1 0 1 5 486 # High hold
+1 1 1 1 0 1 5 487 # High hold
+0 0 0 1 0 1 5 488 # Falling/prepare
+0 0 0 1 0 1 5 489 # Low hold
+0 0 1 1 0 1 5 490 # Rising
+0 0 1 1 0 1 5 491 # High hold
+0 0 1 1 0 1 5 492 # High hold
+0 0 1 1 0 1 5 493 # High hold
+1 1 0 1 0 1 5 494 # Falling/prepare
+1 1 0 1 0 1 5 495 # Low hold
+1 1 1 1 1 0 5 496 # Rising
+1 1 1 1 1 0 5 497 # High hold
+1 1 1 1 1 0 5 498 # High hold
+1 1 1 1 1 0 5 499 # High hold
+1 1 0 1 1 0 5 500 # Falling/prepare
+1 1 0 1 1 0 5 501 # Low hold
+1 1 1 1 0 1 5 502 # Rising
+1 1 1 1 0 1 5 503 # High hold
+1 1 1 1 0 1 5 504 # High hold
+1 1 1 1 0 1 5 505 # High hold
+1 1 1 0 0 1 5 506 # Async clear at high
+1 1 1 1 0 1 5 507 # Release clear high
+0 0 0 1 0 1 5 508 # Falling/prepare
+0 0 0 1 0 1 5 509 # Low hold
+0 0 1 1 0 1 5 510 # Rising
+0 0 1 1 0 1 5 511 # High hold
+0 0 1 1 0 1 5 512 # High hold
+0 0 1 1 0 1 5 513 # High hold
+1 1 0 1 0 1 5 514 # Falling/prepare
+1 1 0 1 0 1 5 515 # Low hold
+1 1 1 1 1 0 5 516 # Rising
+1 1 1 1 1 0 5 517 # High hold
+1 1 1 1 1 0 5 518 # High hold
+1 1 1 1 1 0 5 519 # High hold
+0 0 0 1 1 0 5 520 # Falling/prepare
+0 0 0 1 1 0 5 521 # Low hold
+0 0 1 1 1 0 5 522 # Rising
+0 0 1 1 1 0 5 523 # High hold
+0 0 1 1 1 0 5 524 # High hold
+0 0 1 1 1 0 5 525 # High hold
+1 1 0 1 1 0 5 526 # Falling/prepare
+1 1 0 1 1 0 5 527 # Low hold
+1 1 1 1 0 1 5 528 # Rising
+1 1 1 1 0 1 5 529 # High hold
+1 1 1 1 0 1 5 530 # High hold
+1 1 1 1 0 1 5 531 # High hold
+0 0 0 1 0 1 5 532 # Falling/prepare
+0 0 0 1 0 1 5 533 # Low hold
+0 0 1 1 0 1 5 534 # Rising
+0 0 1 1 0 1 5 535 # High hold
+0 0 1 1 0 1 5 536 # High hold
+0 0 1 1 0 1 5 537 # High hold
+1 1 0 1 0 1 5 538 # Falling/prepare
+1 1 0 1 0 1 5 539 # Low hold
+1 1 1 1 1 0 5 540 # Rising
+1 1 1 1 1 0 5 541 # High hold
+1 1 1 1 1 0 5 542 # High hold
+1 1 1 1 1 0 5 543 # High hold
+0 0 0 1 1 0 5 544 # Falling/prepare
+0 0 0 1 1 0 5 545 # Low hold
+0 0 1 1 1 0 5 546 # Rising
+0 0 1 1 1 0 5 547 # High hold
+0 0 1 1 1 0 5 548 # High hold
+0 0 1 1 1 0 5 549 # High hold
+1 0 0 1 1 0 5 550 # Falling/prepare
+1 0 0 1 1 0 5 551 # Low hold
+1 0 1 1 1 0 5 552 # Rising
+1 0 1 1 1 0 5 553 # High hold
+1 0 1 1 1 0 5 554 # High hold
+1 0 1 1 1 0 5 555 # High hold
+0 0 0 1 1 0 5 556 # Falling/prepare
+0 0 0 1 1 0 5 557 # Low hold
+0 0 1 1 1 0 5 558 # Rising
+0 0 1 1 1 0 5 559 # High hold
+0 0 1 1 1 0 5 560 # High hold
+0 0 1 1 1 0 5 561 # High hold
+1 0 0 1 1 0 5 562 # Falling/prepare
+1 0 0 1 1 0 5 563 # Low hold
+1 0 1 1 1 0 5 564 # Rising
+1 0 1 1 1 0 5 565 # High hold
+1 0 1 1 1 0 5 566 # High hold
+1 0 1 1 1 0 5 567 # High hold
+1 1 1 0 0 1 5 568 # Async clear at high
+1 1 1 1 0 1 5 569 # Release clear high
+1 1 0 1 0 1 5 570 # Falling/prepare
+1 1 0 1 0 1 5 571 # Low hold
+1 1 1 1 1 0 5 572 # Rising
+1 1 1 1 1 0 5 573 # High hold
+1 1 1 1 1 0 5 574 # High hold
+1 1 1 1 1 0 5 575 # High hold
+1 1 0 1 1 0 5 576 # Falling/prepare
+1 1 0 1 1 0 5 577 # Low hold
+1 1 1 1 0 1 5 578 # Rising
+1 1 1 1 0 1 5 579 # High hold
+1 1 1 1 0 1 5 580 # High hold
+1 1 1 1 0 1 5 581 # High hold
+1 0 0 1 0 1 5 582 # Falling/prepare
+1 0 0 1 0 1 5 583 # Low hold
+1 0 1 1 1 0 5 584 # Rising
+1 0 1 1 1 0 5 585 # High hold
+1 0 1 1 1 0 5 586 # High hold
+1 0 1 1 1 0 5 587 # High hold
+0 1 0 1 1 0 5 588 # Falling/prepare
+0 1 0 1 1 0 5 589 # Low hold
+0 1 1 1 0 1 5 590 # Rising
+0 1 1 1 0 1 5 591 # High hold
+0 1 1 1 0 1 5 592 # High hold
+0 1 1 1 0 1 5 593 # High hold
+1 0 0 1 0 1 5 594 # Falling/prepare
+1 0 0 1 0 1 5 595 # Low hold
+1 0 1 1 1 0 5 596 # Rising
+1 0 1 1 1 0 5 597 # High hold
+1 0 1 1 1 0 5 598 # High hold
+1 0 1 1 1 0 5 599 # High hold
+0 1 0 1 1 0 5 600 # Falling/prepare
+0 1 0 1 1 0 5 601 # Low hold
+0 1 1 1 0 1 5 602 # Rising
+0 1 1 1 0 1 5 603 # High hold
+0 1 1 1 0 1 5 604 # High hold
+0 1 1 1 0 1 5 605 # High hold
+0 0 0 1 0 1 5 606 # Falling/prepare
+0 0 0 1 0 1 5 607 # Low hold
+0 0 1 1 0 1 5 608 # Rising
+0 0 1 1 0 1 5 609 # High hold
+0 0 1 1 0 1 5 610 # High hold
+0 0 1 1 0 1 5 611 # High hold
+1 0 0 1 0 1 5 612 # Falling/prepare
+1 0 0 1 0 1 5 613 # Low hold
+1 0 1 1 1 0 5 614 # Rising
+1 0 1 1 1 0 5 615 # High hold
+1 0 1 1 1 0 5 616 # High hold
+1 0 1 1 1 0 5 617 # High hold
+1 0 0 1 1 0 5 618 # Falling/prepare
+1 0 0 1 1 0 5 619 # Low hold
+1 0 1 1 1 0 5 620 # Rising
+1 0 1 1 1 0 5 621 # High hold
+1 0 1 1 1 0 5 622 # High hold
+1 0 1 1 1 0 5 623 # High hold
+1 0 1 0 0 1 6 1 # Cold reset
+1 0 1 0 0 1 6 2 # Reset holds
+1 0 1 1 0 1 6 3 # Release reset
+1 1 0 1 0 1 6 4 # Falling/prepare
+1 1 0 1 0 1 6 5 # Low hold
+1 1 1 1 1 0 6 6 # Rising
+1 1 1 1 1 0 6 7 # High hold
+1 1 1 1 1 0 6 8 # High hold
+1 1 1 1 1 0 6 9 # High hold
+1 1 1 0 0 1 6 10 # Async clear at high
+1 1 1 1 0 1 6 11 # Release clear high
+1 1 0 1 0 1 6 12 # Falling/prepare
+1 1 0 1 0 1 6 13 # Low hold
+1 1 1 1 1 0 6 14 # Rising
+1 1 1 1 1 0 6 15 # High hold
+1 1 1 1 1 0 6 16 # High hold
+1 1 1 1 1 0 6 17 # High hold
+1 1 0 1 1 0 6 18 # Falling/prepare
+1 1 0 1 1 0 6 19 # Low hold
+1 1 1 1 0 1 6 20 # Rising
+1 1 1 1 0 1 6 21 # High hold
+1 1 1 1 0 1 6 22 # High hold
+1 1 1 1 0 1 6 23 # High hold
+1 1 0 1 0 1 6 24 # Falling/prepare
+1 1 0 1 0 1 6 25 # Low hold
+1 1 1 1 1 0 6 26 # Rising
+1 1 1 1 1 0 6 27 # High hold
+1 1 1 1 1 0 6 28 # High hold
+1 1 1 1 1 0 6 29 # High hold
+1 1 0 1 1 0 6 30 # Falling/prepare
+1 1 0 1 1 0 6 31 # Low hold
+1 1 1 1 0 1 6 32 # Rising
+1 1 1 1 0 1 6 33 # High hold
+1 1 1 1 0 1 6 34 # High hold
+1 1 1 1 0 1 6 35 # High hold
+1 1 0 1 0 1 6 36 # Falling/prepare
+1 1 0 1 0 1 6 37 # Low hold
+1 1 1 1 1 0 6 38 # Rising
+1 1 1 1 1 0 6 39 # High hold
+1 1 1 1 1 0 6 40 # High hold
+1 1 1 1 1 0 6 41 # High hold
+1 1 0 1 1 0 6 42 # Falling/prepare
+1 1 0 1 1 0 6 43 # Low hold
+1 1 1 1 0 1 6 44 # Rising
+1 1 1 1 0 1 6 45 # High hold
+1 1 1 1 0 1 6 46 # High hold
+1 1 1 1 0 1 6 47 # High hold
+1 1 0 1 0 1 6 48 # Falling/prepare
+1 1 0 1 0 1 6 49 # Low hold
+1 1 1 1 1 0 6 50 # Rising
+1 1 1 1 1 0 6 51 # High hold
+1 1 1 1 1 0 6 52 # High hold
+1 1 1 1 1 0 6 53 # High hold
+1 1 0 1 1 0 6 54 # Falling/prepare
+1 1 0 1 1 0 6 55 # Low hold
+1 1 1 1 0 1 6 56 # Rising
+1 1 1 1 0 1 6 57 # High hold
+1 1 1 1 0 1 6 58 # High hold
+1 1 1 1 0 1 6 59 # High hold
+1 1 0 1 0 1 6 60 # Falling/prepare
+1 1 0 1 0 1 6 61 # Low hold
+1 1 1 1 1 0 6 62 # Rising
+1 1 1 1 1 0 6 63 # High hold
+1 1 1 1 1 0 6 64 # High hold
+1 1 1 1 1 0 6 65 # High hold
+1 1 0 1 1 0 6 66 # Falling/prepare
+1 1 0 1 1 0 6 67 # Low hold
+1 1 1 1 0 1 6 68 # Rising
+1 1 1 1 0 1 6 69 # High hold
+1 1 1 1 0 1 6 70 # High hold
+1 1 1 1 0 1 6 71 # High hold
+1 1 1 0 0 1 6 72 # Async clear at high
+1 1 1 1 0 1 6 73 # Release clear high
+1 1 0 1 0 1 6 74 # Falling/prepare
+1 1 0 1 0 1 6 75 # Low hold
+1 1 1 1 1 0 6 76 # Rising
+1 1 1 1 1 0 6 77 # High hold
+1 1 1 1 1 0 6 78 # High hold
+1 1 1 1 1 0 6 79 # High hold
+1 1 0 1 1 0 6 80 # Falling/prepare
+1 1 0 1 1 0 6 81 # Low hold
+1 1 1 1 0 1 6 82 # Rising
+1 1 1 1 0 1 6 83 # High hold
+1 1 1 1 0 1 6 84 # High hold
+1 1 1 1 0 1 6 85 # High hold
+1 1 0 1 0 1 6 86 # Falling/prepare
+1 1 0 1 0 1 6 87 # Low hold
+1 1 1 1 1 0 6 88 # Rising
+1 1 1 1 1 0 6 89 # High hold
+1 1 1 1 1 0 6 90 # High hold
+1 1 1 1 1 0 6 91 # High hold
+1 1 0 1 1 0 6 92 # Falling/prepare
+1 1 0 1 1 0 6 93 # Low hold
+1 1 1 1 0 1 6 94 # Rising
+1 1 1 1 0 1 6 95 # High hold
+1 1 1 1 0 1 6 96 # High hold
+1 1 1 1 0 1 6 97 # High hold
+1 1 0 1 0 1 6 98 # Falling/prepare
+1 1 0 1 0 1 6 99 # Low hold
+1 1 1 1 1 0 6 100 # Rising
+1 1 1 1 1 0 6 101 # High hold
+1 1 1 1 1 0 6 102 # High hold
+1 1 1 1 1 0 6 103 # High hold
+1 1 0 1 1 0 6 104 # Falling/prepare
+1 1 0 1 1 0 6 105 # Low hold
+1 1 1 1 0 1 6 106 # Rising
+1 1 1 1 0 1 6 107 # High hold
+1 1 1 1 0 1 6 108 # High hold
+1 1 1 1 0 1 6 109 # High hold
+1 1 0 1 0 1 6 110 # Falling/prepare
+1 1 0 1 0 1 6 111 # Low hold
+1 1 1 1 1 0 6 112 # Rising
+1 1 1 1 1 0 6 113 # High hold
+1 1 1 1 1 0 6 114 # High hold
+1 1 1 1 1 0 6 115 # High hold
+1 1 0 1 1 0 6 116 # Falling/prepare
+1 1 0 1 1 0 6 117 # Low hold
+1 1 1 1 0 1 6 118 # Rising
+1 1 1 1 0 1 6 119 # High hold
+1 1 1 1 0 1 6 120 # High hold
+1 1 1 1 0 1 6 121 # High hold
+1 1 0 1 0 1 6 122 # Falling/prepare
+1 1 0 1 0 1 6 123 # Low hold
+1 1 1 1 1 0 6 124 # Rising
+1 1 1 1 1 0 6 125 # High hold
+1 1 1 1 1 0 6 126 # High hold
+1 1 1 1 1 0 6 127 # High hold
+1 1 0 1 1 0 6 128 # Falling/prepare
+1 1 0 1 1 0 6 129 # Low hold
+1 1 1 1 0 1 6 130 # Rising
+1 1 1 1 0 1 6 131 # High hold
+1 1 1 1 0 1 6 132 # High hold
+1 1 1 1 0 1 6 133 # High hold
+1 1 1 0 0 1 6 134 # Async clear at high
+1 1 1 1 0 1 6 135 # Release clear high
+1 1 0 1 0 1 6 136 # Falling/prepare
+1 1 0 1 0 1 6 137 # Low hold
+1 1 1 1 1 0 6 138 # Rising
+1 1 1 1 1 0 6 139 # High hold
+1 1 1 1 1 0 6 140 # High hold
+1 1 1 1 1 0 6 141 # High hold
+1 1 0 1 1 0 6 142 # Falling/prepare
+1 1 0 1 1 0 6 143 # Low hold
+1 1 1 1 0 1 6 144 # Rising
+1 1 1 1 0 1 6 145 # High hold
+1 1 1 1 0 1 6 146 # High hold
+1 1 1 1 0 1 6 147 # High hold
+1 1 0 1 0 1 6 148 # Falling/prepare
+1 1 0 1 0 1 6 149 # Low hold
+1 1 1 1 1 0 6 150 # Rising
+1 1 1 1 1 0 6 151 # High hold
+1 1 1 1 1 0 6 152 # High hold
+1 1 1 1 1 0 6 153 # High hold
+1 1 0 1 1 0 6 154 # Falling/prepare
+1 1 0 1 1 0 6 155 # Low hold
+1 1 1 1 0 1 6 156 # Rising
+1 1 1 1 0 1 6 157 # High hold
+1 1 1 1 0 1 6 158 # High hold
+1 1 1 1 0 1 6 159 # High hold
+1 1 0 1 0 1 6 160 # Falling/prepare
+1 1 0 1 0 1 6 161 # Low hold
+1 1 1 1 1 0 6 162 # Rising
+1 1 1 1 1 0 6 163 # High hold
+1 1 1 1 1 0 6 164 # High hold
+1 1 1 1 1 0 6 165 # High hold
+1 1 0 1 1 0 6 166 # Falling/prepare
+1 1 0 1 1 0 6 167 # Low hold
+1 1 1 1 0 1 6 168 # Rising
+1 1 1 1 0 1 6 169 # High hold
+1 1 1 1 0 1 6 170 # High hold
+1 1 1 1 0 1 6 171 # High hold
+1 1 0 1 0 1 6 172 # Falling/prepare
+1 1 0 1 0 1 6 173 # Low hold
+1 1 1 1 1 0 6 174 # Rising
+1 1 1 1 1 0 6 175 # High hold
+1 1 1 1 1 0 6 176 # High hold
+1 1 1 1 1 0 6 177 # High hold
+1 1 0 1 1 0 6 178 # Falling/prepare
+1 1 0 1 1 0 6 179 # Low hold
+1 1 1 1 0 1 6 180 # Rising
+1 1 1 1 0 1 6 181 # High hold
+1 1 1 1 0 1 6 182 # High hold
+1 1 1 1 0 1 6 183 # High hold
+1 1 0 1 0 1 6 184 # Falling/prepare
+1 1 0 1 0 1 6 185 # Low hold
+1 1 1 1 1 0 6 186 # Rising
+1 1 1 1 1 0 6 187 # High hold
+1 1 1 1 1 0 6 188 # High hold
+1 1 1 1 1 0 6 189 # High hold
+1 1 0 1 1 0 6 190 # Falling/prepare
+1 1 0 1 1 0 6 191 # Low hold
+1 1 1 1 0 1 6 192 # Rising
+1 1 1 1 0 1 6 193 # High hold
+1 1 1 1 0 1 6 194 # High hold
+1 1 1 1 0 1 6 195 # High hold
+1 1 1 0 0 1 6 196 # Async clear at high
+1 1 1 1 0 1 6 197 # Release clear high
+1 1 0 1 0 1 6 198 # Falling/prepare
+1 1 0 1 0 1 6 199 # Low hold
+1 1 1 1 1 0 6 200 # Rising
+1 1 1 1 1 0 6 201 # High hold
+1 1 1 1 1 0 6 202 # High hold
+1 1 1 1 1 0 6 203 # High hold
+1 1 0 1 1 0 6 204 # Falling/prepare
+1 1 0 1 1 0 6 205 # Low hold
+1 1 1 1 0 1 6 206 # Rising
+1 1 1 1 0 1 6 207 # High hold
+1 1 1 1 0 1 6 208 # High hold
+1 1 1 1 0 1 6 209 # High hold
+1 1 0 1 0 1 6 210 # Falling/prepare
+1 1 0 1 0 1 6 211 # Low hold
+1 1 1 1 1 0 6 212 # Rising
+1 1 1 1 1 0 6 213 # High hold
+1 1 1 1 1 0 6 214 # High hold
+1 1 1 1 1 0 6 215 # High hold
+1 1 0 1 1 0 6 216 # Falling/prepare
+1 1 0 1 1 0 6 217 # Low hold
+1 1 1 1 0 1 6 218 # Rising
+1 1 1 1 0 1 6 219 # High hold
+1 1 1 1 0 1 6 220 # High hold
+1 1 1 1 0 1 6 221 # High hold
+1 1 0 1 0 1 6 222 # Falling/prepare
+1 1 0 1 0 1 6 223 # Low hold
+1 1 1 1 1 0 6 224 # Rising
+1 1 1 1 1 0 6 225 # High hold
+1 1 1 1 1 0 6 226 # High hold
+1 1 1 1 1 0 6 227 # High hold
+1 1 0 1 1 0 6 228 # Falling/prepare
+1 1 0 1 1 0 6 229 # Low hold
+1 1 1 1 0 1 6 230 # Rising
+1 1 1 1 0 1 6 231 # High hold
+1 1 1 1 0 1 6 232 # High hold
+1 1 1 1 0 1 6 233 # High hold
+1 1 0 1 0 1 6 234 # Falling/prepare
+1 1 0 1 0 1 6 235 # Low hold
+1 1 1 1 1 0 6 236 # Rising
+1 1 1 1 1 0 6 237 # High hold
+1 1 1 1 1 0 6 238 # High hold
+1 1 1 1 1 0 6 239 # High hold
+1 1 0 1 1 0 6 240 # Falling/prepare
+1 1 0 1 1 0 6 241 # Low hold
+1 1 1 1 0 1 6 242 # Rising
+1 1 1 1 0 1 6 243 # High hold
+1 1 1 1 0 1 6 244 # High hold
+1 1 1 1 0 1 6 245 # High hold
+1 1 0 1 0 1 6 246 # Falling/prepare
+1 1 0 1 0 1 6 247 # Low hold
+1 1 1 1 1 0 6 248 # Rising
+1 1 1 1 1 0 6 249 # High hold
+1 1 1 1 1 0 6 250 # High hold
+1 1 1 1 1 0 6 251 # High hold
+1 1 0 1 1 0 6 252 # Falling/prepare
+1 1 0 1 1 0 6 253 # Low hold
+1 1 1 1 0 1 6 254 # Rising
+1 1 1 1 0 1 6 255 # High hold
+1 1 1 1 0 1 6 256 # High hold
+1 1 1 1 0 1 6 257 # High hold
+1 1 1 0 0 1 6 258 # Async clear at high
+1 1 1 1 0 1 6 259 # Release clear high
+1 1 0 1 0 1 6 260 # Falling/prepare
+1 1 0 1 0 1 6 261 # Low hold
+1 1 1 1 1 0 6 262 # Rising
+1 1 1 1 1 0 6 263 # High hold
+1 1 1 1 1 0 6 264 # High hold
+1 1 1 1 1 0 6 265 # High hold
+1 1 0 1 1 0 6 266 # Falling/prepare
+1 1 0 1 1 0 6 267 # Low hold
+1 1 1 1 0 1 6 268 # Rising
+1 1 1 1 0 1 6 269 # High hold
+1 1 1 1 0 1 6 270 # High hold
+1 1 1 1 0 1 6 271 # High hold
+1 1 0 1 0 1 6 272 # Falling/prepare
+1 1 0 1 0 1 6 273 # Low hold
+1 1 1 1 1 0 6 274 # Rising
+1 1 1 1 1 0 6 275 # High hold
+1 1 1 1 1 0 6 276 # High hold
+1 1 1 1 1 0 6 277 # High hold
+1 1 0 1 1 0 6 278 # Falling/prepare
+1 1 0 1 1 0 6 279 # Low hold
+1 1 1 1 0 1 6 280 # Rising
+1 1 1 1 0 1 6 281 # High hold
+1 1 1 1 0 1 6 282 # High hold
+1 1 1 1 0 1 6 283 # High hold
+1 1 0 1 0 1 6 284 # Falling/prepare
+1 1 0 1 0 1 6 285 # Low hold
+1 1 1 1 1 0 6 286 # Rising
+1 1 1 1 1 0 6 287 # High hold
+1 1 1 1 1 0 6 288 # High hold
+1 1 1 1 1 0 6 289 # High hold
+1 1 0 1 1 0 6 290 # Falling/prepare
+1 1 0 1 1 0 6 291 # Low hold
+1 1 1 1 0 1 6 292 # Rising
+1 1 1 1 0 1 6 293 # High hold
+1 1 1 1 0 1 6 294 # High hold
+1 1 1 1 0 1 6 295 # High hold
+1 1 0 1 0 1 6 296 # Falling/prepare
+1 1 0 1 0 1 6 297 # Low hold
+1 1 1 1 1 0 6 298 # Rising
+1 1 1 1 1 0 6 299 # High hold
+1 1 1 1 1 0 6 300 # High hold
+1 1 1 1 1 0 6 301 # High hold
+1 1 0 1 1 0 6 302 # Falling/prepare
+1 1 0 1 1 0 6 303 # Low hold
+1 1 1 1 0 1 6 304 # Rising
+1 1 1 1 0 1 6 305 # High hold
+1 1 1 1 0 1 6 306 # High hold
+1 1 1 1 0 1 6 307 # High hold
+1 1 0 1 0 1 6 308 # Falling/prepare
+1 1 0 1 0 1 6 309 # Low hold
+1 1 1 1 1 0 6 310 # Rising
+1 1 1 1 1 0 6 311 # High hold
+1 1 1 1 1 0 6 312 # High hold
+1 1 1 1 1 0 6 313 # High hold
+0 1 0 1 1 0 6 314 # Falling/prepare
+0 1 0 1 1 0 6 315 # Low hold
+0 1 1 1 0 1 6 316 # Rising
+0 1 1 1 0 1 6 317 # High hold
+0 1 1 1 0 1 6 318 # High hold
+0 1 1 1 0 1 6 319 # High hold
+1 1 1 0 0 1 6 320 # Async clear at high
+1 1 1 1 0 1 6 321 # Release clear high
+1 0 0 1 0 1 6 322 # Falling/prepare
+1 0 0 1 0 1 6 323 # Low hold
+1 0 1 1 1 0 6 324 # Rising
+1 0 1 1 1 0 6 325 # High hold
+1 0 1 1 1 0 6 326 # High hold
+1 0 1 1 1 0 6 327 # High hold
+0 0 0 1 1 0 6 328 # Falling/prepare
+0 0 0 1 1 0 6 329 # Low hold
+0 0 1 1 1 0 6 330 # Rising
+0 0 1 1 1 0 6 331 # High hold
+0 0 1 1 1 0 6 332 # High hold
+0 0 1 1 1 0 6 333 # High hold
+0 0 0 1 1 0 6 334 # Falling/prepare
+0 0 0 1 1 0 6 335 # Low hold
+0 0 1 1 1 0 6 336 # Rising
+0 0 1 1 1 0 6 337 # High hold
+0 0 1 1 1 0 6 338 # High hold
+0 0 1 1 1 0 6 339 # High hold
+0 1 0 1 1 0 6 340 # Falling/prepare
+0 1 0 1 1 0 6 341 # Low hold
+0 1 1 1 0 1 6 342 # Rising
+0 1 1 1 0 1 6 343 # High hold
+0 1 1 1 0 1 6 344 # High hold
+0 1 1 1 0 1 6 345 # High hold
+1 1 0 1 0 1 6 346 # Falling/prepare
+1 1 0 1 0 1 6 347 # Low hold
+1 1 1 1 1 0 6 348 # Rising
+1 1 1 1 1 0 6 349 # High hold
+1 1 1 1 1 0 6 350 # High hold
+1 1 1 1 1 0 6 351 # High hold
+1 1 0 1 1 0 6 352 # Falling/prepare
+1 1 0 1 1 0 6 353 # Low hold
+1 1 1 1 0 1 6 354 # Rising
+1 1 1 1 0 1 6 355 # High hold
+1 1 1 1 0 1 6 356 # High hold
+1 1 1 1 0 1 6 357 # High hold
+0 0 0 1 0 1 6 358 # Falling/prepare
+0 0 0 1 0 1 6 359 # Low hold
+0 0 1 1 0 1 6 360 # Rising
+0 0 1 1 0 1 6 361 # High hold
+0 0 1 1 0 1 6 362 # High hold
+0 0 1 1 0 1 6 363 # High hold
+0 0 0 1 0 1 6 364 # Falling/prepare
+0 0 0 1 0 1 6 365 # Low hold
+0 0 1 1 0 1 6 366 # Rising
+0 0 1 1 0 1 6 367 # High hold
+0 0 1 1 0 1 6 368 # High hold
+0 0 1 1 0 1 6 369 # High hold
+1 1 0 1 0 1 6 370 # Falling/prepare
+1 1 0 1 0 1 6 371 # Low hold
+1 1 1 1 1 0 6 372 # Rising
+1 1 1 1 1 0 6 373 # High hold
+1 1 1 1 1 0 6 374 # High hold
+1 1 1 1 1 0 6 375 # High hold
+0 0 0 1 1 0 6 376 # Falling/prepare
+0 0 0 1 1 0 6 377 # Low hold
+0 0 1 1 1 0 6 378 # Rising
+0 0 1 1 1 0 6 379 # High hold
+0 0 1 1 1 0 6 380 # High hold
+0 0 1 1 1 0 6 381 # High hold
+1 1 1 0 0 1 6 382 # Async clear at high
+1 1 1 1 0 1 6 383 # Release clear high
+0 1 0 1 0 1 6 384 # Falling/prepare
+0 1 0 1 0 1 6 385 # Low hold
+0 1 1 1 0 1 6 386 # Rising
+0 1 1 1 0 1 6 387 # High hold
+0 1 1 1 0 1 6 388 # High hold
+0 1 1 1 0 1 6 389 # High hold
+0 1 0 1 0 1 6 390 # Falling/prepare
+0 1 0 1 0 1 6 391 # Low hold
+0 1 1 1 0 1 6 392 # Rising
+0 1 1 1 0 1 6 393 # High hold
+0 1 1 1 0 1 6 394 # High hold
+0 1 1 1 0 1 6 395 # High hold
+0 0 0 1 0 1 6 396 # Falling/prepare
+0 0 0 1 0 1 6 397 # Low hold
+0 0 1 1 0 1 6 398 # Rising
+0 0 1 1 0 1 6 399 # High hold
+0 0 1 1 0 1 6 400 # High hold
+0 0 1 1 0 1 6 401 # High hold
+1 1 0 1 0 1 6 402 # Falling/prepare
+1 1 0 1 0 1 6 403 # Low hold
+1 1 1 1 1 0 6 404 # Rising
+1 1 1 1 1 0 6 405 # High hold
+1 1 1 1 1 0 6 406 # High hold
+1 1 1 1 1 0 6 407 # High hold
+1 1 0 1 1 0 6 408 # Falling/prepare
+1 1 0 1 1 0 6 409 # Low hold
+1 1 1 1 0 1 6 410 # Rising
+1 1 1 1 0 1 6 411 # High hold
+1 1 1 1 0 1 6 412 # High hold
+1 1 1 1 0 1 6 413 # High hold
+1 0 0 1 0 1 6 414 # Falling/prepare
+1 0 0 1 0 1 6 415 # Low hold
+1 0 1 1 1 0 6 416 # Rising
+1 0 1 1 1 0 6 417 # High hold
+1 0 1 1 1 0 6 418 # High hold
+1 0 1 1 1 0 6 419 # High hold
+0 0 0 1 1 0 6 420 # Falling/prepare
+0 0 0 1 1 0 6 421 # Low hold
+0 0 1 1 1 0 6 422 # Rising
+0 0 1 1 1 0 6 423 # High hold
+0 0 1 1 1 0 6 424 # High hold
+0 0 1 1 1 0 6 425 # High hold
+0 1 0 1 1 0 6 426 # Falling/prepare
+0 1 0 1 1 0 6 427 # Low hold
+0 1 1 1 0 1 6 428 # Rising
+0 1 1 1 0 1 6 429 # High hold
+0 1 1 1 0 1 6 430 # High hold
+0 1 1 1 0 1 6 431 # High hold
+1 1 0 1 0 1 6 432 # Falling/prepare
+1 1 0 1 0 1 6 433 # Low hold
+1 1 1 1 1 0 6 434 # Rising
+1 1 1 1 1 0 6 435 # High hold
+1 1 1 1 1 0 6 436 # High hold
+1 1 1 1 1 0 6 437 # High hold
+1 1 0 1 1 0 6 438 # Falling/prepare
+1 1 0 1 1 0 6 439 # Low hold
+1 1 1 1 0 1 6 440 # Rising
+1 1 1 1 0 1 6 441 # High hold
+1 1 1 1 0 1 6 442 # High hold
+1 1 1 1 0 1 6 443 # High hold
+1 1 1 0 0 1 6 444 # Async clear at high
+1 1 1 1 0 1 6 445 # Release clear high
+0 1 0 1 0 1 6 446 # Falling/prepare
+0 1 0 1 0 1 6 447 # Low hold
+0 1 1 1 0 1 6 448 # Rising
+0 1 1 1 0 1 6 449 # High hold
+0 1 1 1 0 1 6 450 # High hold
+0 1 1 1 0 1 6 451 # High hold
+0 1 0 1 0 1 6 452 # Falling/prepare
+0 1 0 1 0 1 6 453 # Low hold
+0 1 1 1 0 1 6 454 # Rising
+0 1 1 1 0 1 6 455 # High hold
+0 1 1 1 0 1 6 456 # High hold
+0 1 1 1 0 1 6 457 # High hold
+1 1 0 1 0 1 6 458 # Falling/prepare
+1 1 0 1 0 1 6 459 # Low hold
+1 1 1 1 1 0 6 460 # Rising
+1 1 1 1 1 0 6 461 # High hold
+1 1 1 1 1 0 6 462 # High hold
+1 1 1 1 1 0 6 463 # High hold
+1 1 0 1 1 0 6 464 # Falling/prepare
+1 1 0 1 1 0 6 465 # Low hold
+1 1 1 1 0 1 6 466 # Rising
+1 1 1 1 0 1 6 467 # High hold
+1 1 1 1 0 1 6 468 # High hold
+1 1 1 1 0 1 6 469 # High hold
+1 1 0 1 0 1 6 470 # Falling/prepare
+1 1 0 1 0 1 6 471 # Low hold
+1 1 1 1 1 0 6 472 # Rising
+1 1 1 1 1 0 6 473 # High hold
+1 1 1 1 1 0 6 474 # High hold
+1 1 1 1 1 0 6 475 # High hold
+1 1 0 1 1 0 6 476 # Falling/prepare
+1 1 0 1 1 0 6 477 # Low hold
+1 1 1 1 0 1 6 478 # Rising
+1 1 1 1 0 1 6 479 # High hold
+1 1 1 1 0 1 6 480 # High hold
+1 1 1 1 0 1 6 481 # High hold
+1 1 0 1 0 1 6 482 # Falling/prepare
+1 1 0 1 0 1 6 483 # Low hold
+1 1 1 1 1 0 6 484 # Rising
+1 1 1 1 1 0 6 485 # High hold
+1 1 1 1 1 0 6 486 # High hold
+1 1 1 1 1 0 6 487 # High hold
+0 1 0 1 1 0 6 488 # Falling/prepare
+0 1 0 1 1 0 6 489 # Low hold
+0 1 1 1 0 1 6 490 # Rising
+0 1 1 1 0 1 6 491 # High hold
+0 1 1 1 0 1 6 492 # High hold
+0 1 1 1 0 1 6 493 # High hold
+1 1 0 1 0 1 6 494 # Falling/prepare
+1 1 0 1 0 1 6 495 # Low hold
+1 1 1 1 1 0 6 496 # Rising
+1 1 1 1 1 0 6 497 # High hold
+1 1 1 1 1 0 6 498 # High hold
+1 1 1 1 1 0 6 499 # High hold
+0 0 0 1 1 0 6 500 # Falling/prepare
+0 0 0 1 1 0 6 501 # Low hold
+0 0 1 1 1 0 6 502 # Rising
+0 0 1 1 1 0 6 503 # High hold
+0 0 1 1 1 0 6 504 # High hold
+0 0 1 1 1 0 6 505 # High hold
+1 1 1 0 0 1 6 506 # Async clear at high
+1 1 1 1 0 1 6 507 # Release clear high
+1 1 0 1 0 1 6 508 # Falling/prepare
+1 1 0 1 0 1 6 509 # Low hold
+1 1 1 1 1 0 6 510 # Rising
+1 1 1 1 1 0 6 511 # High hold
+1 1 1 1 1 0 6 512 # High hold
+1 1 1 1 1 0 6 513 # High hold
+0 1 0 1 1 0 6 514 # Falling/prepare
+0 1 0 1 1 0 6 515 # Low hold
+0 1 1 1 0 1 6 516 # Rising
+0 1 1 1 0 1 6 517 # High hold
+0 1 1 1 0 1 6 518 # High hold
+0 1 1 1 0 1 6 519 # High hold
+1 0 0 1 0 1 6 520 # Falling/prepare
+1 0 0 1 0 1 6 521 # Low hold
+1 0 1 1 1 0 6 522 # Rising
+1 0 1 1 1 0 6 523 # High hold
+1 0 1 1 1 0 6 524 # High hold
+1 0 1 1 1 0 6 525 # High hold
+1 1 0 1 1 0 6 526 # Falling/prepare
+1 1 0 1 1 0 6 527 # Low hold
+1 1 1 1 0 1 6 528 # Rising
+1 1 1 1 0 1 6 529 # High hold
+1 1 1 1 0 1 6 530 # High hold
+1 1 1 1 0 1 6 531 # High hold
+0 1 0 1 0 1 6 532 # Falling/prepare
+0 1 0 1 0 1 6 533 # Low hold
+0 1 1 1 0 1 6 534 # Rising
+0 1 1 1 0 1 6 535 # High hold
+0 1 1 1 0 1 6 536 # High hold
+0 1 1 1 0 1 6 537 # High hold
+1 1 0 1 0 1 6 538 # Falling/prepare
+1 1 0 1 0 1 6 539 # Low hold
+1 1 1 1 1 0 6 540 # Rising
+1 1 1 1 1 0 6 541 # High hold
+1 1 1 1 1 0 6 542 # High hold
+1 1 1 1 1 0 6 543 # High hold
+1 0 0 1 1 0 6 544 # Falling/prepare
+1 0 0 1 1 0 6 545 # Low hold
+1 0 1 1 1 0 6 546 # Rising
+1 0 1 1 1 0 6 547 # High hold
+1 0 1 1 1 0 6 548 # High hold
+1 0 1 1 1 0 6 549 # High hold
+1 0 0 1 1 0 6 550 # Falling/prepare
+1 0 0 1 1 0 6 551 # Low hold
+1 0 1 1 1 0 6 552 # Rising
+1 0 1 1 1 0 6 553 # High hold
+1 0 1 1 1 0 6 554 # High hold
+1 0 1 1 1 0 6 555 # High hold
+1 1 0 1 1 0 6 556 # Falling/prepare
+1 1 0 1 1 0 6 557 # Low hold
+1 1 1 1 0 1 6 558 # Rising
+1 1 1 1 0 1 6 559 # High hold
+1 1 1 1 0 1 6 560 # High hold
+1 1 1 1 0 1 6 561 # High hold
+0 1 0 1 0 1 6 562 # Falling/prepare
+0 1 0 1 0 1 6 563 # Low hold
+0 1 1 1 0 1 6 564 # Rising
+0 1 1 1 0 1 6 565 # High hold
+0 1 1 1 0 1 6 566 # High hold
+0 1 1 1 0 1 6 567 # High hold
+1 1 1 0 0 1 6 568 # Async clear at high
+1 1 1 1 0 1 6 569 # Release clear high
+1 1 0 1 0 1 6 570 # Falling/prepare
+1 1 0 1 0 1 6 571 # Low hold
+1 1 1 1 1 0 6 572 # Rising
+1 1 1 1 1 0 6 573 # High hold
+1 1 1 1 1 0 6 574 # High hold
+1 1 1 1 1 0 6 575 # High hold
+0 0 0 1 1 0 6 576 # Falling/prepare
+0 0 0 1 1 0 6 577 # Low hold
+0 0 1 1 1 0 6 578 # Rising
+0 0 1 1 1 0 6 579 # High hold
+0 0 1 1 1 0 6 580 # High hold
+0 0 1 1 1 0 6 581 # High hold
+0 1 0 1 1 0 6 582 # Falling/prepare
+0 1 0 1 1 0 6 583 # Low hold
+0 1 1 1 0 1 6 584 # Rising
+0 1 1 1 0 1 6 585 # High hold
+0 1 1 1 0 1 6 586 # High hold
+0 1 1 1 0 1 6 587 # High hold
+1 0 0 1 0 1 6 588 # Falling/prepare
+1 0 0 1 0 1 6 589 # Low hold
+1 0 1 1 1 0 6 590 # Rising
+1 0 1 1 1 0 6 591 # High hold
+1 0 1 1 1 0 6 592 # High hold
+1 0 1 1 1 0 6 593 # High hold
+0 1 0 1 1 0 6 594 # Falling/prepare
+0 1 0 1 1 0 6 595 # Low hold
+0 1 1 1 0 1 6 596 # Rising
+0 1 1 1 0 1 6 597 # High hold
+0 1 1 1 0 1 6 598 # High hold
+0 1 1 1 0 1 6 599 # High hold
+1 1 0 1 0 1 6 600 # Falling/prepare
+1 1 0 1 0 1 6 601 # Low hold
+1 1 1 1 1 0 6 602 # Rising
+1 1 1 1 1 0 6 603 # High hold
+1 1 1 1 1 0 6 604 # High hold
+1 1 1 1 1 0 6 605 # High hold
+1 0 0 1 1 0 6 606 # Falling/prepare
+1 0 0 1 1 0 6 607 # Low hold
+1 0 1 1 1 0 6 608 # Rising
+1 0 1 1 1 0 6 609 # High hold
+1 0 1 1 1 0 6 610 # High hold
+1 0 1 1 1 0 6 611 # High hold
+1 0 0 1 1 0 6 612 # Falling/prepare
+1 0 0 1 1 0 6 613 # Low hold
+1 0 1 1 1 0 6 614 # Rising
+1 0 1 1 1 0 6 615 # High hold
+1 0 1 1 1 0 6 616 # High hold
+1 0 1 1 1 0 6 617 # High hold
+1 0 0 1 1 0 6 618 # Falling/prepare
+1 0 0 1 1 0 6 619 # Low hold
+1 0 1 1 1 0 6 620 # Rising
+1 0 1 1 1 0 6 621 # High hold
+1 0 1 1 1 0 6 622 # High hold
+1 0 1 1 1 0 6 623 # High hold
+1 1 0 0 0 1 7 1 # Cold reset
+1 1 0 0 0 1 7 2 # Reset holds
+1 1 0 1 0 1 7 3 # Release reset
+1 1 0 1 0 1 7 4 # Falling/prepare
+1 1 0 1 0 1 7 5 # Low hold
+1 1 1 1 1 0 7 6 # Rising
+1 1 1 1 1 0 7 7 # High hold
+1 1 1 1 1 0 7 8 # High hold
+1 1 1 1 1 0 7 9 # High hold
+1 1 1 0 0 1 7 10 # Async clear at high
+1 1 1 1 0 1 7 11 # Release clear high
+1 1 0 1 0 1 7 12 # Falling/prepare
+1 1 0 1 0 1 7 13 # Low hold
+1 1 1 1 1 0 7 14 # Rising
+1 1 1 1 1 0 7 15 # High hold
+1 1 1 1 1 0 7 16 # High hold
+1 1 1 1 1 0 7 17 # High hold
+1 1 0 1 1 0 7 18 # Falling/prepare
+1 1 0 1 1 0 7 19 # Low hold
+1 1 1 1 0 1 7 20 # Rising
+1 1 1 1 0 1 7 21 # High hold
+1 1 1 1 0 1 7 22 # High hold
+1 1 1 1 0 1 7 23 # High hold
+1 1 0 1 0 1 7 24 # Falling/prepare
+1 1 0 1 0 1 7 25 # Low hold
+1 1 1 1 1 0 7 26 # Rising
+1 1 1 1 1 0 7 27 # High hold
+1 1 1 1 1 0 7 28 # High hold
+1 1 1 1 1 0 7 29 # High hold
+1 1 0 1 1 0 7 30 # Falling/prepare
+1 1 0 1 1 0 7 31 # Low hold
+1 1 1 1 0 1 7 32 # Rising
+1 1 1 1 0 1 7 33 # High hold
+1 1 1 1 0 1 7 34 # High hold
+1 1 1 1 0 1 7 35 # High hold
+1 1 0 1 0 1 7 36 # Falling/prepare
+1 1 0 1 0 1 7 37 # Low hold
+1 1 1 1 1 0 7 38 # Rising
+1 1 1 1 1 0 7 39 # High hold
+1 1 1 1 1 0 7 40 # High hold
+1 1 1 1 1 0 7 41 # High hold
+1 1 0 1 1 0 7 42 # Falling/prepare
+1 1 0 1 1 0 7 43 # Low hold
+1 1 1 1 0 1 7 44 # Rising
+1 1 1 1 0 1 7 45 # High hold
+1 1 1 1 0 1 7 46 # High hold
+1 1 1 1 0 1 7 47 # High hold
+1 1 0 1 0 1 7 48 # Falling/prepare
+1 1 0 1 0 1 7 49 # Low hold
+1 1 1 1 1 0 7 50 # Rising
+1 1 1 1 1 0 7 51 # High hold
+1 1 1 1 1 0 7 52 # High hold
+1 1 1 1 1 0 7 53 # High hold
+1 1 0 1 1 0 7 54 # Falling/prepare
+1 1 0 1 1 0 7 55 # Low hold
+1 1 1 1 0 1 7 56 # Rising
+1 1 1 1 0 1 7 57 # High hold
+1 1 1 1 0 1 7 58 # High hold
+1 1 1 1 0 1 7 59 # High hold
+1 1 0 1 0 1 7 60 # Falling/prepare
+1 1 0 1 0 1 7 61 # Low hold
+1 1 1 1 1 0 7 62 # Rising
+1 1 1 1 1 0 7 63 # High hold
+1 1 1 1 1 0 7 64 # High hold
+1 1 1 1 1 0 7 65 # High hold
+1 1 0 1 1 0 7 66 # Falling/prepare
+1 1 0 1 1 0 7 67 # Low hold
+1 1 1 1 0 1 7 68 # Rising
+1 1 1 1 0 1 7 69 # High hold
+1 1 1 1 0 1 7 70 # High hold
+1 1 1 1 0 1 7 71 # High hold
+1 1 1 0 0 1 7 72 # Async clear at high
+1 1 1 1 0 1 7 73 # Release clear high
+1 1 0 1 0 1 7 74 # Falling/prepare
+1 1 0 1 0 1 7 75 # Low hold
+1 1 1 1 1 0 7 76 # Rising
+1 1 1 1 1 0 7 77 # High hold
+1 1 1 1 1 0 7 78 # High hold
+1 1 1 1 1 0 7 79 # High hold
+1 1 0 1 1 0 7 80 # Falling/prepare
+1 1 0 1 1 0 7 81 # Low hold
+1 1 1 1 0 1 7 82 # Rising
+1 1 1 1 0 1 7 83 # High hold
+1 1 1 1 0 1 7 84 # High hold
+1 1 1 1 0 1 7 85 # High hold
+1 1 0 1 0 1 7 86 # Falling/prepare
+1 1 0 1 0 1 7 87 # Low hold
+1 1 1 1 1 0 7 88 # Rising
+1 1 1 1 1 0 7 89 # High hold
+1 1 1 1 1 0 7 90 # High hold
+1 1 1 1 1 0 7 91 # High hold
+1 1 0 1 1 0 7 92 # Falling/prepare
+1 1 0 1 1 0 7 93 # Low hold
+1 1 1 1 0 1 7 94 # Rising
+1 1 1 1 0 1 7 95 # High hold
+1 1 1 1 0 1 7 96 # High hold
+1 1 1 1 0 1 7 97 # High hold
+1 1 0 1 0 1 7 98 # Falling/prepare
+1 1 0 1 0 1 7 99 # Low hold
+1 1 1 1 1 0 7 100 # Rising
+1 1 1 1 1 0 7 101 # High hold
+1 1 1 1 1 0 7 102 # High hold
+1 1 1 1 1 0 7 103 # High hold
+1 1 0 1 1 0 7 104 # Falling/prepare
+1 1 0 1 1 0 7 105 # Low hold
+1 1 1 1 0 1 7 106 # Rising
+1 1 1 1 0 1 7 107 # High hold
+1 1 1 1 0 1 7 108 # High hold
+1 1 1 1 0 1 7 109 # High hold
+1 1 0 1 0 1 7 110 # Falling/prepare
+1 1 0 1 0 1 7 111 # Low hold
+1 1 1 1 1 0 7 112 # Rising
+1 1 1 1 1 0 7 113 # High hold
+1 1 1 1 1 0 7 114 # High hold
+1 1 1 1 1 0 7 115 # High hold
+1 1 0 1 1 0 7 116 # Falling/prepare
+1 1 0 1 1 0 7 117 # Low hold
+1 1 1 1 0 1 7 118 # Rising
+1 1 1 1 0 1 7 119 # High hold
+1 1 1 1 0 1 7 120 # High hold
+1 1 1 1 0 1 7 121 # High hold
+1 1 0 1 0 1 7 122 # Falling/prepare
+1 1 0 1 0 1 7 123 # Low hold
+1 1 1 1 1 0 7 124 # Rising
+1 1 1 1 1 0 7 125 # High hold
+1 1 1 1 1 0 7 126 # High hold
+1 1 1 1 1 0 7 127 # High hold
+1 1 0 1 1 0 7 128 # Falling/prepare
+1 1 0 1 1 0 7 129 # Low hold
+1 1 1 1 0 1 7 130 # Rising
+1 1 1 1 0 1 7 131 # High hold
+1 1 1 1 0 1 7 132 # High hold
+1 1 1 1 0 1 7 133 # High hold
+1 1 1 0 0 1 7 134 # Async clear at high
+1 1 1 1 0 1 7 135 # Release clear high
+1 1 0 1 0 1 7 136 # Falling/prepare
+1 1 0 1 0 1 7 137 # Low hold
+1 1 1 1 1 0 7 138 # Rising
+1 1 1 1 1 0 7 139 # High hold
+1 1 1 1 1 0 7 140 # High hold
+1 1 1 1 1 0 7 141 # High hold
+1 1 0 1 1 0 7 142 # Falling/prepare
+1 1 0 1 1 0 7 143 # Low hold
+1 1 1 1 0 1 7 144 # Rising
+1 1 1 1 0 1 7 145 # High hold
+1 1 1 1 0 1 7 146 # High hold
+1 1 1 1 0 1 7 147 # High hold
+1 1 0 1 0 1 7 148 # Falling/prepare
+1 1 0 1 0 1 7 149 # Low hold
+1 1 1 1 1 0 7 150 # Rising
+1 1 1 1 1 0 7 151 # High hold
+1 1 1 1 1 0 7 152 # High hold
+1 1 1 1 1 0 7 153 # High hold
+1 1 0 1 1 0 7 154 # Falling/prepare
+1 1 0 1 1 0 7 155 # Low hold
+1 1 1 1 0 1 7 156 # Rising
+1 1 1 1 0 1 7 157 # High hold
+1 1 1 1 0 1 7 158 # High hold
+1 1 1 1 0 1 7 159 # High hold
+1 1 0 1 0 1 7 160 # Falling/prepare
+1 1 0 1 0 1 7 161 # Low hold
+1 1 1 1 1 0 7 162 # Rising
+1 1 1 1 1 0 7 163 # High hold
+1 1 1 1 1 0 7 164 # High hold
+1 1 1 1 1 0 7 165 # High hold
+1 1 0 1 1 0 7 166 # Falling/prepare
+1 1 0 1 1 0 7 167 # Low hold
+1 1 1 1 0 1 7 168 # Rising
+1 1 1 1 0 1 7 169 # High hold
+1 1 1 1 0 1 7 170 # High hold
+1 1 1 1 0 1 7 171 # High hold
+1 1 0 1 0 1 7 172 # Falling/prepare
+1 1 0 1 0 1 7 173 # Low hold
+1 1 1 1 1 0 7 174 # Rising
+1 1 1 1 1 0 7 175 # High hold
+1 1 1 1 1 0 7 176 # High hold
+1 1 1 1 1 0 7 177 # High hold
+1 1 0 1 1 0 7 178 # Falling/prepare
+1 1 0 1 1 0 7 179 # Low hold
+1 1 1 1 0 1 7 180 # Rising
+1 1 1 1 0 1 7 181 # High hold
+1 1 1 1 0 1 7 182 # High hold
+1 1 1 1 0 1 7 183 # High hold
+1 1 0 1 0 1 7 184 # Falling/prepare
+1 1 0 1 0 1 7 185 # Low hold
+1 1 1 1 1 0 7 186 # Rising
+1 1 1 1 1 0 7 187 # High hold
+1 1 1 1 1 0 7 188 # High hold
+1 1 1 1 1 0 7 189 # High hold
+1 1 0 1 1 0 7 190 # Falling/prepare
+1 1 0 1 1 0 7 191 # Low hold
+1 1 1 1 0 1 7 192 # Rising
+1 1 1 1 0 1 7 193 # High hold
+1 1 1 1 0 1 7 194 # High hold
+1 1 1 1 0 1 7 195 # High hold
+1 1 1 0 0 1 7 196 # Async clear at high
+1 1 1 1 0 1 7 197 # Release clear high
+1 1 0 1 0 1 7 198 # Falling/prepare
+1 1 0 1 0 1 7 199 # Low hold
+1 1 1 1 1 0 7 200 # Rising
+1 1 1 1 1 0 7 201 # High hold
+1 1 1 1 1 0 7 202 # High hold
+1 1 1 1 1 0 7 203 # High hold
+1 1 0 1 1 0 7 204 # Falling/prepare
+1 1 0 1 1 0 7 205 # Low hold
+1 1 1 1 0 1 7 206 # Rising
+1 1 1 1 0 1 7 207 # High hold
+1 1 1 1 0 1 7 208 # High hold
+1 1 1 1 0 1 7 209 # High hold
+1 1 0 1 0 1 7 210 # Falling/prepare
+1 1 0 1 0 1 7 211 # Low hold
+1 1 1 1 1 0 7 212 # Rising
+1 1 1 1 1 0 7 213 # High hold
+1 1 1 1 1 0 7 214 # High hold
+1 1 1 1 1 0 7 215 # High hold
+1 1 0 1 1 0 7 216 # Falling/prepare
+1 1 0 1 1 0 7 217 # Low hold
+1 1 1 1 0 1 7 218 # Rising
+1 1 1 1 0 1 7 219 # High hold
+1 1 1 1 0 1 7 220 # High hold
+1 1 1 1 0 1 7 221 # High hold
+1 1 0 1 0 1 7 222 # Falling/prepare
+1 1 0 1 0 1 7 223 # Low hold
+1 1 1 1 1 0 7 224 # Rising
+1 1 1 1 1 0 7 225 # High hold
+1 1 1 1 1 0 7 226 # High hold
+1 1 1 1 1 0 7 227 # High hold
+1 1 0 1 1 0 7 228 # Falling/prepare
+1 1 0 1 1 0 7 229 # Low hold
+1 1 1 1 0 1 7 230 # Rising
+1 1 1 1 0 1 7 231 # High hold
+1 1 1 1 0 1 7 232 # High hold
+1 1 1 1 0 1 7 233 # High hold
+1 1 0 1 0 1 7 234 # Falling/prepare
+1 1 0 1 0 1 7 235 # Low hold
+1 1 1 1 1 0 7 236 # Rising
+1 1 1 1 1 0 7 237 # High hold
+1 1 1 1 1 0 7 238 # High hold
+1 1 1 1 1 0 7 239 # High hold
+1 1 0 1 1 0 7 240 # Falling/prepare
+1 1 0 1 1 0 7 241 # Low hold
+1 1 1 1 0 1 7 242 # Rising
+1 1 1 1 0 1 7 243 # High hold
+1 1 1 1 0 1 7 244 # High hold
+1 1 1 1 0 1 7 245 # High hold
+1 1 0 1 0 1 7 246 # Falling/prepare
+1 1 0 1 0 1 7 247 # Low hold
+1 1 1 1 1 0 7 248 # Rising
+1 1 1 1 1 0 7 249 # High hold
+1 1 1 1 1 0 7 250 # High hold
+1 1 1 1 1 0 7 251 # High hold
+1 1 0 1 1 0 7 252 # Falling/prepare
+1 1 0 1 1 0 7 253 # Low hold
+1 1 1 1 0 1 7 254 # Rising
+1 1 1 1 0 1 7 255 # High hold
+1 1 1 1 0 1 7 256 # High hold
+1 1 1 1 0 1 7 257 # High hold
+1 1 1 0 0 1 7 258 # Async clear at high
+1 1 1 1 0 1 7 259 # Release clear high
+1 1 0 1 0 1 7 260 # Falling/prepare
+1 1 0 1 0 1 7 261 # Low hold
+1 1 1 1 1 0 7 262 # Rising
+1 1 1 1 1 0 7 263 # High hold
+1 1 1 1 1 0 7 264 # High hold
+1 1 1 1 1 0 7 265 # High hold
+1 1 0 1 1 0 7 266 # Falling/prepare
+1 1 0 1 1 0 7 267 # Low hold
+1 1 1 1 0 1 7 268 # Rising
+1 1 1 1 0 1 7 269 # High hold
+1 1 1 1 0 1 7 270 # High hold
+1 1 1 1 0 1 7 271 # High hold
+1 1 0 1 0 1 7 272 # Falling/prepare
+1 1 0 1 0 1 7 273 # Low hold
+1 1 1 1 1 0 7 274 # Rising
+1 1 1 1 1 0 7 275 # High hold
+1 1 1 1 1 0 7 276 # High hold
+1 1 1 1 1 0 7 277 # High hold
+1 1 0 1 1 0 7 278 # Falling/prepare
+1 1 0 1 1 0 7 279 # Low hold
+1 1 1 1 0 1 7 280 # Rising
+1 1 1 1 0 1 7 281 # High hold
+1 1 1 1 0 1 7 282 # High hold
+1 1 1 1 0 1 7 283 # High hold
+1 1 0 1 0 1 7 284 # Falling/prepare
+1 1 0 1 0 1 7 285 # Low hold
+1 1 1 1 1 0 7 286 # Rising
+1 1 1 1 1 0 7 287 # High hold
+1 1 1 1 1 0 7 288 # High hold
+1 1 1 1 1 0 7 289 # High hold
+1 1 0 1 1 0 7 290 # Falling/prepare
+1 1 0 1 1 0 7 291 # Low hold
+1 1 1 1 0 1 7 292 # Rising
+1 1 1 1 0 1 7 293 # High hold
+1 1 1 1 0 1 7 294 # High hold
+1 1 1 1 0 1 7 295 # High hold
+1 1 0 1 0 1 7 296 # Falling/prepare
+1 1 0 1 0 1 7 297 # Low hold
+1 1 1 1 1 0 7 298 # Rising
+1 1 1 1 1 0 7 299 # High hold
+1 1 1 1 1 0 7 300 # High hold
+1 1 1 1 1 0 7 301 # High hold
+1 1 0 1 1 0 7 302 # Falling/prepare
+1 1 0 1 1 0 7 303 # Low hold
+1 1 1 1 0 1 7 304 # Rising
+1 1 1 1 0 1 7 305 # High hold
+1 1 1 1 0 1 7 306 # High hold
+1 1 1 1 0 1 7 307 # High hold
+1 1 0 1 0 1 7 308 # Falling/prepare
+1 1 0 1 0 1 7 309 # Low hold
+1 1 1 1 1 0 7 310 # Rising
+1 1 1 1 1 0 7 311 # High hold
+1 1 1 1 1 0 7 312 # High hold
+1 1 1 1 1 0 7 313 # High hold
+0 0 0 1 1 0 7 314 # Falling/prepare
+0 0 0 1 1 0 7 315 # Low hold
+0 0 1 1 1 0 7 316 # Rising
+0 0 1 1 1 0 7 317 # High hold
+0 0 1 1 1 0 7 318 # High hold
+0 0 1 1 1 0 7 319 # High hold
+1 1 1 0 0 1 7 320 # Async clear at high
+1 1 1 1 0 1 7 321 # Release clear high
+0 1 0 1 0 1 7 322 # Falling/prepare
+0 1 0 1 0 1 7 323 # Low hold
+0 1 1 1 0 1 7 324 # Rising
+0 1 1 1 0 1 7 325 # High hold
+0 1 1 1 0 1 7 326 # High hold
+0 1 1 1 0 1 7 327 # High hold
+1 1 0 1 0 1 7 328 # Falling/prepare
+1 1 0 1 0 1 7 329 # Low hold
+1 1 1 1 1 0 7 330 # Rising
+1 1 1 1 1 0 7 331 # High hold
+1 1 1 1 1 0 7 332 # High hold
+1 1 1 1 1 0 7 333 # High hold
+1 0 0 1 1 0 7 334 # Falling/prepare
+1 0 0 1 1 0 7 335 # Low hold
+1 0 1 1 1 0 7 336 # Rising
+1 0 1 1 1 0 7 337 # High hold
+1 0 1 1 1 0 7 338 # High hold
+1 0 1 1 1 0 7 339 # High hold
+0 1 0 1 1 0 7 340 # Falling/prepare
+0 1 0 1 1 0 7 341 # Low hold
+0 1 1 1 0 1 7 342 # Rising
+0 1 1 1 0 1 7 343 # High hold
+0 1 1 1 0 1 7 344 # High hold
+0 1 1 1 0 1 7 345 # High hold
+0 1 0 1 0 1 7 346 # Falling/prepare
+0 1 0 1 0 1 7 347 # Low hold
+0 1 1 1 0 1 7 348 # Rising
+0 1 1 1 0 1 7 349 # High hold
+0 1 1 1 0 1 7 350 # High hold
+0 1 1 1 0 1 7 351 # High hold
+1 1 0 1 0 1 7 352 # Falling/prepare
+1 1 0 1 0 1 7 353 # Low hold
+1 1 1 1 1 0 7 354 # Rising
+1 1 1 1 1 0 7 355 # High hold
+1 1 1 1 1 0 7 356 # High hold
+1 1 1 1 1 0 7 357 # High hold
+0 1 0 1 1 0 7 358 # Falling/prepare
+0 1 0 1 1 0 7 359 # Low hold
+0 1 1 1 0 1 7 360 # Rising
+0 1 1 1 0 1 7 361 # High hold
+0 1 1 1 0 1 7 362 # High hold
+0 1 1 1 0 1 7 363 # High hold
+0 1 0 1 0 1 7 364 # Falling/prepare
+0 1 0 1 0 1 7 365 # Low hold
+0 1 1 1 0 1 7 366 # Rising
+0 1 1 1 0 1 7 367 # High hold
+0 1 1 1 0 1 7 368 # High hold
+0 1 1 1 0 1 7 369 # High hold
+0 1 0 1 0 1 7 370 # Falling/prepare
+0 1 0 1 0 1 7 371 # Low hold
+0 1 1 1 0 1 7 372 # Rising
+0 1 1 1 0 1 7 373 # High hold
+0 1 1 1 0 1 7 374 # High hold
+0 1 1 1 0 1 7 375 # High hold
+0 1 0 1 0 1 7 376 # Falling/prepare
+0 1 0 1 0 1 7 377 # Low hold
+0 1 1 1 0 1 7 378 # Rising
+0 1 1 1 0 1 7 379 # High hold
+0 1 1 1 0 1 7 380 # High hold
+0 1 1 1 0 1 7 381 # High hold
+1 1 1 0 0 1 7 382 # Async clear at high
+1 1 1 1 0 1 7 383 # Release clear high
+0 1 0 1 0 1 7 384 # Falling/prepare
+0 1 0 1 0 1 7 385 # Low hold
+0 1 1 1 0 1 7 386 # Rising
+0 1 1 1 0 1 7 387 # High hold
+0 1 1 1 0 1 7 388 # High hold
+0 1 1 1 0 1 7 389 # High hold
+1 0 0 1 0 1 7 390 # Falling/prepare
+1 0 0 1 0 1 7 391 # Low hold
+1 0 1 1 1 0 7 392 # Rising
+1 0 1 1 1 0 7 393 # High hold
+1 0 1 1 1 0 7 394 # High hold
+1 0 1 1 1 0 7 395 # High hold
+0 0 0 1 1 0 7 396 # Falling/prepare
+0 0 0 1 1 0 7 397 # Low hold
+0 0 1 1 1 0 7 398 # Rising
+0 0 1 1 1 0 7 399 # High hold
+0 0 1 1 1 0 7 400 # High hold
+0 0 1 1 1 0 7 401 # High hold
+1 0 0 1 1 0 7 402 # Falling/prepare
+1 0 0 1 1 0 7 403 # Low hold
+1 0 1 1 1 0 7 404 # Rising
+1 0 1 1 1 0 7 405 # High hold
+1 0 1 1 1 0 7 406 # High hold
+1 0 1 1 1 0 7 407 # High hold
+1 1 0 1 1 0 7 408 # Falling/prepare
+1 1 0 1 1 0 7 409 # Low hold
+1 1 1 1 0 1 7 410 # Rising
+1 1 1 1 0 1 7 411 # High hold
+1 1 1 1 0 1 7 412 # High hold
+1 1 1 1 0 1 7 413 # High hold
+0 0 0 1 0 1 7 414 # Falling/prepare
+0 0 0 1 0 1 7 415 # Low hold
+0 0 1 1 0 1 7 416 # Rising
+0 0 1 1 0 1 7 417 # High hold
+0 0 1 1 0 1 7 418 # High hold
+0 0 1 1 0 1 7 419 # High hold
+0 0 0 1 0 1 7 420 # Falling/prepare
+0 0 0 1 0 1 7 421 # Low hold
+0 0 1 1 0 1 7 422 # Rising
+0 0 1 1 0 1 7 423 # High hold
+0 0 1 1 0 1 7 424 # High hold
+0 0 1 1 0 1 7 425 # High hold
+1 1 0 1 0 1 7 426 # Falling/prepare
+1 1 0 1 0 1 7 427 # Low hold
+1 1 1 1 1 0 7 428 # Rising
+1 1 1 1 1 0 7 429 # High hold
+1 1 1 1 1 0 7 430 # High hold
+1 1 1 1 1 0 7 431 # High hold
+0 1 0 1 1 0 7 432 # Falling/prepare
+0 1 0 1 1 0 7 433 # Low hold
+0 1 1 1 0 1 7 434 # Rising
+0 1 1 1 0 1 7 435 # High hold
+0 1 1 1 0 1 7 436 # High hold
+0 1 1 1 0 1 7 437 # High hold
+0 1 0 1 0 1 7 438 # Falling/prepare
+0 1 0 1 0 1 7 439 # Low hold
+0 1 1 1 0 1 7 440 # Rising
+0 1 1 1 0 1 7 441 # High hold
+0 1 1 1 0 1 7 442 # High hold
+0 1 1 1 0 1 7 443 # High hold
+1 1 1 0 0 1 7 444 # Async clear at high
+1 1 1 1 0 1 7 445 # Release clear high
+1 1 0 1 0 1 7 446 # Falling/prepare
+1 1 0 1 0 1 7 447 # Low hold
+1 1 1 1 1 0 7 448 # Rising
+1 1 1 1 1 0 7 449 # High hold
+1 1 1 1 1 0 7 450 # High hold
+1 1 1 1 1 0 7 451 # High hold
+1 0 0 1 1 0 7 452 # Falling/prepare
+1 0 0 1 1 0 7 453 # Low hold
+1 0 1 1 1 0 7 454 # Rising
+1 0 1 1 1 0 7 455 # High hold
+1 0 1 1 1 0 7 456 # High hold
+1 0 1 1 1 0 7 457 # High hold
+0 0 0 1 1 0 7 458 # Falling/prepare
+0 0 0 1 1 0 7 459 # Low hold
+0 0 1 1 1 0 7 460 # Rising
+0 0 1 1 1 0 7 461 # High hold
+0 0 1 1 1 0 7 462 # High hold
+0 0 1 1 1 0 7 463 # High hold
+0 0 0 1 1 0 7 464 # Falling/prepare
+0 0 0 1 1 0 7 465 # Low hold
+0 0 1 1 1 0 7 466 # Rising
+0 0 1 1 1 0 7 467 # High hold
+0 0 1 1 1 0 7 468 # High hold
+0 0 1 1 1 0 7 469 # High hold
+0 1 0 1 1 0 7 470 # Falling/prepare
+0 1 0 1 1 0 7 471 # Low hold
+0 1 1 1 0 1 7 472 # Rising
+0 1 1 1 0 1 7 473 # High hold
+0 1 1 1 0 1 7 474 # High hold
+0 1 1 1 0 1 7 475 # High hold
+1 0 0 1 0 1 7 476 # Falling/prepare
+1 0 0 1 0 1 7 477 # Low hold
+1 0 1 1 1 0 7 478 # Rising
+1 0 1 1 1 0 7 479 # High hold
+1 0 1 1 1 0 7 480 # High hold
+1 0 1 1 1 0 7 481 # High hold
+0 0 0 1 1 0 7 482 # Falling/prepare
+0 0 0 1 1 0 7 483 # Low hold
+0 0 1 1 1 0 7 484 # Rising
+0 0 1 1 1 0 7 485 # High hold
+0 0 1 1 1 0 7 486 # High hold
+0 0 1 1 1 0 7 487 # High hold
+1 0 0 1 1 0 7 488 # Falling/prepare
+1 0 0 1 1 0 7 489 # Low hold
+1 0 1 1 1 0 7 490 # Rising
+1 0 1 1 1 0 7 491 # High hold
+1 0 1 1 1 0 7 492 # High hold
+1 0 1 1 1 0 7 493 # High hold
+0 0 0 1 1 0 7 494 # Falling/prepare
+0 0 0 1 1 0 7 495 # Low hold
+0 0 1 1 1 0 7 496 # Rising
+0 0 1 1 1 0 7 497 # High hold
+0 0 1 1 1 0 7 498 # High hold
+0 0 1 1 1 0 7 499 # High hold
+0 1 0 1 1 0 7 500 # Falling/prepare
+0 1 0 1 1 0 7 501 # Low hold
+0 1 1 1 0 1 7 502 # Rising
+0 1 1 1 0 1 7 503 # High hold
+0 1 1 1 0 1 7 504 # High hold
+0 1 1 1 0 1 7 505 # High hold
+1 1 1 0 0 1 7 506 # Async clear at high
+1 1 1 1 0 1 7 507 # Release clear high
+1 1 0 1 0 1 7 508 # Falling/prepare
+1 1 0 1 0 1 7 509 # Low hold
+1 1 1 1 1 0 7 510 # Rising
+1 1 1 1 1 0 7 511 # High hold
+1 1 1 1 1 0 7 512 # High hold
+1 1 1 1 1 0 7 513 # High hold
+1 0 0 1 1 0 7 514 # Falling/prepare
+1 0 0 1 1 0 7 515 # Low hold
+1 0 1 1 1 0 7 516 # Rising
+1 0 1 1 1 0 7 517 # High hold
+1 0 1 1 1 0 7 518 # High hold
+1 0 1 1 1 0 7 519 # High hold
+1 1 0 1 1 0 7 520 # Falling/prepare
+1 1 0 1 1 0 7 521 # Low hold
+1 1 1 1 0 1 7 522 # Rising
+1 1 1 1 0 1 7 523 # High hold
+1 1 1 1 0 1 7 524 # High hold
+1 1 1 1 0 1 7 525 # High hold
+1 1 0 1 0 1 7 526 # Falling/prepare
+1 1 0 1 0 1 7 527 # Low hold
+1 1 1 1 1 0 7 528 # Rising
+1 1 1 1 1 0 7 529 # High hold
+1 1 1 1 1 0 7 530 # High hold
+1 1 1 1 1 0 7 531 # High hold
+1 1 0 1 1 0 7 532 # Falling/prepare
+1 1 0 1 1 0 7 533 # Low hold
+1 1 1 1 0 1 7 534 # Rising
+1 1 1 1 0 1 7 535 # High hold
+1 1 1 1 0 1 7 536 # High hold
+1 1 1 1 0 1 7 537 # High hold
+0 0 0 1 0 1 7 538 # Falling/prepare
+0 0 0 1 0 1 7 539 # Low hold
+0 0 1 1 0 1 7 540 # Rising
+0 0 1 1 0 1 7 541 # High hold
+0 0 1 1 0 1 7 542 # High hold
+0 0 1 1 0 1 7 543 # High hold
+1 1 0 1 0 1 7 544 # Falling/prepare
+1 1 0 1 0 1 7 545 # Low hold
+1 1 1 1 1 0 7 546 # Rising
+1 1 1 1 1 0 7 547 # High hold
+1 1 1 1 1 0 7 548 # High hold
+1 1 1 1 1 0 7 549 # High hold
+0 1 0 1 1 0 7 550 # Falling/prepare
+0 1 0 1 1 0 7 551 # Low hold
+0 1 1 1 0 1 7 552 # Rising
+0 1 1 1 0 1 7 553 # High hold
+0 1 1 1 0 1 7 554 # High hold
+0 1 1 1 0 1 7 555 # High hold
+1 1 0 1 0 1 7 556 # Falling/prepare
+1 1 0 1 0 1 7 557 # Low hold
+1 1 1 1 1 0 7 558 # Rising
+1 1 1 1 1 0 7 559 # High hold
+1 1 1 1 1 0 7 560 # High hold
+1 1 1 1 1 0 7 561 # High hold
+0 1 0 1 1 0 7 562 # Falling/prepare
+0 1 0 1 1 0 7 563 # Low hold
+0 1 1 1 0 1 7 564 # Rising
+0 1 1 1 0 1 7 565 # High hold
+0 1 1 1 0 1 7 566 # High hold
+0 1 1 1 0 1 7 567 # High hold
+1 1 1 0 0 1 7 568 # Async clear at high
+1 1 1 1 0 1 7 569 # Release clear high
+1 1 0 1 0 1 7 570 # Falling/prepare
+1 1 0 1 0 1 7 571 # Low hold
+1 1 1 1 1 0 7 572 # Rising
+1 1 1 1 1 0 7 573 # High hold
+1 1 1 1 1 0 7 574 # High hold
+1 1 1 1 1 0 7 575 # High hold
+1 1 0 1 1 0 7 576 # Falling/prepare
+1 1 0 1 1 0 7 577 # Low hold
+1 1 1 1 0 1 7 578 # Rising
+1 1 1 1 0 1 7 579 # High hold
+1 1 1 1 0 1 7 580 # High hold
+1 1 1 1 0 1 7 581 # High hold
+0 0 0 1 0 1 7 582 # Falling/prepare
+0 0 0 1 0 1 7 583 # Low hold
+0 0 1 1 0 1 7 584 # Rising
+0 0 1 1 0 1 7 585 # High hold
+0 0 1 1 0 1 7 586 # High hold
+0 0 1 1 0 1 7 587 # High hold
+0 1 0 1 0 1 7 588 # Falling/prepare
+0 1 0 1 0 1 7 589 # Low hold
+0 1 1 1 0 1 7 590 # Rising
+0 1 1 1 0 1 7 591 # High hold
+0 1 1 1 0 1 7 592 # High hold
+0 1 1 1 0 1 7 593 # High hold
+0 0 0 1 0 1 7 594 # Falling/prepare
+0 0 0 1 0 1 7 595 # Low hold
+0 0 1 1 0 1 7 596 # Rising
+0 0 1 1 0 1 7 597 # High hold
+0 0 1 1 0 1 7 598 # High hold
+0 0 1 1 0 1 7 599 # High hold
+0 0 0 1 0 1 7 600 # Falling/prepare
+0 0 0 1 0 1 7 601 # Low hold
+0 0 1 1 0 1 7 602 # Rising
+0 0 1 1 0 1 7 603 # High hold
+0 0 1 1 0 1 7 604 # High hold
+0 0 1 1 0 1 7 605 # High hold
+0 0 0 1 0 1 7 606 # Falling/prepare
+0 0 0 1 0 1 7 607 # Low hold
+0 0 1 1 0 1 7 608 # Rising
+0 0 1 1 0 1 7 609 # High hold
+0 0 1 1 0 1 7 610 # High hold
+0 0 1 1 0 1 7 611 # High hold
+1 0 0 1 0 1 7 612 # Falling/prepare
+1 0 0 1 0 1 7 613 # Low hold
+1 0 1 1 1 0 7 614 # Rising
+1 0 1 1 1 0 7 615 # High hold
+1 0 1 1 1 0 7 616 # High hold
+1 0 1 1 1 0 7 617 # High hold
+0 1 0 1 1 0 7 618 # Falling/prepare
+0 1 0 1 1 0 7 619 # Low hold
+0 1 1 1 0 1 7 620 # Rising
+0 1 1 1 0 1 7 621 # High hold
+0 1 1 1 0 1 7 622 # High hold
+0 1 1 1 0 1 7 623 # High hold
+1 1 1 0 0 1 8 1 # Cold reset
+1 1 1 0 0 1 8 2 # Reset holds
+1 1 1 1 0 1 8 3 # Release reset
+1 1 0 1 0 1 8 4 # Falling/prepare
+1 1 0 1 0 1 8 5 # Low hold
+1 1 1 1 1 0 8 6 # Rising
+1 1 1 1 1 0 8 7 # High hold
+1 1 1 1 1 0 8 8 # High hold
+1 1 1 1 1 0 8 9 # High hold
+1 1 1 0 0 1 8 10 # Async clear at high
+1 1 1 1 0 1 8 11 # Release clear high
+1 1 0 1 0 1 8 12 # Falling/prepare
+1 1 0 1 0 1 8 13 # Low hold
+1 1 1 1 1 0 8 14 # Rising
+1 1 1 1 1 0 8 15 # High hold
+1 1 1 1 1 0 8 16 # High hold
+1 1 1 1 1 0 8 17 # High hold
+1 1 0 1 1 0 8 18 # Falling/prepare
+1 1 0 1 1 0 8 19 # Low hold
+1 1 1 1 0 1 8 20 # Rising
+1 1 1 1 0 1 8 21 # High hold
+1 1 1 1 0 1 8 22 # High hold
+1 1 1 1 0 1 8 23 # High hold
+1 1 0 1 0 1 8 24 # Falling/prepare
+1 1 0 1 0 1 8 25 # Low hold
+1 1 1 1 1 0 8 26 # Rising
+1 1 1 1 1 0 8 27 # High hold
+1 1 1 1 1 0 8 28 # High hold
+1 1 1 1 1 0 8 29 # High hold
+1 1 0 1 1 0 8 30 # Falling/prepare
+1 1 0 1 1 0 8 31 # Low hold
+1 1 1 1 0 1 8 32 # Rising
+1 1 1 1 0 1 8 33 # High hold
+1 1 1 1 0 1 8 34 # High hold
+1 1 1 1 0 1 8 35 # High hold
+1 1 0 1 0 1 8 36 # Falling/prepare
+1 1 0 1 0 1 8 37 # Low hold
+1 1 1 1 1 0 8 38 # Rising
+1 1 1 1 1 0 8 39 # High hold
+1 1 1 1 1 0 8 40 # High hold
+1 1 1 1 1 0 8 41 # High hold
+1 1 0 1 1 0 8 42 # Falling/prepare
+1 1 0 1 1 0 8 43 # Low hold
+1 1 1 1 0 1 8 44 # Rising
+1 1 1 1 0 1 8 45 # High hold
+1 1 1 1 0 1 8 46 # High hold
+1 1 1 1 0 1 8 47 # High hold
+1 1 0 1 0 1 8 48 # Falling/prepare
+1 1 0 1 0 1 8 49 # Low hold
+1 1 1 1 1 0 8 50 # Rising
+1 1 1 1 1 0 8 51 # High hold
+1 1 1 1 1 0 8 52 # High hold
+1 1 1 1 1 0 8 53 # High hold
+1 1 0 1 1 0 8 54 # Falling/prepare
+1 1 0 1 1 0 8 55 # Low hold
+1 1 1 1 0 1 8 56 # Rising
+1 1 1 1 0 1 8 57 # High hold
+1 1 1 1 0 1 8 58 # High hold
+1 1 1 1 0 1 8 59 # High hold
+1 1 0 1 0 1 8 60 # Falling/prepare
+1 1 0 1 0 1 8 61 # Low hold
+1 1 1 1 1 0 8 62 # Rising
+1 1 1 1 1 0 8 63 # High hold
+1 1 1 1 1 0 8 64 # High hold
+1 1 1 1 1 0 8 65 # High hold
+1 1 0 1 1 0 8 66 # Falling/prepare
+1 1 0 1 1 0 8 67 # Low hold
+1 1 1 1 0 1 8 68 # Rising
+1 1 1 1 0 1 8 69 # High hold
+1 1 1 1 0 1 8 70 # High hold
+1 1 1 1 0 1 8 71 # High hold
+1 1 1 0 0 1 8 72 # Async clear at high
+1 1 1 1 0 1 8 73 # Release clear high
+1 1 0 1 0 1 8 74 # Falling/prepare
+1 1 0 1 0 1 8 75 # Low hold
+1 1 1 1 1 0 8 76 # Rising
+1 1 1 1 1 0 8 77 # High hold
+1 1 1 1 1 0 8 78 # High hold
+1 1 1 1 1 0 8 79 # High hold
+1 1 0 1 1 0 8 80 # Falling/prepare
+1 1 0 1 1 0 8 81 # Low hold
+1 1 1 1 0 1 8 82 # Rising
+1 1 1 1 0 1 8 83 # High hold
+1 1 1 1 0 1 8 84 # High hold
+1 1 1 1 0 1 8 85 # High hold
+1 1 0 1 0 1 8 86 # Falling/prepare
+1 1 0 1 0 1 8 87 # Low hold
+1 1 1 1 1 0 8 88 # Rising
+1 1 1 1 1 0 8 89 # High hold
+1 1 1 1 1 0 8 90 # High hold
+1 1 1 1 1 0 8 91 # High hold
+1 1 0 1 1 0 8 92 # Falling/prepare
+1 1 0 1 1 0 8 93 # Low hold
+1 1 1 1 0 1 8 94 # Rising
+1 1 1 1 0 1 8 95 # High hold
+1 1 1 1 0 1 8 96 # High hold
+1 1 1 1 0 1 8 97 # High hold
+1 1 0 1 0 1 8 98 # Falling/prepare
+1 1 0 1 0 1 8 99 # Low hold
+1 1 1 1 1 0 8 100 # Rising
+1 1 1 1 1 0 8 101 # High hold
+1 1 1 1 1 0 8 102 # High hold
+1 1 1 1 1 0 8 103 # High hold
+1 1 0 1 1 0 8 104 # Falling/prepare
+1 1 0 1 1 0 8 105 # Low hold
+1 1 1 1 0 1 8 106 # Rising
+1 1 1 1 0 1 8 107 # High hold
+1 1 1 1 0 1 8 108 # High hold
+1 1 1 1 0 1 8 109 # High hold
+1 1 0 1 0 1 8 110 # Falling/prepare
+1 1 0 1 0 1 8 111 # Low hold
+1 1 1 1 1 0 8 112 # Rising
+1 1 1 1 1 0 8 113 # High hold
+1 1 1 1 1 0 8 114 # High hold
+1 1 1 1 1 0 8 115 # High hold
+1 1 0 1 1 0 8 116 # Falling/prepare
+1 1 0 1 1 0 8 117 # Low hold
+1 1 1 1 0 1 8 118 # Rising
+1 1 1 1 0 1 8 119 # High hold
+1 1 1 1 0 1 8 120 # High hold
+1 1 1 1 0 1 8 121 # High hold
+1 1 0 1 0 1 8 122 # Falling/prepare
+1 1 0 1 0 1 8 123 # Low hold
+1 1 1 1 1 0 8 124 # Rising
+1 1 1 1 1 0 8 125 # High hold
+1 1 1 1 1 0 8 126 # High hold
+1 1 1 1 1 0 8 127 # High hold
+1 1 0 1 1 0 8 128 # Falling/prepare
+1 1 0 1 1 0 8 129 # Low hold
+1 1 1 1 0 1 8 130 # Rising
+1 1 1 1 0 1 8 131 # High hold
+1 1 1 1 0 1 8 132 # High hold
+1 1 1 1 0 1 8 133 # High hold
+1 1 1 0 0 1 8 134 # Async clear at high
+1 1 1 1 0 1 8 135 # Release clear high
+1 1 0 1 0 1 8 136 # Falling/prepare
+1 1 0 1 0 1 8 137 # Low hold
+1 1 1 1 1 0 8 138 # Rising
+1 1 1 1 1 0 8 139 # High hold
+1 1 1 1 1 0 8 140 # High hold
+1 1 1 1 1 0 8 141 # High hold
+1 1 0 1 1 0 8 142 # Falling/prepare
+1 1 0 1 1 0 8 143 # Low hold
+1 1 1 1 0 1 8 144 # Rising
+1 1 1 1 0 1 8 145 # High hold
+1 1 1 1 0 1 8 146 # High hold
+1 1 1 1 0 1 8 147 # High hold
+1 1 0 1 0 1 8 148 # Falling/prepare
+1 1 0 1 0 1 8 149 # Low hold
+1 1 1 1 1 0 8 150 # Rising
+1 1 1 1 1 0 8 151 # High hold
+1 1 1 1 1 0 8 152 # High hold
+1 1 1 1 1 0 8 153 # High hold
+1 1 0 1 1 0 8 154 # Falling/prepare
+1 1 0 1 1 0 8 155 # Low hold
+1 1 1 1 0 1 8 156 # Rising
+1 1 1 1 0 1 8 157 # High hold
+1 1 1 1 0 1 8 158 # High hold
+1 1 1 1 0 1 8 159 # High hold
+1 1 0 1 0 1 8 160 # Falling/prepare
+1 1 0 1 0 1 8 161 # Low hold
+1 1 1 1 1 0 8 162 # Rising
+1 1 1 1 1 0 8 163 # High hold
+1 1 1 1 1 0 8 164 # High hold
+1 1 1 1 1 0 8 165 # High hold
+1 1 0 1 1 0 8 166 # Falling/prepare
+1 1 0 1 1 0 8 167 # Low hold
+1 1 1 1 0 1 8 168 # Rising
+1 1 1 1 0 1 8 169 # High hold
+1 1 1 1 0 1 8 170 # High hold
+1 1 1 1 0 1 8 171 # High hold
+1 1 0 1 0 1 8 172 # Falling/prepare
+1 1 0 1 0 1 8 173 # Low hold
+1 1 1 1 1 0 8 174 # Rising
+1 1 1 1 1 0 8 175 # High hold
+1 1 1 1 1 0 8 176 # High hold
+1 1 1 1 1 0 8 177 # High hold
+1 1 0 1 1 0 8 178 # Falling/prepare
+1 1 0 1 1 0 8 179 # Low hold
+1 1 1 1 0 1 8 180 # Rising
+1 1 1 1 0 1 8 181 # High hold
+1 1 1 1 0 1 8 182 # High hold
+1 1 1 1 0 1 8 183 # High hold
+1 1 0 1 0 1 8 184 # Falling/prepare
+1 1 0 1 0 1 8 185 # Low hold
+1 1 1 1 1 0 8 186 # Rising
+1 1 1 1 1 0 8 187 # High hold
+1 1 1 1 1 0 8 188 # High hold
+1 1 1 1 1 0 8 189 # High hold
+1 1 0 1 1 0 8 190 # Falling/prepare
+1 1 0 1 1 0 8 191 # Low hold
+1 1 1 1 0 1 8 192 # Rising
+1 1 1 1 0 1 8 193 # High hold
+1 1 1 1 0 1 8 194 # High hold
+1 1 1 1 0 1 8 195 # High hold
+1 1 1 0 0 1 8 196 # Async clear at high
+1 1 1 1 0 1 8 197 # Release clear high
+1 1 0 1 0 1 8 198 # Falling/prepare
+1 1 0 1 0 1 8 199 # Low hold
+1 1 1 1 1 0 8 200 # Rising
+1 1 1 1 1 0 8 201 # High hold
+1 1 1 1 1 0 8 202 # High hold
+1 1 1 1 1 0 8 203 # High hold
+1 1 0 1 1 0 8 204 # Falling/prepare
+1 1 0 1 1 0 8 205 # Low hold
+1 1 1 1 0 1 8 206 # Rising
+1 1 1 1 0 1 8 207 # High hold
+1 1 1 1 0 1 8 208 # High hold
+1 1 1 1 0 1 8 209 # High hold
+1 1 0 1 0 1 8 210 # Falling/prepare
+1 1 0 1 0 1 8 211 # Low hold
+1 1 1 1 1 0 8 212 # Rising
+1 1 1 1 1 0 8 213 # High hold
+1 1 1 1 1 0 8 214 # High hold
+1 1 1 1 1 0 8 215 # High hold
+1 1 0 1 1 0 8 216 # Falling/prepare
+1 1 0 1 1 0 8 217 # Low hold
+1 1 1 1 0 1 8 218 # Rising
+1 1 1 1 0 1 8 219 # High hold
+1 1 1 1 0 1 8 220 # High hold
+1 1 1 1 0 1 8 221 # High hold
+1 1 0 1 0 1 8 222 # Falling/prepare
+1 1 0 1 0 1 8 223 # Low hold
+1 1 1 1 1 0 8 224 # Rising
+1 1 1 1 1 0 8 225 # High hold
+1 1 1 1 1 0 8 226 # High hold
+1 1 1 1 1 0 8 227 # High hold
+1 1 0 1 1 0 8 228 # Falling/prepare
+1 1 0 1 1 0 8 229 # Low hold
+1 1 1 1 0 1 8 230 # Rising
+1 1 1 1 0 1 8 231 # High hold
+1 1 1 1 0 1 8 232 # High hold
+1 1 1 1 0 1 8 233 # High hold
+1 1 0 1 0 1 8 234 # Falling/prepare
+1 1 0 1 0 1 8 235 # Low hold
+1 1 1 1 1 0 8 236 # Rising
+1 1 1 1 1 0 8 237 # High hold
+1 1 1 1 1 0 8 238 # High hold
+1 1 1 1 1 0 8 239 # High hold
+1 1 0 1 1 0 8 240 # Falling/prepare
+1 1 0 1 1 0 8 241 # Low hold
+1 1 1 1 0 1 8 242 # Rising
+1 1 1 1 0 1 8 243 # High hold
+1 1 1 1 0 1 8 244 # High hold
+1 1 1 1 0 1 8 245 # High hold
+1 1 0 1 0 1 8 246 # Falling/prepare
+1 1 0 1 0 1 8 247 # Low hold
+1 1 1 1 1 0 8 248 # Rising
+1 1 1 1 1 0 8 249 # High hold
+1 1 1 1 1 0 8 250 # High hold
+1 1 1 1 1 0 8 251 # High hold
+1 1 0 1 1 0 8 252 # Falling/prepare
+1 1 0 1 1 0 8 253 # Low hold
+1 1 1 1 0 1 8 254 # Rising
+1 1 1 1 0 1 8 255 # High hold
+1 1 1 1 0 1 8 256 # High hold
+1 1 1 1 0 1 8 257 # High hold
+1 1 1 0 0 1 8 258 # Async clear at high
+1 1 1 1 0 1 8 259 # Release clear high
+1 1 0 1 0 1 8 260 # Falling/prepare
+1 1 0 1 0 1 8 261 # Low hold
+1 1 1 1 1 0 8 262 # Rising
+1 1 1 1 1 0 8 263 # High hold
+1 1 1 1 1 0 8 264 # High hold
+1 1 1 1 1 0 8 265 # High hold
+1 1 0 1 1 0 8 266 # Falling/prepare
+1 1 0 1 1 0 8 267 # Low hold
+1 1 1 1 0 1 8 268 # Rising
+1 1 1 1 0 1 8 269 # High hold
+1 1 1 1 0 1 8 270 # High hold
+1 1 1 1 0 1 8 271 # High hold
+1 1 0 1 0 1 8 272 # Falling/prepare
+1 1 0 1 0 1 8 273 # Low hold
+1 1 1 1 1 0 8 274 # Rising
+1 1 1 1 1 0 8 275 # High hold
+1 1 1 1 1 0 8 276 # High hold
+1 1 1 1 1 0 8 277 # High hold
+1 1 0 1 1 0 8 278 # Falling/prepare
+1 1 0 1 1 0 8 279 # Low hold
+1 1 1 1 0 1 8 280 # Rising
+1 1 1 1 0 1 8 281 # High hold
+1 1 1 1 0 1 8 282 # High hold
+1 1 1 1 0 1 8 283 # High hold
+1 1 0 1 0 1 8 284 # Falling/prepare
+1 1 0 1 0 1 8 285 # Low hold
+1 1 1 1 1 0 8 286 # Rising
+1 1 1 1 1 0 8 287 # High hold
+1 1 1 1 1 0 8 288 # High hold
+1 1 1 1 1 0 8 289 # High hold
+1 1 0 1 1 0 8 290 # Falling/prepare
+1 1 0 1 1 0 8 291 # Low hold
+1 1 1 1 0 1 8 292 # Rising
+1 1 1 1 0 1 8 293 # High hold
+1 1 1 1 0 1 8 294 # High hold
+1 1 1 1 0 1 8 295 # High hold
+1 1 0 1 0 1 8 296 # Falling/prepare
+1 1 0 1 0 1 8 297 # Low hold
+1 1 1 1 1 0 8 298 # Rising
+1 1 1 1 1 0 8 299 # High hold
+1 1 1 1 1 0 8 300 # High hold
+1 1 1 1 1 0 8 301 # High hold
+1 1 0 1 1 0 8 302 # Falling/prepare
+1 1 0 1 1 0 8 303 # Low hold
+1 1 1 1 0 1 8 304 # Rising
+1 1 1 1 0 1 8 305 # High hold
+1 1 1 1 0 1 8 306 # High hold
+1 1 1 1 0 1 8 307 # High hold
+1 1 0 1 0 1 8 308 # Falling/prepare
+1 1 0 1 0 1 8 309 # Low hold
+1 1 1 1 1 0 8 310 # Rising
+1 1 1 1 1 0 8 311 # High hold
+1 1 1 1 1 0 8 312 # High hold
+1 1 1 1 1 0 8 313 # High hold
+0 1 0 1 1 0 8 314 # Falling/prepare
+0 1 0 1 1 0 8 315 # Low hold
+0 1 1 1 0 1 8 316 # Rising
+0 1 1 1 0 1 8 317 # High hold
+0 1 1 1 0 1 8 318 # High hold
+0 1 1 1 0 1 8 319 # High hold
+1 1 1 0 0 1 8 320 # Async clear at high
+1 1 1 1 0 1 8 321 # Release clear high
+1 1 0 1 0 1 8 322 # Falling/prepare
+1 1 0 1 0 1 8 323 # Low hold
+1 1 1 1 1 0 8 324 # Rising
+1 1 1 1 1 0 8 325 # High hold
+1 1 1 1 1 0 8 326 # High hold
+1 1 1 1 1 0 8 327 # High hold
+0 0 0 1 1 0 8 328 # Falling/prepare
+0 0 0 1 1 0 8 329 # Low hold
+0 0 1 1 1 0 8 330 # Rising
+0 0 1 1 1 0 8 331 # High hold
+0 0 1 1 1 0 8 332 # High hold
+0 0 1 1 1 0 8 333 # High hold
+0 1 0 1 1 0 8 334 # Falling/prepare
+0 1 0 1 1 0 8 335 # Low hold
+0 1 1 1 0 1 8 336 # Rising
+0 1 1 1 0 1 8 337 # High hold
+0 1 1 1 0 1 8 338 # High hold
+0 1 1 1 0 1 8 339 # High hold
+0 0 0 1 0 1 8 340 # Falling/prepare
+0 0 0 1 0 1 8 341 # Low hold
+0 0 1 1 0 1 8 342 # Rising
+0 0 1 1 0 1 8 343 # High hold
+0 0 1 1 0 1 8 344 # High hold
+0 0 1 1 0 1 8 345 # High hold
+1 0 0 1 0 1 8 346 # Falling/prepare
+1 0 0 1 0 1 8 347 # Low hold
+1 0 1 1 1 0 8 348 # Rising
+1 0 1 1 1 0 8 349 # High hold
+1 0 1 1 1 0 8 350 # High hold
+1 0 1 1 1 0 8 351 # High hold
+1 0 0 1 1 0 8 352 # Falling/prepare
+1 0 0 1 1 0 8 353 # Low hold
+1 0 1 1 1 0 8 354 # Rising
+1 0 1 1 1 0 8 355 # High hold
+1 0 1 1 1 0 8 356 # High hold
+1 0 1 1 1 0 8 357 # High hold
+1 0 0 1 1 0 8 358 # Falling/prepare
+1 0 0 1 1 0 8 359 # Low hold
+1 0 1 1 1 0 8 360 # Rising
+1 0 1 1 1 0 8 361 # High hold
+1 0 1 1 1 0 8 362 # High hold
+1 0 1 1 1 0 8 363 # High hold
+1 1 0 1 1 0 8 364 # Falling/prepare
+1 1 0 1 1 0 8 365 # Low hold
+1 1 1 1 0 1 8 366 # Rising
+1 1 1 1 0 1 8 367 # High hold
+1 1 1 1 0 1 8 368 # High hold
+1 1 1 1 0 1 8 369 # High hold
+1 1 0 1 0 1 8 370 # Falling/prepare
+1 1 0 1 0 1 8 371 # Low hold
+1 1 1 1 1 0 8 372 # Rising
+1 1 1 1 1 0 8 373 # High hold
+1 1 1 1 1 0 8 374 # High hold
+1 1 1 1 1 0 8 375 # High hold
+0 1 0 1 1 0 8 376 # Falling/prepare
+0 1 0 1 1 0 8 377 # Low hold
+0 1 1 1 0 1 8 378 # Rising
+0 1 1 1 0 1 8 379 # High hold
+0 1 1 1 0 1 8 380 # High hold
+0 1 1 1 0 1 8 381 # High hold
+1 1 1 0 0 1 8 382 # Async clear at high
+1 1 1 1 0 1 8 383 # Release clear high
+0 1 0 1 0 1 8 384 # Falling/prepare
+0 1 0 1 0 1 8 385 # Low hold
+0 1 1 1 0 1 8 386 # Rising
+0 1 1 1 0 1 8 387 # High hold
+0 1 1 1 0 1 8 388 # High hold
+0 1 1 1 0 1 8 389 # High hold
+0 1 0 1 0 1 8 390 # Falling/prepare
+0 1 0 1 0 1 8 391 # Low hold
+0 1 1 1 0 1 8 392 # Rising
+0 1 1 1 0 1 8 393 # High hold
+0 1 1 1 0 1 8 394 # High hold
+0 1 1 1 0 1 8 395 # High hold
+0 1 0 1 0 1 8 396 # Falling/prepare
+0 1 0 1 0 1 8 397 # Low hold
+0 1 1 1 0 1 8 398 # Rising
+0 1 1 1 0 1 8 399 # High hold
+0 1 1 1 0 1 8 400 # High hold
+0 1 1 1 0 1 8 401 # High hold
+0 1 0 1 0 1 8 402 # Falling/prepare
+0 1 0 1 0 1 8 403 # Low hold
+0 1 1 1 0 1 8 404 # Rising
+0 1 1 1 0 1 8 405 # High hold
+0 1 1 1 0 1 8 406 # High hold
+0 1 1 1 0 1 8 407 # High hold
+1 1 0 1 0 1 8 408 # Falling/prepare
+1 1 0 1 0 1 8 409 # Low hold
+1 1 1 1 1 0 8 410 # Rising
+1 1 1 1 1 0 8 411 # High hold
+1 1 1 1 1 0 8 412 # High hold
+1 1 1 1 1 0 8 413 # High hold
+1 0 0 1 1 0 8 414 # Falling/prepare
+1 0 0 1 1 0 8 415 # Low hold
+1 0 1 1 1 0 8 416 # Rising
+1 0 1 1 1 0 8 417 # High hold
+1 0 1 1 1 0 8 418 # High hold
+1 0 1 1 1 0 8 419 # High hold
+1 0 0 1 1 0 8 420 # Falling/prepare
+1 0 0 1 1 0 8 421 # Low hold
+1 0 1 1 1 0 8 422 # Rising
+1 0 1 1 1 0 8 423 # High hold
+1 0 1 1 1 0 8 424 # High hold
+1 0 1 1 1 0 8 425 # High hold
+1 0 0 1 1 0 8 426 # Falling/prepare
+1 0 0 1 1 0 8 427 # Low hold
+1 0 1 1 1 0 8 428 # Rising
+1 0 1 1 1 0 8 429 # High hold
+1 0 1 1 1 0 8 430 # High hold
+1 0 1 1 1 0 8 431 # High hold
+0 0 0 1 1 0 8 432 # Falling/prepare
+0 0 0 1 1 0 8 433 # Low hold
+0 0 1 1 1 0 8 434 # Rising
+0 0 1 1 1 0 8 435 # High hold
+0 0 1 1 1 0 8 436 # High hold
+0 0 1 1 1 0 8 437 # High hold
+0 1 0 1 1 0 8 438 # Falling/prepare
+0 1 0 1 1 0 8 439 # Low hold
+0 1 1 1 0 1 8 440 # Rising
+0 1 1 1 0 1 8 441 # High hold
+0 1 1 1 0 1 8 442 # High hold
+0 1 1 1 0 1 8 443 # High hold
+1 1 1 0 0 1 8 444 # Async clear at high
+1 1 1 1 0 1 8 445 # Release clear high
+0 1 0 1 0 1 8 446 # Falling/prepare
+0 1 0 1 0 1 8 447 # Low hold
+0 1 1 1 0 1 8 448 # Rising
+0 1 1 1 0 1 8 449 # High hold
+0 1 1 1 0 1 8 450 # High hold
+0 1 1 1 0 1 8 451 # High hold
+1 1 0 1 0 1 8 452 # Falling/prepare
+1 1 0 1 0 1 8 453 # Low hold
+1 1 1 1 1 0 8 454 # Rising
+1 1 1 1 1 0 8 455 # High hold
+1 1 1 1 1 0 8 456 # High hold
+1 1 1 1 1 0 8 457 # High hold
+0 1 0 1 1 0 8 458 # Falling/prepare
+0 1 0 1 1 0 8 459 # Low hold
+0 1 1 1 0 1 8 460 # Rising
+0 1 1 1 0 1 8 461 # High hold
+0 1 1 1 0 1 8 462 # High hold
+0 1 1 1 0 1 8 463 # High hold
+0 0 0 1 0 1 8 464 # Falling/prepare
+0 0 0 1 0 1 8 465 # Low hold
+0 0 1 1 0 1 8 466 # Rising
+0 0 1 1 0 1 8 467 # High hold
+0 0 1 1 0 1 8 468 # High hold
+0 0 1 1 0 1 8 469 # High hold
+0 0 0 1 0 1 8 470 # Falling/prepare
+0 0 0 1 0 1 8 471 # Low hold
+0 0 1 1 0 1 8 472 # Rising
+0 0 1 1 0 1 8 473 # High hold
+0 0 1 1 0 1 8 474 # High hold
+0 0 1 1 0 1 8 475 # High hold
+0 1 0 1 0 1 8 476 # Falling/prepare
+0 1 0 1 0 1 8 477 # Low hold
+0 1 1 1 0 1 8 478 # Rising
+0 1 1 1 0 1 8 479 # High hold
+0 1 1 1 0 1 8 480 # High hold
+0 1 1 1 0 1 8 481 # High hold
+0 0 0 1 0 1 8 482 # Falling/prepare
+0 0 0 1 0 1 8 483 # Low hold
+0 0 1 1 0 1 8 484 # Rising
+0 0 1 1 0 1 8 485 # High hold
+0 0 1 1 0 1 8 486 # High hold
+0 0 1 1 0 1 8 487 # High hold
+1 1 0 1 0 1 8 488 # Falling/prepare
+1 1 0 1 0 1 8 489 # Low hold
+1 1 1 1 1 0 8 490 # Rising
+1 1 1 1 1 0 8 491 # High hold
+1 1 1 1 1 0 8 492 # High hold
+1 1 1 1 1 0 8 493 # High hold
+0 0 0 1 1 0 8 494 # Falling/prepare
+0 0 0 1 1 0 8 495 # Low hold
+0 0 1 1 1 0 8 496 # Rising
+0 0 1 1 1 0 8 497 # High hold
+0 0 1 1 1 0 8 498 # High hold
+0 0 1 1 1 0 8 499 # High hold
+0 0 0 1 1 0 8 500 # Falling/prepare
+0 0 0 1 1 0 8 501 # Low hold
+0 0 1 1 1 0 8 502 # Rising
+0 0 1 1 1 0 8 503 # High hold
+0 0 1 1 1 0 8 504 # High hold
+0 0 1 1 1 0 8 505 # High hold
+1 1 1 0 0 1 8 506 # Async clear at high
+1 1 1 1 0 1 8 507 # Release clear high
+0 0 0 1 0 1 8 508 # Falling/prepare
+0 0 0 1 0 1 8 509 # Low hold
+0 0 1 1 0 1 8 510 # Rising
+0 0 1 1 0 1 8 511 # High hold
+0 0 1 1 0 1 8 512 # High hold
+0 0 1 1 0 1 8 513 # High hold
+0 0 0 1 0 1 8 514 # Falling/prepare
+0 0 0 1 0 1 8 515 # Low hold
+0 0 1 1 0 1 8 516 # Rising
+0 0 1 1 0 1 8 517 # High hold
+0 0 1 1 0 1 8 518 # High hold
+0 0 1 1 0 1 8 519 # High hold
+0 0 0 1 0 1 8 520 # Falling/prepare
+0 0 0 1 0 1 8 521 # Low hold
+0 0 1 1 0 1 8 522 # Rising
+0 0 1 1 0 1 8 523 # High hold
+0 0 1 1 0 1 8 524 # High hold
+0 0 1 1 0 1 8 525 # High hold
+0 1 0 1 0 1 8 526 # Falling/prepare
+0 1 0 1 0 1 8 527 # Low hold
+0 1 1 1 0 1 8 528 # Rising
+0 1 1 1 0 1 8 529 # High hold
+0 1 1 1 0 1 8 530 # High hold
+0 1 1 1 0 1 8 531 # High hold
+1 0 0 1 0 1 8 532 # Falling/prepare
+1 0 0 1 0 1 8 533 # Low hold
+1 0 1 1 1 0 8 534 # Rising
+1 0 1 1 1 0 8 535 # High hold
+1 0 1 1 1 0 8 536 # High hold
+1 0 1 1 1 0 8 537 # High hold
+0 0 0 1 1 0 8 538 # Falling/prepare
+0 0 0 1 1 0 8 539 # Low hold
+0 0 1 1 1 0 8 540 # Rising
+0 0 1 1 1 0 8 541 # High hold
+0 0 1 1 1 0 8 542 # High hold
+0 0 1 1 1 0 8 543 # High hold
+0 0 0 1 1 0 8 544 # Falling/prepare
+0 0 0 1 1 0 8 545 # Low hold
+0 0 1 1 1 0 8 546 # Rising
+0 0 1 1 1 0 8 547 # High hold
+0 0 1 1 1 0 8 548 # High hold
+0 0 1 1 1 0 8 549 # High hold
+1 0 0 1 1 0 8 550 # Falling/prepare
+1 0 0 1 1 0 8 551 # Low hold
+1 0 1 1 1 0 8 552 # Rising
+1 0 1 1 1 0 8 553 # High hold
+1 0 1 1 1 0 8 554 # High hold
+1 0 1 1 1 0 8 555 # High hold
+1 1 0 1 1 0 8 556 # Falling/prepare
+1 1 0 1 1 0 8 557 # Low hold
+1 1 1 1 0 1 8 558 # Rising
+1 1 1 1 0 1 8 559 # High hold
+1 1 1 1 0 1 8 560 # High hold
+1 1 1 1 0 1 8 561 # High hold
+1 1 0 1 0 1 8 562 # Falling/prepare
+1 1 0 1 0 1 8 563 # Low hold
+1 1 1 1 1 0 8 564 # Rising
+1 1 1 1 1 0 8 565 # High hold
+1 1 1 1 1 0 8 566 # High hold
+1 1 1 1 1 0 8 567 # High hold
+1 1 1 0 0 1 8 568 # Async clear at high
+1 1 1 1 0 1 8 569 # Release clear high
+1 1 0 1 0 1 8 570 # Falling/prepare
+1 1 0 1 0 1 8 571 # Low hold
+1 1 1 1 1 0 8 572 # Rising
+1 1 1 1 1 0 8 573 # High hold
+1 1 1 1 1 0 8 574 # High hold
+1 1 1 1 1 0 8 575 # High hold
+1 0 0 1 1 0 8 576 # Falling/prepare
+1 0 0 1 1 0 8 577 # Low hold
+1 0 1 1 1 0 8 578 # Rising
+1 0 1 1 1 0 8 579 # High hold
+1 0 1 1 1 0 8 580 # High hold
+1 0 1 1 1 0 8 581 # High hold
+1 1 0 1 1 0 8 582 # Falling/prepare
+1 1 0 1 1 0 8 583 # Low hold
+1 1 1 1 0 1 8 584 # Rising
+1 1 1 1 0 1 8 585 # High hold
+1 1 1 1 0 1 8 586 # High hold
+1 1 1 1 0 1 8 587 # High hold
+0 0 0 1 0 1 8 588 # Falling/prepare
+0 0 0 1 0 1 8 589 # Low hold
+0 0 1 1 0 1 8 590 # Rising
+0 0 1 1 0 1 8 591 # High hold
+0 0 1 1 0 1 8 592 # High hold
+0 0 1 1 0 1 8 593 # High hold
+1 0 0 1 0 1 8 594 # Falling/prepare
+1 0 0 1 0 1 8 595 # Low hold
+1 0 1 1 1 0 8 596 # Rising
+1 0 1 1 1 0 8 597 # High hold
+1 0 1 1 1 0 8 598 # High hold
+1 0 1 1 1 0 8 599 # High hold
+0 1 0 1 1 0 8 600 # Falling/prepare
+0 1 0 1 1 0 8 601 # Low hold
+0 1 1 1 0 1 8 602 # Rising
+0 1 1 1 0 1 8 603 # High hold
+0 1 1 1 0 1 8 604 # High hold
+0 1 1 1 0 1 8 605 # High hold
+1 1 0 1 0 1 8 606 # Falling/prepare
+1 1 0 1 0 1 8 607 # Low hold
+1 1 1 1 1 0 8 608 # Rising
+1 1 1 1 1 0 8 609 # High hold
+1 1 1 1 1 0 8 610 # High hold
+1 1 1 1 1 0 8 611 # High hold
+0 0 0 1 1 0 8 612 # Falling/prepare
+0 0 0 1 1 0 8 613 # Low hold
+0 0 1 1 1 0 8 614 # Rising
+0 0 1 1 1 0 8 615 # High hold
+0 0 1 1 1 0 8 616 # High hold
+0 0 1 1 1 0 8 617 # High hold
+0 0 0 1 1 0 8 618 # Falling/prepare
+0 0 0 1 1 0 8 619 # Low hold
+0 0 1 1 1 0 8 620 # Rising
+0 0 1 1 1 0 8 621 # High hold
+0 0 1 1 1 0 8 622 # High hold
+0 0 1 1 1 0 8 623 # High hold
